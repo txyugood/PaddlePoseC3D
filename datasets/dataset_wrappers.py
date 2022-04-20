@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
+from paddle.io import Dataset
 
 
-class RepeatDataset:
+class RepeatDataset(Dataset):
     """A wrapper of repeated dataset.
 
     The length of repeated dataset will be ``times`` larger than the original

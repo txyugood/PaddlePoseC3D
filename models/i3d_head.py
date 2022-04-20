@@ -3,6 +3,7 @@ from abc import abstractmethod
 import paddle.nn
 import paddle.nn as nn
 from paddle import ParamAttr
+import paddle.nn.functional as F
 
 from datasets.utils import top_k_accuracy
 
@@ -30,7 +31,7 @@ class BaseHead(nn.Layer):
                  in_channels,
                  loss_cls=dict(type='CrossEntropyLoss', loss_weight=1.0),
                  multi_class=False,
-                 label_smooth_eps=0.0):
+                 label_smooth_eps=0.1):
         super().__init__()
         self.num_classes = num_classes
         self.in_channels = in_channels
@@ -80,7 +81,10 @@ class BaseHead(nn.Layer):
             labels = ((1 - self.label_smooth_eps) * labels +
                       self.label_smooth_eps / self.num_classes)
 
-        loss_cls = self.loss_cls(cls_score, labels, **kwargs)
+        if self.label_smooth_eps == 0:
+            loss_cls = self.loss_cls(cls_score, labels, **kwargs)
+        else:
+            loss_cls = self.label_smooth_loss(cls_score, labels)
         # loss_cls may be dictionary or single tensor
         if isinstance(loss_cls, dict):
             losses.update(loss_cls)
@@ -88,6 +92,14 @@ class BaseHead(nn.Layer):
             losses['loss_cls'] = loss_cls
 
         return losses
+
+    def label_smooth_loss(self, scores, labels):
+        labels = F.one_hot(labels, self.num_classes)
+        labels = F.label_smooth(labels, epsilon=self.label_smooth_eps)
+        labels = paddle.squeeze(labels, axis=1)
+        # loss = self.loss_func(scores, labels, soft_label=True, **kwargs)
+        loss = F.cross_entropy(scores, labels, soft_label=True)
+        return loss
 
 
 class I3DHead(BaseHead):
@@ -133,7 +145,11 @@ class I3DHead(BaseHead):
             self.avg_pool = None
 
     def init_weights(self):
-        pass
+        initializer = paddle.nn.initializer.Normal(std=self.init_std)
+        initializer(self.fc_cls.weight)
+        if self.fc_cls.bias is not None:
+            initializer = paddle.nn.initializer.Constant(0)
+            initializer(self.fc_cls.bias)
 
     def forward(self, x):
         """Defines the computation performed at every call.

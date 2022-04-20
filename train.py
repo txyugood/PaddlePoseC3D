@@ -63,7 +63,7 @@ def parse_args():
         dest='max_epochs',
         help='max_epochs',
         type=int,
-        default=100
+        default=12
     )
 
     parser.add_argument(
@@ -79,7 +79,7 @@ def parse_args():
         dest='seed',
         help='random seed',
         type=int,
-        default=1234
+        default=0
     )
 
     return parser.parse_args()
@@ -141,7 +141,6 @@ if __name__ == '__main__':
     if args.pretrained is not None:
         load_pretrained_model(model, args.pretrained)
 
-
     batch_size = args.batch_size
     train_loader = paddle.io.DataLoader(
         dataset,
@@ -157,11 +156,11 @@ if __name__ == '__main__':
                                       batch_size=batch_size, shuffle=False, drop_last=False, return_list=True)
 
     max_epochs = args.max_epochs
-    lr = paddle.optimizer.lr.MultiStepDecay(learning_rate=1e-2, milestones=[9, 11], gamma=0.1)
+    lr = paddle.optimizer.lr.MultiStepDecay(learning_rate=1e-2 / 8, milestones=[9 * iters_per_epoch, 11 * iters_per_epoch],
+                                            gamma=0.1)
     grad_clip = paddle.nn.ClipGradByNorm(40)
     optimizer = paddle.optimizer.Momentum(learning_rate=lr, weight_decay=3e-4, parameters=model.parameters(),
                                           grad_clip=grad_clip)
-
 
     epoch = 1
 

@@ -1,0 +1,5 @@
+/output/
+/test_tipc/data/mini_ucf/
+/test_tipc/data/__MACOSX/
+.idea/
+__pycache__/

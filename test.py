@@ -3,9 +3,9 @@ import argparse
 
 import paddle
 
-from datasets import SampleFrames, RawFrameDecode, Resize, RandomCrop, CenterCrop, Flip, Normalize, FormatShape, Collect
-from datasets import RawframeDataset
-from models.c3d import C3D
+from datasets import UniformSampleFrames, Resize, PoseCompact, CenterCrop, PoseDecode, GeneratePoseTarget, FormatShape, Collect
+from datasets import PoseDataset
+from models.resnet3d_slowonly import ResNet3dSlowOnly
 from models.i3d_head import I3DHead
 from models.recognizer3d import Recognizer3D
 from utils import load_pretrained_model
@@ -20,7 +20,7 @@ def parse_args():
         dest='dataset_root',
         help='The path of dataset root',
         type=str,
-        default='/Users/alex/baidu/mmaction2/data/ucf101/')
+        default='/Users/alex/Downloads/ucf101.pkl')
 
     parser.add_argument(
         '--pretrained',
@@ -34,17 +34,27 @@ def parse_args():
 
 if __name__ == '__main__':
     args = parse_args()
+    left_kp = [1, 3, 5, 7, 9, 11, 13, 15]
+    right_kp = [2, 4, 6, 8, 10, 12, 14, 16]
     tranforms = [
-        SampleFrames(clip_len=16, frame_interval=1, num_clips=10, test_mode=True),
-        RawFrameDecode(),
-        Resize(scale=(128, 171)),
-        CenterCrop(crop_size=112),
-        Normalize(mean=[104, 117, 128], std=[1, 1, 1], to_bgr=False),
+        UniformSampleFrames(clip_len=48, num_clips=10, test_mode=True),
+        PoseDecode(),
+        PoseCompact(hw_ratio=1., allow_imgpad=True),
+        Resize(scale=(-1, 56)),
+        CenterCrop(crop_size=56),
+        GeneratePoseTarget(sigma=0.6,
+                           use_score=True,
+                           with_kp=True,
+                           with_limb=False,
+                           double=True,
+                           left_kp=left_kp,
+                           right_kp=right_kp),
         FormatShape(input_format='NCTHW'),
         Collect(keys=['imgs', 'label'], meta_keys=[])
     ]
-    dataset = RawframeDataset(ann_file=os.path.join(args.dataset_root, 'ucf101_val_split_1_rawframes.txt'),
-                              pipeline=tranforms, data_prefix=os.path.join(args.dataset_root, "rawframes"))
+
+    dataset = PoseDataset(ann_file=args.dataset_root, split='test1', data_prefix='',
+                              pipeline=tranforms)
 
     loader = paddle.io.DataLoader(
         dataset,
@@ -55,8 +65,22 @@ if __name__ == '__main__':
         return_list=True,
     )
 
-    backbone = C3D(dropout_ratio=0.5, init_std=0.005)
-    head = I3DHead(num_classes=101, in_channels=4096, spatial_type=None, dropout_ratio=0.5, init_std=0.01)
+    backbone = ResNet3dSlowOnly(
+        depth=50,
+        pretrained=None,
+        in_channels=17,
+        base_channels=32,
+        num_stages=3,
+        out_indices=(2,),
+        stage_blocks=(3, 4, 6),
+        conv1_stride_s=1,
+        pool1_stride_s=1,
+        inflate=(0, 1, 1),
+        spatial_strides=(2, 2, 2),
+        temporal_strides=(1, 1, 2),
+        dilations=(1, 1, 1)
+    )
+    head = I3DHead(num_classes=101, in_channels=512, spatial_type='avg', dropout_ratio=0.5)
     model = Recognizer3D(backbone=backbone, cls_head=head)
     load_pretrained_model(model, args.pretrained)
 

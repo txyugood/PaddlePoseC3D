@@ -16,7 +16,7 @@
 ```shell
 test_tipc/
 ├── configs/  # 配置文件目录
-    ├── c3d   # c3d模型的测试配置文件目录 
+    ├── posec3d   # posec3d模型的测试配置文件目录 
         ├── train_infer_python.txt      # 测试Linux上python训练预测（基础训练预测）的配置文件
         ├── train_infer_python.md      # 测试Linux上python训练预测（基础训练预测）的使用文档
 ├── results/   # 预测结果
@@ -47,9 +47,9 @@ bash test_tipc/test_train_inference_python.sh configs/[model_name]/[params_file_
 ```shell
 # 功能：准备数据
 # 格式：bash + 运行脚本 + 参数1: 配置文件选择 + 参数2: 模式选择
-bash test_tipc/prepare.sh ./test_tipc/configs/c3d/train_infer_python.txt 'lite_train_lite_infer'
+bash test_tipc/prepare.sh ./test_tipc/configs/posec3d/train_infer_python.txt 'lite_train_lite_infer'
 
 # 功能：运行测试
 # 格式：bash + 运行脚本 + 参数1: 配置文件选择 + 参数2: 模式选择
-bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/c3d/train_infer_python.txt 'lite_train_lite_infer'
+bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/posec3d/train_infer_python.txt 'lite_train_lite_infer'
 ```

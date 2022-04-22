@@ -18,7 +18,7 @@ trainer_list=$(func_parser_value "${lines[14]}")
 
 # MODE be one of ['lite_train_lite_infer']
 if [ ${MODE} = "lite_train_lite_infer" ];then
-    rm -rf ./test_tipc/data/mini_ucf
+    rm -rf ./test_tipc/data/*.pkl
     rm -rf ./test_tipc/data/__MACOSX
-    cd ./test_tipc/data/ && unzip mini_ucf.zip && cd ../../
+    cd ./test_tipc/data/ && unzip mini_ucf101.zip && cd ../../
 fi

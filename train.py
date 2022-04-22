@@ -10,6 +10,7 @@ from datasets import UniformSampleFrames, PoseDecode, PoseCompact, Resize, Rando
     FormatShape, Collect, GeneratePoseTarget, RandomResizedCrop
 from datasets import PoseDataset, RepeatDataset
 from timer import TimeAverager, calculate_eta
+from precise_bn import do_preciseBN
 
 from models.i3d_head import I3DHead
 from models.recognizer3d import Recognizer3D
@@ -211,7 +212,10 @@ if __name__ == '__main__':
                 reader_cost_averager.reset()
                 batch_cost_averager.reset()
             batch_start = time.time()
-
+        if epoch % 2 == 0:
+            do_preciseBN(
+                model, train_loader, False,
+                min(200, len(train_loader)))
         model.eval()
         results = []
         total_val_avg_loss = 0.0

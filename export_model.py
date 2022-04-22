@@ -3,7 +3,7 @@ import argparse
 
 import paddle
 
-from models.c3d import C3D
+from models.resnet3d_slowonly import ResNet3dSlowOnly
 from models.i3d_head import I3DHead
 from models.recognizer3d import Recognizer3D
 from utils import load_pretrained_model
@@ -33,9 +33,22 @@ def parse_args():
 
 
 def main(args):
-
-    backbone = C3D(dropout_ratio=0.5, init_std=0.005)
-    head = I3DHead(num_classes=101, in_channels=4096, spatial_type=None, dropout_ratio=0.5, init_std=0.01)
+    backbone = ResNet3dSlowOnly(
+        depth=50,
+        pretrained=None,
+        in_channels=17,
+        base_channels=32,
+        num_stages=3,
+        out_indices=(2,),
+        stage_blocks=(3, 4, 6),
+        conv1_stride_s=1,
+        pool1_stride_s=1,
+        inflate=(0, 1, 1),
+        spatial_strides=(2, 2, 2),
+        temporal_strides=(1, 1, 2),
+        dilations=(1, 1, 1)
+    )
+    head = I3DHead(num_classes=101, in_channels=512, spatial_type='avg', dropout_ratio=0.5)
     net = Recognizer3D(backbone=backbone, cls_head=head)
 
     if args.model_path:

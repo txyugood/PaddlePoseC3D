@@ -45,7 +45,7 @@ inference:infer.py
 --use_tensorrt:False
 --precision:fp32
 --model_file:output/model.pdmodel
---input_file:test_tipc/data/example.npy
+--input_file:test_tipc/data/predict_example.pkl
 null:null
 --enable_benchmark:True
 --params_file:output/model.pdiparams

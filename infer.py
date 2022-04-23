@@ -23,6 +23,8 @@ from paddle import inference
 from paddle.inference import Config, create_predictor
 import paddle.nn.functional as F
 
+from datasets import UniformSampleFrames, Resize, PoseCompact, CenterCrop, PoseDecode, GeneratePoseTarget, FormatShape, Collect, Compose
+
 
 
 def parse_args():
@@ -118,7 +120,7 @@ def postprocess(input_file, output, print_output=True):
 
     output = output[0]  # [B, num_cls]
 
-    N = input_file[0].shape[0]
+    N = len(input_file[0])
     if output.shape[0] != N:
         output = output.reshape([N] + [output.shape[0] // N] +
                                 list(output.shape[1:]))  # [N, T, C]
@@ -137,7 +139,7 @@ def postprocess(input_file, output, print_output=True):
 def main():
     args = parse_args()
 
-    model_name = 'C3D'
+    model_name = 'POSEC3D'
     print(f"Inference model({model_name})...")
     # InferenceHelper = build_inference_helper(cfg.INFERENCE)
 
@@ -156,17 +158,38 @@ def main():
     # get the absolute file path(s) to be processed
     files = parse_file_paths(args.input_file)
 
-    files = np.load(files[0])
+    import pickle
+    with open(files[0], 'rb') as f:
+        files = pickle.load(f)
+    left_kp = [1, 3, 5, 7, 9, 11, 13, 15]
+    right_kp = [2, 4, 6, 8, 10, 12, 14, 16]
+    tranforms = [
+        UniformSampleFrames(clip_len=48, num_clips=10, test_mode=True),
+        PoseDecode(),
+        PoseCompact(hw_ratio=1., allow_imgpad=True),
+        Resize(scale=(-1, 56)),
+        CenterCrop(crop_size=56),
+        GeneratePoseTarget(sigma=0.6,
+                           use_score=True,
+                           with_kp=True,
+                           with_limb=False,
+                           double=True,
+                           left_kp=left_kp,
+                           right_kp=right_kp),
+        FormatShape(input_format='NCTHW'),
+        Collect(keys=['imgs', 'label'], meta_keys=[])
+    ]
+    tranforms = Compose(tranforms)
+    files = [tranforms(f) for f in files]
 
     if args.enable_benchmark:
-        test_video_num = 50
-        num_warmup = 10
+        num_warmup = 0
 
         # instantiate auto log
         import auto_log
         pid = os.getpid()
         autolog = auto_log.AutoLogger(
-            model_name="C3D",
+            model_name="POSEC3D",
             model_precision=args.precision,
             batch_size=args.batch_size,
             data_shape="dynamic",
@@ -178,8 +201,13 @@ def main():
             time_keys=['preprocess_time', 'inference_time', 'postprocess_time'],
             warmup=num_warmup)
 
-        files = [files[0:1] for _ in range(test_video_num + num_warmup)]
-        files = np.concatenate(files)
+    imgs = []
+    labels = []
+    for f in files:
+        imgs.append(f["imgs"][np.newaxis, :,:,:,:,:])
+        labels.append(f["label"])
+    imgs = np.concatenate(imgs)
+
 
     # Inferencing process
     batch_num = args.batch_size
@@ -191,7 +219,7 @@ def main():
             autolog.times.start()
 
         # Pre process batched input
-        batched_inputs = [files[st_idx:ed_idx]]
+        batched_inputs = [imgs[st_idx:ed_idx]]
 
         # get pre process time cost
         if args.enable_benchmark:
@@ -210,7 +238,7 @@ def main():
         if args.enable_benchmark:
             autolog.times.stamp()
 
-        postprocess([files[st_idx:ed_idx]], batched_outputs, not args.enable_benchmark)
+        postprocess([labels[st_idx:ed_idx]], batched_outputs, not args.enable_benchmark)
 
         # get post process time cost
         if args.enable_benchmark:

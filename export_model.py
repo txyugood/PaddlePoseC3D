@@ -57,7 +57,7 @@ def main(args):
         print('Loaded trained params of model successfully.')
 
 
-    shape = [None, 1, 3, 16, 112, 112]
+    shape = [1, 20, 17, 48, 56, 56]
 
     new_net = net
 

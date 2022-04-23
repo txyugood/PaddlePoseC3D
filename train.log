@@ -1,0 +1,848 @@
+9537 videos remain after valid thresholding
+3783 videos remain after valid thresholding
+W0422 12:13:10.356344 18674 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0422 12:13:10.362488 18674 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from res3d_k400.pdparams
+cls_head.fc_cls.weight is not in pretrained model
+cls_head.fc_cls.bias is not in pretrained model
+There are 215/217 variables loaded into Recognizer3D.
+/home/aistudio/PaddlePoseC3D/datasets/pipelines/transforms.py:1467: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  results['frame_inds'] = inds.astype(np.int)
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[TRAIN] epoch=1, batch_id=100, loss=3.667755, lr=0.001250,acc=0.309,avg_reader_cost: 1.0762703704833985 sec, avg_batch_cost: 1.4114563417434693 sec, avg_samples: 16, avg_ips: 11.335809352938515 images/sec  ETA 28:00:06
+[TRAIN] epoch=1, batch_id=200, loss=2.964189, lr=0.001250,acc=0.469,avg_reader_cost: 1.0612448930740357 sec, avg_batch_cost: 1.4339417290687562 sec, avg_samples: 16, avg_ips: 11.158054525961017 images/sec  ETA 28:24:28
+[TRAIN] epoch=1, batch_id=300, loss=2.586353, lr=0.001250,acc=0.552,avg_reader_cost: 1.0944110774993896 sec, avg_batch_cost: 1.4057958960533141 sec, avg_samples: 16, avg_ips: 11.381453057957431 images/sec  ETA 27:48:40
+[TRAIN] epoch=1, batch_id=400, loss=2.344097, lr=0.001250,acc=0.606,avg_reader_cost: 1.1278571319580077 sec, avg_batch_cost: 1.4242467761039734 sec, avg_samples: 16, avg_ips: 11.23400822697875 images/sec  ETA 28:08:12
+[TRAIN] epoch=1, batch_id=500, loss=2.203900, lr=0.001250,acc=0.636,avg_reader_cost: 1.0829577612876893 sec, avg_batch_cost: 1.3770252132415772 sec, avg_samples: 16, avg_ips: 11.619249848254633 images/sec  ETA 27:09:56
+[TRAIN] epoch=1, batch_id=600, loss=2.092657, lr=0.001250,acc=0.662,avg_reader_cost: 1.109946801662445 sec, avg_batch_cost: 1.4358664107322694 sec, avg_samples: 16, avg_ips: 11.143097909672704 images/sec  ETA 28:17:11
+[TRAIN] epoch=1, batch_id=700, loss=2.005526, lr=0.001250,acc=0.684,avg_reader_cost: 1.1657694005966186 sec, avg_batch_cost: 1.4910651516914368 sec, avg_samples: 16, avg_ips: 10.730584094095349 images/sec  ETA 29:19:57
+[TRAIN] epoch=1, batch_id=800, loss=1.936219, lr=0.001250,acc=0.701,avg_reader_cost: 1.1293326425552368 sec, avg_batch_cost: 1.4153137612342834 sec, avg_samples: 16, avg_ips: 11.304913750041216 images/sec  ETA 27:48:10
+[TRAIN] epoch=1, batch_id=900, loss=1.881750, lr=0.001250,acc=0.716,avg_reader_cost: 1.1231662940979004 sec, avg_batch_cost: 1.4365487360954285 sec, avg_samples: 16, avg_ips: 11.137805211877708 images/sec  ETA 28:10:49
+[TRAIN] epoch=1, batch_id=1000, loss=1.834770, lr=0.001250,acc=0.729,avg_reader_cost: 1.1320327258110046 sec, avg_batch_cost: 1.4264088463783264 sec, avg_samples: 16, avg_ips: 11.216980349374754 images/sec  ETA 27:56:30
+[TRAIN] epoch=1, batch_id=1100, loss=1.789100, lr=0.001250,acc=0.741,avg_reader_cost: 1.1035387110710144 sec, avg_batch_cost: 1.4251643443107604 sec, avg_samples: 16, avg_ips: 11.22677539883159 images/sec  ETA 27:52:40
+[TRAIN] epoch=1, batch_id=1200, loss=1.753159, lr=0.001250,acc=0.751,avg_reader_cost: 1.0781646871566772 sec, avg_batch_cost: 1.367859709262848 sec, avg_samples: 16, avg_ips: 11.697105990951766 images/sec  ETA 26:43:07
+[TRAIN] epoch=1, batch_id=1300, loss=1.719775, lr=0.001250,acc=0.760,avg_reader_cost: 1.1234828305244446 sec, avg_batch_cost: 1.4560848045349122 sec, avg_samples: 16, avg_ips: 10.988370972740531 images/sec  ETA 28:24:06
+[TRAIN] epoch=1, batch_id=1400, loss=1.690730, lr=0.001250,acc=0.768,avg_reader_cost: 1.1149330639839172 sec, avg_batch_cost: 1.4103504395484925 sec, avg_samples: 16, avg_ips: 11.344698134119216 images/sec  ETA 27:28:13
+[TRAIN] epoch=1, batch_id=1500, loss=1.664244, lr=0.001250,acc=0.776,avg_reader_cost: 1.1606651949882507 sec, avg_batch_cost: 1.4435917949676513 sec, avg_samples: 16, avg_ips: 11.083465600023402 images/sec  ETA 28:04:40
+[TRAIN] epoch=1, batch_id=1600, loss=1.640301, lr=0.001250,acc=0.782,avg_reader_cost: 1.2063324451446533 sec, avg_batch_cost: 1.5467293357849121 sec, avg_samples: 16, avg_ips: 10.344408442916452 images/sec  ETA 30:02:27
+[TRAIN] epoch=1, batch_id=1700, loss=1.618208, lr=0.001250,acc=0.789,avg_reader_cost: 1.1214430594444276 sec, avg_batch_cost: 1.4000012588500976 sec, avg_samples: 16, avg_ips: 11.42856115225334 images/sec  ETA 27:09:08
+[TRAIN] epoch=1, batch_id=1800, loss=1.597781, lr=0.001250,acc=0.795,avg_reader_cost: 1.1272310757637023 sec, avg_batch_cost: 1.5203136110305786 sec, avg_samples: 16, avg_ips: 10.524144415936684 images/sec  ETA 29:26:36
+[TRAIN] epoch=1, batch_id=1900, loss=1.580141, lr=0.001250,acc=0.800,avg_reader_cost: 1.1576682138442993 sec, avg_batch_cost: 1.4924252343177795 sec, avg_samples: 16, avg_ips: 10.720805057490168 images/sec  ETA 28:51:42
+[TRAIN] epoch=1, batch_id=2000, loss=1.562532, lr=0.001250,acc=0.805,avg_reader_cost: 1.0785063815116882 sec, avg_batch_cost: 1.4167850732803344 sec, avg_samples: 16, avg_ips: 11.29317375073314 images/sec  ETA 27:21:34
+[TRAIN] epoch=1, batch_id=2100, loss=1.546025, lr=0.001250,acc=0.810,avg_reader_cost: 1.167512547969818 sec, avg_batch_cost: 1.4942636513710021 sec, avg_samples: 16, avg_ips: 10.70761507537163 images/sec  ETA 28:48:51
+[TRAIN] epoch=1, batch_id=2200, loss=1.531746, lr=0.001250,acc=0.814,avg_reader_cost: 1.1280489349365235 sec, avg_batch_cost: 1.496882815361023 sec, avg_samples: 16, avg_ips: 10.68887947393602 images/sec  ETA 28:49:23
+[TRAIN] epoch=1, batch_id=2300, loss=1.520126, lr=0.001250,acc=0.818,avg_reader_cost: 1.1148930740356446 sec, avg_batch_cost: 1.4469387984275819 sec, avg_samples: 16, avg_ips: 11.057827751517568 images/sec  ETA 27:49:17
+[TRAIN] epoch=1, batch_id=2400, loss=1.508012, lr=0.001250,acc=0.821,avg_reader_cost: 1.1243890857696532 sec, avg_batch_cost: 1.4648674607276917 sec, avg_samples: 16, avg_ips: 10.922489869528397 images/sec  ETA 28:07:31
+[TRAIN] epoch=1, batch_id=2500, loss=1.495483, lr=0.001250,acc=0.826,avg_reader_cost: 1.1100771689414979 sec, avg_batch_cost: 1.4257854890823365 sec, avg_samples: 16, avg_ips: 11.221884443709632 images/sec  ETA 27:20:07
+[TRAIN] epoch=1, batch_id=2600, loss=1.484122, lr=0.001250,acc=0.829,avg_reader_cost: 1.157312159538269 sec, avg_batch_cost: 1.516469223499298 sec, avg_samples: 16, avg_ips: 10.550824080082233 images/sec  ETA 29:01:55
+[TRAIN] epoch=1, batch_id=2700, loss=1.473953, lr=0.001250,acc=0.832,avg_reader_cost: 1.1524976944923402 sec, avg_batch_cost: 1.5488800168037415 sec, avg_samples: 16, avg_ips: 10.330044823625197 images/sec  ETA 29:36:33
+[TRAIN] epoch=1, batch_id=2800, loss=1.464514, lr=0.001250,acc=0.835,avg_reader_cost: 1.1382748484611511 sec, avg_batch_cost: 1.4596014165878295 sec, avg_samples: 16, avg_ips: 10.961896733016237 images/sec  ETA 27:51:43
+[TRAIN] epoch=1, batch_id=2900, loss=1.455157, lr=0.001250,acc=0.837,avg_reader_cost: 1.101019561290741 sec, avg_batch_cost: 1.4403571319580077 sec, avg_samples: 16, avg_ips: 11.108356146541068 images/sec  ETA 27:27:17
+[TRAIN] epoch=1, batch_id=3000, loss=1.445234, lr=0.001250,acc=0.840,avg_reader_cost: 1.1433008742332458 sec, avg_batch_cost: 1.4886714839935302 sec, avg_samples: 16, avg_ips: 10.7478380368234 images/sec  ETA 28:20:03
+[TRAIN] epoch=1, batch_id=3100, loss=1.437581, lr=0.001250,acc=0.842,avg_reader_cost: 1.0832001709938048 sec, avg_batch_cost: 1.4102268147468566 sec, avg_samples: 16, avg_ips: 11.345692645102686 images/sec  ETA 26:48:07
+[TRAIN] epoch=1, batch_id=3200, loss=1.428859, lr=0.001250,acc=0.845,avg_reader_cost: 1.0757829451560974 sec, avg_batch_cost: 1.4104538702964782 sec, avg_samples: 16, avg_ips: 11.343866209985862 images/sec  ETA 26:46:02
+[TRAIN] epoch=1, batch_id=3300, loss=1.421204, lr=0.001250,acc=0.847,avg_reader_cost: 1.071508367061615 sec, avg_batch_cost: 1.3908128428459168 sec, avg_samples: 16, avg_ips: 11.50406403154891 images/sec  ETA 26:21:21
+[TRAIN] epoch=1, batch_id=3400, loss=1.414423, lr=0.001250,acc=0.850,avg_reader_cost: 1.0783135652542115 sec, avg_batch_cost: 1.3810178065299987 sec, avg_samples: 16, avg_ips: 11.585658001182654 images/sec  ETA 26:07:54
+[TRAIN] epoch=1, batch_id=3500, loss=1.407412, lr=0.001250,acc=0.852,avg_reader_cost: 1.1014783668518067 sec, avg_batch_cost: 1.4324770998954772 sec, avg_samples: 16, avg_ips: 11.169463023993517 images/sec  ETA 27:03:57
+[TRAIN] epoch=1, batch_id=3600, loss=1.399987, lr=0.001250,acc=0.854,avg_reader_cost: 1.1194330668449402 sec, avg_batch_cost: 1.4395177841186524 sec, avg_samples: 16, avg_ips: 11.114833159074886 images/sec  ETA 27:09:32
+[TRAIN] epoch=1, batch_id=3700, loss=1.393350, lr=0.001250,acc=0.856,avg_reader_cost: 1.069685356616974 sec, avg_batch_cost: 1.392549979686737 sec, avg_samples: 16, avg_ips: 11.4897132838272 images/sec  ETA 26:14:02
+[TRAIN] epoch=1, batch_id=3800, loss=1.387102, lr=0.001250,acc=0.858,avg_reader_cost: 1.0791447401046752 sec, avg_batch_cost: 1.391601550579071 sec, avg_samples: 16, avg_ips: 11.497543958140968 images/sec  ETA 26:10:39
+[TRAIN] epoch=1, batch_id=3900, loss=1.380814, lr=0.001250,acc=0.860,avg_reader_cost: 1.0922188186645507 sec, avg_batch_cost: 1.4450979399681092 sec, avg_samples: 16, avg_ips: 11.071913921870992 images/sec  ETA 27:08:37
+[TRAIN] epoch=1, batch_id=4000, loss=1.374529, lr=0.001250,acc=0.862,avg_reader_cost: 1.0869778966903687 sec, avg_batch_cost: 1.4230916261672975 sec, avg_samples: 16, avg_ips: 11.243127080363449 images/sec  ETA 26:41:27
+[TRAIN] epoch=1, batch_id=4100, loss=1.368693, lr=0.001250,acc=0.864,avg_reader_cost: 1.083247754573822 sec, avg_batch_cost: 1.4345230889320373 sec, avg_samples: 16, avg_ips: 11.153532573610619 images/sec  ETA 26:51:55
+[TRAIN] epoch=1, batch_id=4200, loss=1.363264, lr=0.001250,acc=0.866,avg_reader_cost: 1.1003964471817016 sec, avg_batch_cost: 1.3788103938102723 sec, avg_samples: 16, avg_ips: 11.604206112622066 images/sec  ETA 25:47:01
+[TRAIN] epoch=1, batch_id=4300, loss=1.357619, lr=0.001250,acc=0.867,avg_reader_cost: 1.0790998983383178 sec, avg_batch_cost: 1.4470639824867249 sec, avg_samples: 16, avg_ips: 11.056871149888345 images/sec  ETA 27:01:11
+[TRAIN] epoch=1, batch_id=4400, loss=1.352380, lr=0.001250,acc=0.869,avg_reader_cost: 1.0853181886672973 sec, avg_batch_cost: 1.426064546108246 sec, avg_samples: 16, avg_ips: 11.2196885082546 images/sec  ETA 26:35:17
+[TRAIN] epoch=1, batch_id=4500, loss=1.346964, lr=0.001250,acc=0.870,avg_reader_cost: 1.0756901860237122 sec, avg_batch_cost: 1.4158732938766478 sec, avg_samples: 16, avg_ips: 11.300446211674881 images/sec  ETA 26:21:31
+[TRAIN] epoch=1, batch_id=4600, loss=1.341979, lr=0.001250,acc=0.872,avg_reader_cost: 1.079012131690979 sec, avg_batch_cost: 1.3862709140777587 sec, avg_samples: 16, avg_ips: 11.541755538198162 images/sec  ETA 25:46:09
+[TRAIN] epoch=1, batch_id=4700, loss=1.337533, lr=0.001250,acc=0.873,avg_reader_cost: 1.1049833822250366 sec, avg_batch_cost: 1.4130059456825257 sec, avg_samples: 16, avg_ips: 11.323377689165705 images/sec  ETA 26:13:37
+[TRAIN] epoch=1, batch_id=4800, loss=1.332562, lr=0.001250,acc=0.875,avg_reader_cost: 1.0762821102142335 sec, avg_batch_cost: 1.4124460577964784 sec, avg_samples: 16, avg_ips: 11.327866230134974 images/sec  ETA 26:10:38
+[TRAIN] epoch=1, batch_id=4900, loss=1.327956, lr=0.001250,acc=0.876,avg_reader_cost: 1.098031828403473 sec, avg_batch_cost: 1.4015722227096559 sec, avg_samples: 16, avg_ips: 11.415751354623197 images/sec  ETA 25:56:12
+[TRAIN] epoch=1, batch_id=5000, loss=1.323367, lr=0.001250,acc=0.878,avg_reader_cost: 1.0890225195884704 sec, avg_batch_cost: 1.4660906672477723 sec, avg_samples: 16, avg_ips: 10.913376885507429 images/sec  ETA 27:05:24
+[TRAIN] epoch=1, batch_id=5100, loss=1.319297, lr=0.001250,acc=0.879,avg_reader_cost: 1.1083351945877076 sec, avg_batch_cost: 1.4499289965629578 sec, avg_samples: 16, avg_ips: 11.035023120392681 images/sec  ETA 26:45:04
+[TRAIN] epoch=1, batch_id=5200, loss=1.315228, lr=0.001250,acc=0.880,avg_reader_cost: 1.1249341225624085 sec, avg_batch_cost: 1.5643552112579346 sec, avg_samples: 16, avg_ips: 10.22785610637243 images/sec  ETA 28:49:08
+[TRAIN] epoch=1, batch_id=5300, loss=1.310860, lr=0.001250,acc=0.882,avg_reader_cost: 1.1191234707832336 sec, avg_batch_cost: 1.5279394006729126 sec, avg_samples: 16, avg_ips: 10.471619485009363 images/sec  ETA 28:06:20
+[TRAIN] epoch=1, batch_id=5400, loss=1.306513, lr=0.001250,acc=0.883,avg_reader_cost: 1.1078713583946227 sec, avg_batch_cost: 1.4355851936340331 sec, avg_samples: 16, avg_ips: 11.145280733564602 images/sec  ETA 26:22:00
+[TRAIN] epoch=1, batch_id=5500, loss=1.302622, lr=0.001250,acc=0.884,avg_reader_cost: 1.0796532320976258 sec, avg_batch_cost: 1.4403448629379272 sec, avg_samples: 16, avg_ips: 11.108450768772265 images/sec  ETA 26:24:51
+[TRAIN] epoch=1, batch_id=5600, loss=1.298450, lr=0.001250,acc=0.885,avg_reader_cost: 1.0625566029548645 sec, avg_batch_cost: 1.3962215614318847 sec, avg_samples: 16, avg_ips: 11.459499295793226 images/sec  ETA 25:33:58
+[TRAIN] epoch=1, batch_id=5700, loss=1.294805, lr=0.001250,acc=0.887,avg_reader_cost: 1.072331852912903 sec, avg_batch_cost: 1.4374341988563537 sec, avg_samples: 16, avg_ips: 11.130944298340657 images/sec  ETA 26:16:51
+[TRAIN] epoch=1, batch_id=5800, loss=1.291060, lr=0.001250,acc=0.888,avg_reader_cost: 1.1058075428009033 sec, avg_batch_cost: 1.4459450888633727 sec, avg_samples: 16, avg_ips: 11.065427119765154 images/sec  ETA 26:23:47
+[TRAIN] epoch=1, batch_id=5900, loss=1.287607, lr=0.001250,acc=0.889,avg_reader_cost: 1.0673007702827453 sec, avg_batch_cost: 1.4514034032821654 sec, avg_samples: 16, avg_ips: 11.023813203013043 images/sec  ETA 26:27:21
+[EVAL] epoch=1
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8274
+top5_acc	0.9500
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8263
+[TRAIN] epoch=2, batch_id=40, loss=1.069033, lr=0.001250,acc=0.952,avg_reader_cost: 4.944218015670776 sec, avg_batch_cost: 5.2925433659553525 sec, avg_samples: 16, avg_ips: 3.023121190261963 images/sec  ETA 96:19:27
+[TRAIN] epoch=2, batch_id=140, loss=1.069276, lr=0.001250,acc=0.960,avg_reader_cost: 1.1562310242652893 sec, avg_batch_cost: 1.4420299530029297 sec, avg_samples: 16, avg_ips: 11.095469942688142 images/sec  ETA 26:12:17
+[TRAIN] epoch=2, batch_id=240, loss=1.068473, lr=0.001250,acc=0.958,avg_reader_cost: 1.103321771621704 sec, avg_batch_cost: 1.3836919736862183 sec, avg_samples: 16, avg_ips: 11.563267189716562 images/sec  ETA 25:06:22
+[TRAIN] epoch=2, batch_id=340, loss=1.068213, lr=0.001250,acc=0.960,avg_reader_cost: 1.1326676321029663 sec, avg_batch_cost: 1.4500097417831421 sec, avg_samples: 16, avg_ips: 11.034408624264882 images/sec  ETA 26:16:09
+[TRAIN] epoch=2, batch_id=440, loss=1.067416, lr=0.001250,acc=0.961,avg_reader_cost: 1.1467015051841736 sec, avg_batch_cost: 1.4706235241889953 sec, avg_samples: 16, avg_ips: 10.879738924905013 images/sec  ETA 26:36:07
+[TRAIN] epoch=2, batch_id=540, loss=1.063563, lr=0.001250,acc=0.961,avg_reader_cost: 1.1741609859466553 sec, avg_batch_cost: 1.5043318676948547 sec, avg_samples: 16, avg_ips: 10.635950978368498 images/sec  ETA 27:10:11
+[TRAIN] epoch=2, batch_id=640, loss=1.066530, lr=0.001250,acc=0.960,avg_reader_cost: 1.165456509590149 sec, avg_batch_cost: 1.4997490453720093 sec, avg_samples: 16, avg_ips: 10.668451531523553 images/sec  ETA 27:02:43
+[TRAIN] epoch=2, batch_id=740, loss=1.066630, lr=0.001250,acc=0.960,avg_reader_cost: 1.172748827934265 sec, avg_batch_cost: 1.506526644229889 sec, avg_samples: 16, avg_ips: 10.620456041239768 images/sec  ETA 27:07:33
+[TRAIN] epoch=2, batch_id=840, loss=1.067649, lr=0.001250,acc=0.959,avg_reader_cost: 1.1027162456512452 sec, avg_batch_cost: 1.4004418754577637 sec, avg_samples: 16, avg_ips: 11.424965420125034 images/sec  ETA 25:10:36
+[TRAIN] epoch=2, batch_id=940, loss=1.066570, lr=0.001250,acc=0.959,avg_reader_cost: 1.1469112014770508 sec, avg_batch_cost: 1.4468429327011108 sec, avg_samples: 16, avg_ips: 11.058560427239744 images/sec  ETA 25:58:14
+[TRAIN] epoch=2, batch_id=1040, loss=1.065689, lr=0.001250,acc=0.960,avg_reader_cost: 1.1262734937667847 sec, avg_batch_cost: 1.4168135666847228 sec, avg_samples: 16, avg_ips: 11.29294663477796 images/sec  ETA 25:23:32
+[TRAIN] epoch=2, batch_id=1140, loss=1.061949, lr=0.001250,acc=0.961,avg_reader_cost: 1.1569743704795838 sec, avg_batch_cost: 1.5039597511291505 sec, avg_samples: 16, avg_ips: 10.63858257376066 images/sec  ETA 26:54:45
+[TRAIN] epoch=2, batch_id=1240, loss=1.061145, lr=0.001250,acc=0.961,avg_reader_cost: 1.1109352421760559 sec, avg_batch_cost: 1.4105798172950745 sec, avg_samples: 16, avg_ips: 11.342853345712527 images/sec  ETA 25:12:08
+[TRAIN] epoch=2, batch_id=1340, loss=1.059758, lr=0.001250,acc=0.961,avg_reader_cost: 1.1241918396949768 sec, avg_batch_cost: 1.4316442918777466 sec, avg_samples: 16, avg_ips: 11.175960460830936 images/sec  ETA 25:32:20
+[TRAIN] epoch=2, batch_id=1440, loss=1.057801, lr=0.001250,acc=0.961,avg_reader_cost: 1.1812681865692138 sec, avg_batch_cost: 1.5149181532859801 sec, avg_samples: 16, avg_ips: 10.561626689398834 images/sec  ETA 26:58:56
+[TRAIN] epoch=2, batch_id=1540, loss=1.057780, lr=0.001250,acc=0.960,avg_reader_cost: 1.1514297938346862 sec, avg_batch_cost: 1.4604279923439025 sec, avg_samples: 16, avg_ips: 10.955692498279854 images/sec  ETA 25:58:16
+[TRAIN] epoch=2, batch_id=1640, loss=1.056675, lr=0.001250,acc=0.960,avg_reader_cost: 1.121956126689911 sec, avg_batch_cost: 1.4345955705642701 sec, avg_samples: 16, avg_ips: 11.15296905155417 images/sec  ETA 25:28:19
+[TRAIN] epoch=2, batch_id=1740, loss=1.056357, lr=0.001250,acc=0.960,avg_reader_cost: 1.1610755872726441 sec, avg_batch_cost: 1.4883858203887939 sec, avg_samples: 16, avg_ips: 10.749900852871942 images/sec  ETA 26:23:08
+[TRAIN] epoch=2, batch_id=1840, loss=1.054816, lr=0.001250,acc=0.961,avg_reader_cost: 1.136375334262848 sec, avg_batch_cost: 1.4562702870368958 sec, avg_samples: 16, avg_ips: 10.986971403883782 images/sec  ETA 25:46:33
+[TRAIN] epoch=2, batch_id=1940, loss=1.054415, lr=0.001250,acc=0.961,avg_reader_cost: 1.1037260127067565 sec, avg_batch_cost: 1.3997852420806884 sec, avg_samples: 16, avg_ips: 11.430324823411523 images/sec  ETA 24:44:14
+[TRAIN] epoch=2, batch_id=2040, loss=1.053719, lr=0.001250,acc=0.961,avg_reader_cost: 1.1443460512161254 sec, avg_batch_cost: 1.4495044898986817 sec, avg_samples: 16, avg_ips: 11.03825487364884 images/sec  ETA 25:34:32
+[TRAIN] epoch=2, batch_id=2140, loss=1.052718, lr=0.001250,acc=0.961,avg_reader_cost: 1.143106348514557 sec, avg_batch_cost: 1.4465945553779602 sec, avg_samples: 16, avg_ips: 11.060459159421892 images/sec  ETA 25:29:03
+[TRAIN] epoch=2, batch_id=2240, loss=1.051305, lr=0.001250,acc=0.961,avg_reader_cost: 1.1731205892562866 sec, avg_batch_cost: 1.4927263689041137 sec, avg_samples: 16, avg_ips: 10.718642299959109 images/sec  ETA 26:15:19
+[TRAIN] epoch=2, batch_id=2340, loss=1.051710, lr=0.001250,acc=0.961,avg_reader_cost: 1.1635637497901916 sec, avg_batch_cost: 1.4975463104248048 sec, avg_samples: 16, avg_ips: 10.684143714701767 images/sec  ETA 26:17:54
+[TRAIN] epoch=2, batch_id=2440, loss=1.051455, lr=0.001250,acc=0.961,avg_reader_cost: 1.1564722752571106 sec, avg_batch_cost: 1.476133406162262 sec, avg_samples: 16, avg_ips: 10.839128721839401 images/sec  ETA 25:52:53
+[TRAIN] epoch=2, batch_id=2540, loss=1.050686, lr=0.001250,acc=0.961,avg_reader_cost: 1.183791766166687 sec, avg_batch_cost: 1.4818915963172912 sec, avg_samples: 16, avg_ips: 10.797011090259401 images/sec  ETA 25:56:28
+[TRAIN] epoch=2, batch_id=2640, loss=1.050739, lr=0.001250,acc=0.961,avg_reader_cost: 1.1208220744132995 sec, avg_batch_cost: 1.4230557084083557 sec, avg_samples: 16, avg_ips: 11.243410855570447 images/sec  ETA 24:52:18
+[TRAIN] epoch=2, batch_id=2740, loss=1.050078, lr=0.001250,acc=0.961,avg_reader_cost: 1.1684394431114198 sec, avg_batch_cost: 1.504036817550659 sec, avg_samples: 16, avg_ips: 10.638037455795915 images/sec  ETA 26:14:43
+[TRAIN] epoch=2, batch_id=2840, loss=1.048926, lr=0.001250,acc=0.961,avg_reader_cost: 1.1915689945220946 sec, avg_batch_cost: 1.4727394080162048 sec, avg_samples: 16, avg_ips: 10.86410801049465 images/sec  ETA 25:39:30
+[TRAIN] epoch=2, batch_id=2940, loss=1.048434, lr=0.001250,acc=0.961,avg_reader_cost: 1.1443717288970947 sec, avg_batch_cost: 1.4428135895729064 sec, avg_samples: 16, avg_ips: 11.089443650677168 images/sec  ETA 25:05:48
+[TRAIN] epoch=2, batch_id=3040, loss=1.047832, lr=0.001250,acc=0.961,avg_reader_cost: 1.1904120326042176 sec, avg_batch_cost: 1.5020413970947266 sec, avg_samples: 16, avg_ips: 10.652169794352849 images/sec  ETA 26:05:07
+[TRAIN] epoch=2, batch_id=3140, loss=1.046928, lr=0.001250,acc=0.962,avg_reader_cost: 1.1175743412971497 sec, avg_batch_cost: 1.4405459475517273 sec, avg_samples: 16, avg_ips: 11.106900149344574 images/sec  ETA 24:58:38
+[TRAIN] epoch=2, batch_id=3240, loss=1.046067, lr=0.001250,acc=0.962,avg_reader_cost: 1.183104121685028 sec, avg_batch_cost: 1.5190877246856689 sec, avg_samples: 16, avg_ips: 10.53263727959538 images/sec  ETA 26:17:49
+[TRAIN] epoch=2, batch_id=3340, loss=1.045151, lr=0.001250,acc=0.962,avg_reader_cost: 1.16792343378067 sec, avg_batch_cost: 1.5186168336868286 sec, avg_samples: 16, avg_ips: 10.535903227910316 images/sec  ETA 26:14:48
+[TRAIN] epoch=2, batch_id=3440, loss=1.044429, lr=0.001250,acc=0.962,avg_reader_cost: 1.1547079277038574 sec, avg_batch_cost: 1.4882619738578797 sec, avg_samples: 16, avg_ips: 10.75079541172763 images/sec  ETA 25:40:50
+[TRAIN] epoch=2, batch_id=3540, loss=1.043878, lr=0.001250,acc=0.962,avg_reader_cost: 1.154886109828949 sec, avg_batch_cost: 1.456856391429901 sec, avg_samples: 16, avg_ips: 10.982551261827556 images/sec  ETA 25:05:54
+[TRAIN] epoch=2, batch_id=3640, loss=1.042991, lr=0.001250,acc=0.963,avg_reader_cost: 1.1499393391609192 sec, avg_batch_cost: 1.4546838927268981 sec, avg_samples: 16, avg_ips: 10.998953160887053 images/sec  ETA 25:01:14
+[TRAIN] epoch=2, batch_id=3740, loss=1.042313, lr=0.001250,acc=0.963,avg_reader_cost: 1.1395970940589906 sec, avg_batch_cost: 1.474928047657013 sec, avg_samples: 16, avg_ips: 10.847986805469386 images/sec  ETA 25:19:40
+[TRAIN] epoch=2, batch_id=3840, loss=1.041868, lr=0.001250,acc=0.963,avg_reader_cost: 1.1725100255012513 sec, avg_batch_cost: 1.489066264629364 sec, avg_samples: 16, avg_ips: 10.744988574422159 images/sec  ETA 25:31:45
+[TRAIN] epoch=2, batch_id=3940, loss=1.041881, lr=0.001250,acc=0.963,avg_reader_cost: 1.1703974080085755 sec, avg_batch_cost: 1.482619411945343 sec, avg_samples: 16, avg_ips: 10.791710853837007 images/sec  ETA 25:22:39
+[TRAIN] epoch=2, batch_id=4040, loss=1.041214, lr=0.001250,acc=0.963,avg_reader_cost: 1.1453414750099182 sec, avg_batch_cost: 1.45586745262146 sec, avg_samples: 16, avg_ips: 10.990011467864143 images/sec  ETA 24:52:44
+[TRAIN] epoch=2, batch_id=4140, loss=1.040595, lr=0.001250,acc=0.963,avg_reader_cost: 1.2069374012947083 sec, avg_batch_cost: 1.527664966583252 sec, avg_samples: 16, avg_ips: 10.473500636586117 images/sec  ETA 26:03:49
+[TRAIN] epoch=2, batch_id=4240, loss=1.039798, lr=0.001250,acc=0.963,avg_reader_cost: 1.1020165944099427 sec, avg_batch_cost: 1.422589304447174 sec, avg_samples: 16, avg_ips: 11.247097071503491 images/sec  ETA 24:13:53
+[TRAIN] epoch=2, batch_id=4340, loss=1.038962, lr=0.001250,acc=0.964,avg_reader_cost: 1.1241340970993041 sec, avg_batch_cost: 1.4133936524391175 sec, avg_samples: 16, avg_ips: 11.320271583495884 images/sec  ETA 24:02:07
+[TRAIN] epoch=2, batch_id=4440, loss=1.038543, lr=0.001250,acc=0.964,avg_reader_cost: 1.1708597540855408 sec, avg_batch_cost: 1.5039036822319032 sec, avg_samples: 16, avg_ips: 10.638979203943984 images/sec  ETA 25:31:58
+[TRAIN] epoch=2, batch_id=4540, loss=1.037585, lr=0.001250,acc=0.964,avg_reader_cost: 1.13276264667511 sec, avg_batch_cost: 1.44649653673172 sec, avg_samples: 16, avg_ips: 11.06120864703287 images/sec  ETA 24:31:05
+[TRAIN] epoch=2, batch_id=4640, loss=1.036817, lr=0.001250,acc=0.964,avg_reader_cost: 1.1771360635757446 sec, avg_batch_cost: 1.4904987025260925 sec, avg_samples: 16, avg_ips: 10.734662145551184 images/sec  ETA 25:13:21
+[TRAIN] epoch=2, batch_id=4740, loss=1.036390, lr=0.001250,acc=0.964,avg_reader_cost: 1.144149990081787 sec, avg_batch_cost: 1.4572660112380982 sec, avg_samples: 16, avg_ips: 10.979464199817812 images/sec  ETA 24:37:10
+[TRAIN] epoch=2, batch_id=4840, loss=1.036073, lr=0.001250,acc=0.964,avg_reader_cost: 1.1451015281677246 sec, avg_batch_cost: 1.4600926089286803 sec, avg_samples: 16, avg_ips: 10.958209021919332 images/sec  ETA 24:37:36
+[TRAIN] epoch=2, batch_id=4940, loss=1.035426, lr=0.001250,acc=0.965,avg_reader_cost: 1.1202379560470581 sec, avg_batch_cost: 1.4652688479423523 sec, avg_samples: 16, avg_ips: 10.91949782626477 images/sec  ETA 24:40:24
+[TRAIN] epoch=2, batch_id=5040, loss=1.035023, lr=0.001250,acc=0.965,avg_reader_cost: 1.1421064352989196 sec, avg_batch_cost: 1.4623689937591553 sec, avg_samples: 16, avg_ips: 10.94115101474527 images/sec  ETA 24:35:02
+[TRAIN] epoch=2, batch_id=5140, loss=1.034566, lr=0.001250,acc=0.965,avg_reader_cost: 1.133243865966797 sec, avg_batch_cost: 1.4372845053672791 sec, avg_samples: 16, avg_ips: 11.132103588573377 images/sec  ETA 24:07:20
+[TRAIN] epoch=2, batch_id=5240, loss=1.034063, lr=0.001250,acc=0.965,avg_reader_cost: 1.1422026419639588 sec, avg_batch_cost: 1.4331377291679381 sec, avg_samples: 16, avg_ips: 11.164314269563889 images/sec  ETA 24:00:46
+[TRAIN] epoch=2, batch_id=5340, loss=1.033553, lr=0.001250,acc=0.965,avg_reader_cost: 1.167594335079193 sec, avg_batch_cost: 1.4855166745185853 sec, avg_samples: 16, avg_ips: 10.770663348619198 images/sec  ETA 24:50:57
+[TRAIN] epoch=2, batch_id=5440, loss=1.032860, lr=0.001250,acc=0.965,avg_reader_cost: 1.1210694551467895 sec, avg_batch_cost: 1.4497006821632386 sec, avg_samples: 16, avg_ips: 11.036761034094882 images/sec  ETA 24:12:36
+[TRAIN] epoch=2, batch_id=5540, loss=1.032116, lr=0.001250,acc=0.966,avg_reader_cost: 1.1596331429481506 sec, avg_batch_cost: 1.4781900024414063 sec, avg_samples: 16, avg_ips: 10.82404831149859 images/sec  ETA 24:38:40
+[TRAIN] epoch=2, batch_id=5640, loss=1.031699, lr=0.001250,acc=0.966,avg_reader_cost: 1.133482241630554 sec, avg_batch_cost: 1.4674187016487121 sec, avg_samples: 16, avg_ips: 10.903500127143852 images/sec  ETA 24:25:27
+[TRAIN] epoch=2, batch_id=5740, loss=1.031152, lr=0.001250,acc=0.966,avg_reader_cost: 1.1463994479179382 sec, avg_batch_cost: 1.4505296850204468 sec, avg_samples: 16, avg_ips: 11.030453333862287 images/sec  ETA 24:06:10
+[TRAIN] epoch=2, batch_id=5840, loss=1.030471, lr=0.001250,acc=0.966,avg_reader_cost: 1.1595447301864623 sec, avg_batch_cost: 1.5016300082206726 sec, avg_samples: 16, avg_ips: 10.655088079225914 images/sec  ETA 24:54:37
+[TRAIN] epoch=2, batch_id=5940, loss=1.030056, lr=0.001250,acc=0.966,avg_reader_cost: 1.1448314905166626 sec, avg_batch_cost: 1.486923475265503 sec, avg_samples: 16, avg_ips: 10.760473061428439 images/sec  ETA 24:37:30
+[EVAL] epoch=2
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8483
+top5_acc	0.9580
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8462
+[TRAIN] epoch=3, batch_id=80, loss=0.986650, lr=0.001250,acc=0.976,avg_reader_cost: 7.877899100780487 sec, avg_batch_cost: 8.222709126472473 sec, avg_samples: 16, avg_ips: 1.945830717578109 images/sec  ETA 135:56:55
+[TRAIN] epoch=3, batch_id=180, loss=0.976845, lr=0.001250,acc=0.978,avg_reader_cost: 1.0821849942207336 sec, avg_batch_cost: 1.4154105305671691 sec, avg_samples: 16, avg_ips: 11.30414085133918 images/sec  ETA 23:21:43
+[TRAIN] epoch=3, batch_id=280, loss=0.974354, lr=0.001250,acc=0.980,avg_reader_cost: 1.1322555351257324 sec, avg_batch_cost: 1.410076105594635 sec, avg_samples: 16, avg_ips: 11.346905274487106 images/sec  ETA 23:14:05
+[TRAIN] epoch=3, batch_id=380, loss=0.974090, lr=0.001250,acc=0.981,avg_reader_cost: 1.1416603064537048 sec, avg_batch_cost: 1.4637380146980286 sec, avg_samples: 16, avg_ips: 10.930917855064948 images/sec  ETA 24:04:42
+[TRAIN] epoch=3, batch_id=480, loss=0.972142, lr=0.001250,acc=0.982,avg_reader_cost: 1.1112183594703675 sec, avg_batch_cost: 1.4665052914619445 sec, avg_samples: 16, avg_ips: 10.910291352614049 images/sec  ETA 24:04:59
+[TRAIN] epoch=3, batch_id=580, loss=0.969903, lr=0.001250,acc=0.983,avg_reader_cost: 1.1447958421707154 sec, avg_batch_cost: 1.5171905183792114 sec, avg_samples: 16, avg_ips: 10.545808061793403 images/sec  ETA 24:52:24
+[TRAIN] epoch=3, batch_id=680, loss=0.971650, lr=0.001250,acc=0.982,avg_reader_cost: 1.1448424029350281 sec, avg_batch_cost: 1.4618142676353454 sec, avg_samples: 16, avg_ips: 10.94530293912226 images/sec  ETA 23:55:30
+[TRAIN] epoch=3, batch_id=780, loss=0.972874, lr=0.001250,acc=0.981,avg_reader_cost: 1.1541296195983888 sec, avg_batch_cost: 1.4621221661567687 sec, avg_samples: 16, avg_ips: 10.94299804102996 images/sec  ETA 23:53:22
+[TRAIN] epoch=3, batch_id=880, loss=0.971990, lr=0.001250,acc=0.981,avg_reader_cost: 1.1967957377433778 sec, avg_batch_cost: 1.52989976644516 sec, avg_samples: 16, avg_ips: 10.458201478896381 images/sec  ETA 24:57:15
+[TRAIN] epoch=3, batch_id=980, loss=0.972612, lr=0.001250,acc=0.981,avg_reader_cost: 1.1368281722068787 sec, avg_batch_cost: 1.443715546131134 sec, avg_samples: 16, avg_ips: 11.082515557082397 images/sec  ETA 23:30:30
+[TRAIN] epoch=3, batch_id=1080, loss=0.971672, lr=0.001250,acc=0.981,avg_reader_cost: 1.1725203824043273 sec, avg_batch_cost: 1.499974055290222 sec, avg_samples: 16, avg_ips: 10.666851165571824 images/sec  ETA 24:22:58
+[TRAIN] epoch=3, batch_id=1180, loss=0.970646, lr=0.001250,acc=0.982,avg_reader_cost: 1.149154622554779 sec, avg_batch_cost: 1.4327349185943603 sec, avg_samples: 16, avg_ips: 11.167453094322163 images/sec  ETA 23:15:00
+[TRAIN] epoch=3, batch_id=1280, loss=0.969864, lr=0.001250,acc=0.982,avg_reader_cost: 1.1076000213623047 sec, avg_batch_cost: 1.4851811194419862 sec, avg_samples: 16, avg_ips: 10.773096823377028 images/sec  ETA 24:03:35
+[TRAIN] epoch=3, batch_id=1380, loss=0.968621, lr=0.001250,acc=0.982,avg_reader_cost: 1.1655813646316528 sec, avg_batch_cost: 1.496767430305481 sec, avg_samples: 16, avg_ips: 10.689703474329676 images/sec  ETA 24:12:21
+[TRAIN] epoch=3, batch_id=1480, loss=0.967156, lr=0.001250,acc=0.983,avg_reader_cost: 1.1608840012550354 sec, avg_batch_cost: 1.4805589318275452 sec, avg_samples: 16, avg_ips: 10.806729577626616 images/sec  ETA 23:54:10
+[TRAIN] epoch=3, batch_id=1580, loss=0.967067, lr=0.001250,acc=0.983,avg_reader_cost: 1.1551913237571716 sec, avg_batch_cost: 1.4877499842643738 sec, avg_samples: 16, avg_ips: 10.754495156598027 images/sec  ETA 23:58:39
+[TRAIN] epoch=3, batch_id=1680, loss=0.966260, lr=0.001250,acc=0.983,avg_reader_cost: 1.1656622004508972 sec, avg_batch_cost: 1.4694624733924866 sec, avg_samples: 16, avg_ips: 10.88833521761292 images/sec  ETA 23:38:31
+[TRAIN] epoch=3, batch_id=1780, loss=0.965853, lr=0.001250,acc=0.983,avg_reader_cost: 1.1481010556221007 sec, avg_batch_cost: 1.4657229328155517 sec, avg_samples: 16, avg_ips: 10.916114936719394 images/sec  ETA 23:32:28
+[TRAIN] epoch=3, batch_id=1880, loss=0.965608, lr=0.001250,acc=0.983,avg_reader_cost: 1.1049885845184326 sec, avg_batch_cost: 1.4331333971023559 sec, avg_samples: 16, avg_ips: 11.164348016974769 images/sec  ETA 22:58:40
+[TRAIN] epoch=3, batch_id=1980, loss=0.965708, lr=0.001250,acc=0.983,avg_reader_cost: 1.1410702562332153 sec, avg_batch_cost: 1.4835301423072815 sec, avg_samples: 16, avg_ips: 10.785085886502968 images/sec  ETA 23:44:41
+[TRAIN] epoch=3, batch_id=2080, loss=0.965596, lr=0.001250,acc=0.983,avg_reader_cost: 1.1639746713638306 sec, avg_batch_cost: 1.4987983727455139 sec, avg_samples: 16, avg_ips: 10.675218422269195 images/sec  ETA 23:56:50
+[TRAIN] epoch=3, batch_id=2180, loss=0.965303, lr=0.001250,acc=0.983,avg_reader_cost: 1.1864306950569152 sec, avg_batch_cost: 1.4817831659317016 sec, avg_samples: 16, avg_ips: 10.797801168121431 images/sec  ETA 23:38:03
+[TRAIN] epoch=3, batch_id=2280, loss=0.965098, lr=0.001250,acc=0.983,avg_reader_cost: 1.1489070105552672 sec, avg_batch_cost: 1.5240728664398193 sec, avg_samples: 16, avg_ips: 10.498185718229758 images/sec  ETA 24:15:59
+[TRAIN] epoch=3, batch_id=2380, loss=0.965218, lr=0.001250,acc=0.983,avg_reader_cost: 1.1433059668540955 sec, avg_batch_cost: 1.4594107007980346 sec, avg_samples: 16, avg_ips: 10.96332923367691 images/sec  ETA 23:11:47
+[TRAIN] epoch=3, batch_id=2480, loss=0.965211, lr=0.001250,acc=0.983,avg_reader_cost: 1.1436607122421265 sec, avg_batch_cost: 1.4731930565834046 sec, avg_samples: 16, avg_ips: 10.860762565027853 images/sec  ETA 23:22:28
+[TRAIN] epoch=3, batch_id=2580, loss=0.964417, lr=0.001250,acc=0.983,avg_reader_cost: 1.128179771900177 sec, avg_batch_cost: 1.4728075313568114 sec, avg_samples: 16, avg_ips: 10.863605501297332 images/sec  ETA 23:19:39
+[TRAIN] epoch=3, batch_id=2680, loss=0.964384, lr=0.001250,acc=0.983,avg_reader_cost: 1.1121675705909728 sec, avg_batch_cost: 1.4452531623840332 sec, avg_samples: 16, avg_ips: 11.070724781260484 images/sec  ETA 22:51:03
+[TRAIN] epoch=3, batch_id=2780, loss=0.964295, lr=0.001250,acc=0.983,avg_reader_cost: 1.1035855269432069 sec, avg_batch_cost: 1.4344105076789857 sec, avg_samples: 16, avg_ips: 11.154407970623096 images/sec  ETA 22:38:23
+[TRAIN] epoch=3, batch_id=2880, loss=0.963819, lr=0.001250,acc=0.983,avg_reader_cost: 1.1658214616775513 sec, avg_batch_cost: 1.4741635036468506 sec, avg_samples: 16, avg_ips: 10.85361288650716 images/sec  ETA 23:13:34
+[TRAIN] epoch=3, batch_id=2980, loss=0.963669, lr=0.001250,acc=0.983,avg_reader_cost: 1.1213361644744873 sec, avg_batch_cost: 1.4635454988479615 sec, avg_samples: 16, avg_ips: 10.932355716029665 images/sec  ETA 23:01:05
+[TRAIN] epoch=3, batch_id=3080, loss=0.963415, lr=0.001250,acc=0.984,avg_reader_cost: 1.1000176072120667 sec, avg_batch_cost: 1.4269112515449525 sec, avg_samples: 16, avg_ips: 11.213030931444685 images/sec  ETA 22:24:09
+[TRAIN] epoch=3, batch_id=3180, loss=0.962757, lr=0.001250,acc=0.984,avg_reader_cost: 1.1408931374549867 sec, avg_batch_cost: 1.5017488646507262 sec, avg_samples: 16, avg_ips: 10.654244778617661 images/sec  ETA 23:32:08
+[TRAIN] epoch=3, batch_id=3280, loss=0.962675, lr=0.001250,acc=0.984,avg_reader_cost: 1.0985334157943725 sec, avg_batch_cost: 1.414650683403015 sec, avg_samples: 16, avg_ips: 11.310212611293677 images/sec  ETA 22:07:53
+[TRAIN] epoch=3, batch_id=3380, loss=0.962258, lr=0.001250,acc=0.984,avg_reader_cost: 1.1598659420013429 sec, avg_batch_cost: 1.5250405383110046 sec, avg_samples: 16, avg_ips: 10.491524387751776 images/sec  ETA 23:48:57
+[TRAIN] epoch=3, batch_id=3480, loss=0.961986, lr=0.001250,acc=0.984,avg_reader_cost: 1.0977285861968995 sec, avg_batch_cost: 1.4285017585754394 sec, avg_samples: 16, avg_ips: 11.200546239408103 images/sec  ETA 22:16:07
+[TRAIN] epoch=3, batch_id=3580, loss=0.962354, lr=0.001250,acc=0.984,avg_reader_cost: 1.170699565410614 sec, avg_batch_cost: 1.485239746570587 sec, avg_samples: 16, avg_ips: 10.772671575039611 images/sec  ETA 23:06:43
+[TRAIN] epoch=3, batch_id=3680, loss=0.961999, lr=0.001250,acc=0.984,avg_reader_cost: 1.1163310170173646 sec, avg_batch_cost: 1.4322130060195923 sec, avg_samples: 16, avg_ips: 11.171522624604014 images/sec  ETA 22:14:49
+[TRAIN] epoch=3, batch_id=3780, loss=0.961871, lr=0.001250,acc=0.984,avg_reader_cost: 1.110540587902069 sec, avg_batch_cost: 1.472522509098053 sec, avg_samples: 16, avg_ips: 10.8657082666942 images/sec  ETA 22:49:56
+[TRAIN] epoch=3, batch_id=3880, loss=0.961719, lr=0.001250,acc=0.984,avg_reader_cost: 1.1531339263916016 sec, avg_batch_cost: 1.4888293194770812 sec, avg_samples: 16, avg_ips: 10.74669862467489 images/sec  ETA 23:02:37
+[TRAIN] epoch=3, batch_id=3980, loss=0.962015, lr=0.001250,acc=0.984,avg_reader_cost: 1.1853763604164123 sec, avg_batch_cost: 1.487765121459961 sec, avg_samples: 16, avg_ips: 10.754385735497696 images/sec  ETA 22:59:09
+[TRAIN] epoch=3, batch_id=4080, loss=0.961765, lr=0.001250,acc=0.983,avg_reader_cost: 1.1669686889648438 sec, avg_batch_cost: 1.5217825365066528 sec, avg_samples: 16, avg_ips: 10.513985813458605 images/sec  ETA 23:28:09
+[TRAIN] epoch=3, batch_id=4180, loss=0.961636, lr=0.001250,acc=0.983,avg_reader_cost: 1.1374881315231322 sec, avg_batch_cost: 1.4327786660194397 sec, avg_samples: 16, avg_ips: 11.167112115405349 images/sec  ETA 22:03:24
+[TRAIN] epoch=3, batch_id=4280, loss=0.961390, lr=0.001250,acc=0.984,avg_reader_cost: 1.1004142427444459 sec, avg_batch_cost: 1.385349419116974 sec, avg_samples: 16, avg_ips: 11.549432785122507 images/sec  ETA 21:17:17
+[TRAIN] epoch=3, batch_id=4380, loss=0.961264, lr=0.001250,acc=0.984,avg_reader_cost: 1.1120324587821961 sec, avg_batch_cost: 1.4160746479034423 sec, avg_samples: 16, avg_ips: 11.298839382294336 images/sec  ETA 21:43:15
+[TRAIN] epoch=3, batch_id=4480, loss=0.961314, lr=0.001250,acc=0.983,avg_reader_cost: 1.1398261022567748 sec, avg_batch_cost: 1.4662877202033997 sec, avg_samples: 16, avg_ips: 10.911910247588052 images/sec  ETA 22:27:01
+[TRAIN] epoch=3, batch_id=4580, loss=0.960910, lr=0.001250,acc=0.984,avg_reader_cost: 1.1046839213371278 sec, avg_batch_cost: 1.423168225288391 sec, avg_samples: 16, avg_ips: 11.242521942026746 images/sec  ETA 21:45:02
+[TRAIN] epoch=3, batch_id=4680, loss=0.960688, lr=0.001250,acc=0.984,avg_reader_cost: 1.1195384168624878 sec, avg_batch_cost: 1.420094482898712 sec, avg_samples: 16, avg_ips: 11.266855968161096 images/sec  ETA 21:39:51
+[TRAIN] epoch=3, batch_id=4780, loss=0.960537, lr=0.001250,acc=0.984,avg_reader_cost: 1.1088005375862122 sec, avg_batch_cost: 1.4066515588760375 sec, avg_samples: 16, avg_ips: 11.374529746929328 images/sec  ETA 21:25:12
+[TRAIN] epoch=3, batch_id=4880, loss=0.960473, lr=0.001250,acc=0.984,avg_reader_cost: 1.084069287776947 sec, avg_batch_cost: 1.5109907817840575 sec, avg_samples: 16, avg_ips: 10.589078499280104 images/sec  ETA 22:58:01
+[TRAIN] epoch=3, batch_id=4980, loss=0.960365, lr=0.001250,acc=0.984,avg_reader_cost: 1.13562166929245 sec, avg_batch_cost: 1.4989513874053955 sec, avg_samples: 16, avg_ips: 10.674128683849542 images/sec  ETA 22:44:32
+[TRAIN] epoch=3, batch_id=5080, loss=0.960213, lr=0.001250,acc=0.984,avg_reader_cost: 1.0900643730163575 sec, avg_batch_cost: 1.5196644639968873 sec, avg_samples: 16, avg_ips: 10.52863995905926 images/sec  ETA 23:00:52
+[TRAIN] epoch=3, batch_id=5180, loss=0.960023, lr=0.001250,acc=0.984,avg_reader_cost: 1.1509865522384644 sec, avg_batch_cost: 1.4772281074523925 sec, avg_samples: 16, avg_ips: 10.83109637521952 images/sec  ETA 22:19:50
+[TRAIN] epoch=3, batch_id=5280, loss=0.959988, lr=0.001250,acc=0.984,avg_reader_cost: 1.1528577947616576 sec, avg_batch_cost: 1.466292769908905 sec, avg_samples: 16, avg_ips: 10.911872668508089 images/sec  ETA 22:07:29
+[TRAIN] epoch=3, batch_id=5380, loss=0.959836, lr=0.001250,acc=0.984,avg_reader_cost: 1.114632124900818 sec, avg_batch_cost: 1.4952964901924133 sec, avg_samples: 16, avg_ips: 10.700219056851484 images/sec  ETA 22:31:14
+[TRAIN] epoch=3, batch_id=5480, loss=0.959551, lr=0.001250,acc=0.984,avg_reader_cost: 1.160654079914093 sec, avg_batch_cost: 1.4950100708007812 sec, avg_samples: 16, avg_ips: 10.702269043197699 images/sec  ETA 22:28:29
+[TRAIN] epoch=3, batch_id=5580, loss=0.959346, lr=0.001250,acc=0.984,avg_reader_cost: 1.1693357348442077 sec, avg_batch_cost: 1.4653202939033507 sec, avg_samples: 16, avg_ips: 10.919114453386069 images/sec  ETA 21:59:16
+[TRAIN] epoch=3, batch_id=5680, loss=0.959184, lr=0.001250,acc=0.984,avg_reader_cost: 1.1349936318397522 sec, avg_batch_cost: 1.469075050354004 sec, avg_samples: 16, avg_ips: 10.891206678749645 images/sec  ETA 22:00:12
+[TRAIN] epoch=3, batch_id=5780, loss=0.958892, lr=0.001250,acc=0.984,avg_reader_cost: 1.1254317879676818 sec, avg_batch_cost: 1.4534631776809692 sec, avg_samples: 16, avg_ips: 11.00819081328798 images/sec  ETA 21:43:45
+[TRAIN] epoch=3, batch_id=5880, loss=0.958632, lr=0.001250,acc=0.984,avg_reader_cost: 1.1635449719429016 sec, avg_batch_cost: 1.4863177704811097 sec, avg_samples: 16, avg_ips: 10.764858173512197 images/sec  ETA 22:10:44
+[EVAL] epoch=3
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8459
+top5_acc	0.9572
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8449
+[TRAIN] epoch=4, batch_id=20, loss=0.946900, lr=0.001250,acc=0.978,avg_reader_cost: 5.045322256088257 sec, avg_batch_cost: 5.348510084152221 sec, avg_samples: 16, avg_ips: 2.9914873017456634 images/sec  ETA 79:39:47
+[TRAIN] epoch=4, batch_id=120, loss=0.936034, lr=0.001250,acc=0.986,avg_reader_cost: 1.154585120677948 sec, avg_batch_cost: 1.4631707382202148 sec, avg_samples: 16, avg_ips: 10.935155810635079 images/sec  ETA 21:45:08
+[TRAIN] epoch=4, batch_id=220, loss=0.937289, lr=0.001250,acc=0.986,avg_reader_cost: 1.1393180203437805 sec, avg_batch_cost: 1.4250769376754762 sec, avg_samples: 16, avg_ips: 11.227463989487127 images/sec  ETA 21:08:47
+[TRAIN] epoch=4, batch_id=320, loss=0.935056, lr=0.001250,acc=0.989,avg_reader_cost: 1.2229192233085633 sec, avg_batch_cost: 1.5207399535179138 sec, avg_samples: 16, avg_ips: 10.521193951002173 images/sec  ETA 22:31:25
+[TRAIN] epoch=4, batch_id=420, loss=0.934122, lr=0.001250,acc=0.989,avg_reader_cost: 1.2140947198867797 sec, avg_batch_cost: 1.495679817199707 sec, avg_samples: 16, avg_ips: 10.697476703239914 images/sec  ETA 22:06:40
+[TRAIN] epoch=4, batch_id=520, loss=0.933352, lr=0.001250,acc=0.990,avg_reader_cost: 1.2414990711212157 sec, avg_batch_cost: 1.5742319297790528 sec, avg_samples: 16, avg_ips: 10.163686619064853 images/sec  ETA 23:13:43
+[TRAIN] epoch=4, batch_id=620, loss=0.934374, lr=0.001250,acc=0.989,avg_reader_cost: 1.2142653441429139 sec, avg_batch_cost: 1.4835070514678954 sec, avg_samples: 16, avg_ips: 10.785253756743774 images/sec  ETA 21:50:55
+[TRAIN] epoch=4, batch_id=720, loss=0.936337, lr=0.001250,acc=0.989,avg_reader_cost: 1.2296357202529906 sec, avg_batch_cost: 1.5279118990898133 sec, avg_samples: 16, avg_ips: 10.471807968464216 images/sec  ETA 22:27:37
+[TRAIN] epoch=4, batch_id=820, loss=0.936751, lr=0.001250,acc=0.988,avg_reader_cost: 1.1836084842681884 sec, avg_batch_cost: 1.478903157711029 sec, avg_samples: 16, avg_ips: 10.818828749249535 images/sec  ETA 21:41:55
+[TRAIN] epoch=4, batch_id=920, loss=0.935956, lr=0.001250,acc=0.988,avg_reader_cost: 1.1827334070205688 sec, avg_batch_cost: 1.45618914604187 sec, avg_samples: 16, avg_ips: 10.987583614045114 images/sec  ETA 21:19:30
+[TRAIN] epoch=4, batch_id=1020, loss=0.935262, lr=0.001250,acc=0.989,avg_reader_cost: 1.1734899401664733 sec, avg_batch_cost: 1.5174773406982422 sec, avg_samples: 16, avg_ips: 10.543814771321635 images/sec  ETA 22:10:49
+[TRAIN] epoch=4, batch_id=1120, loss=0.933982, lr=0.001250,acc=0.989,avg_reader_cost: 1.221222529411316 sec, avg_batch_cost: 1.5609492397308349 sec, avg_samples: 16, avg_ips: 10.250173159223928 images/sec  ETA 22:46:21
+[TRAIN] epoch=4, batch_id=1220, loss=0.933036, lr=0.001250,acc=0.989,avg_reader_cost: 1.1971543383598329 sec, avg_batch_cost: 1.481698932647705 sec, avg_samples: 16, avg_ips: 10.798415013641794 images/sec  ETA 21:34:30
+[TRAIN] epoch=4, batch_id=1320, loss=0.932332, lr=0.001250,acc=0.990,avg_reader_cost: 1.198084409236908 sec, avg_batch_cost: 1.4759238076210022 sec, avg_samples: 16, avg_ips: 10.84066800561333 images/sec  ETA 21:27:00
+[TRAIN] epoch=4, batch_id=1420, loss=0.931259, lr=0.001250,acc=0.990,avg_reader_cost: 1.2431480193138122 sec, avg_batch_cost: 1.5763024067878724 sec, avg_samples: 16, avg_ips: 10.150336592205157 images/sec  ETA 22:51:54
+[TRAIN] epoch=4, batch_id=1520, loss=0.930921, lr=0.001250,acc=0.990,avg_reader_cost: 1.1903705024719238 sec, avg_batch_cost: 1.503361177444458 sec, avg_samples: 16, avg_ips: 10.642818399234022 images/sec  ETA 21:45:55
+[TRAIN] epoch=4, batch_id=1620, loss=0.931036, lr=0.001250,acc=0.990,avg_reader_cost: 1.2530612087249755 sec, avg_batch_cost: 1.5318106031417846 sec, avg_samples: 16, avg_ips: 10.445155535014297 images/sec  ETA 22:08:04
+[TRAIN] epoch=4, batch_id=1720, loss=0.930662, lr=0.001250,acc=0.990,avg_reader_cost: 1.21484699010849 sec, avg_batch_cost: 1.5577759122848511 sec, avg_samples: 16, avg_ips: 10.271053669415245 images/sec  ETA 22:27:59
+[TRAIN] epoch=4, batch_id=1820, loss=0.930127, lr=0.001250,acc=0.990,avg_reader_cost: 1.2189389514923095 sec, avg_batch_cost: 1.5500322651863099 sec, avg_samples: 16, avg_ips: 10.32236577222271 images/sec  ETA 22:18:42
+[TRAIN] epoch=4, batch_id=1920, loss=0.930160, lr=0.001250,acc=0.990,avg_reader_cost: 1.1717436408996582 sec, avg_batch_cost: 1.4649933218955993 sec, avg_samples: 16, avg_ips: 10.921551491645788 images/sec  ETA 21:02:49
+[TRAIN] epoch=4, batch_id=2020, loss=0.929893, lr=0.001250,acc=0.990,avg_reader_cost: 1.160014522075653 sec, avg_batch_cost: 1.5045858430862427 sec, avg_samples: 16, avg_ips: 10.634155620646021 images/sec  ETA 21:34:26
+[TRAIN] epoch=4, batch_id=2120, loss=0.930012, lr=0.001250,acc=0.990,avg_reader_cost: 1.1914074730873108 sec, avg_batch_cost: 1.50874014377594 sec, avg_samples: 16, avg_ips: 10.604874580957745 images/sec  ETA 21:35:30
+[TRAIN] epoch=4, batch_id=2220, loss=0.929500, lr=0.001250,acc=0.990,avg_reader_cost: 1.2372396278381348 sec, avg_batch_cost: 1.5797226309776307 sec, avg_samples: 16, avg_ips: 10.128360312277229 images/sec  ETA 22:33:49
+[TRAIN] epoch=4, batch_id=2320, loss=0.929809, lr=0.001250,acc=0.990,avg_reader_cost: 1.2569235968589783 sec, avg_batch_cost: 1.5903342127799989 sec, avg_samples: 16, avg_ips: 10.060778339183843 images/sec  ETA 22:40:15
+[TRAIN] epoch=4, batch_id=2420, loss=0.929861, lr=0.001250,acc=0.990,avg_reader_cost: 1.1913546419143677 sec, avg_batch_cost: 1.4888016390800476 sec, avg_samples: 16, avg_ips: 10.746898431604787 images/sec  ETA 21:10:56
+[TRAIN] epoch=4, batch_id=2520, loss=0.929556, lr=0.001250,acc=0.990,avg_reader_cost: 1.2484677481651305 sec, avg_batch_cost: 1.5405387306213378 sec, avg_samples: 16, avg_ips: 10.385977114348043 images/sec  ETA 21:52:32
+[TRAIN] epoch=4, batch_id=2620, loss=0.928965, lr=0.001250,acc=0.990,avg_reader_cost: 1.1823258018493652 sec, avg_batch_cost: 1.4837494969367981 sec, avg_samples: 16, avg_ips: 10.78349144045677 images/sec  ETA 21:01:40
+[TRAIN] epoch=4, batch_id=2720, loss=0.928838, lr=0.001250,acc=0.990,avg_reader_cost: 1.18927325963974 sec, avg_batch_cost: 1.494305670261383 sec, avg_samples: 16, avg_ips: 10.707313984294318 images/sec  ETA 21:08:10
+[TRAIN] epoch=4, batch_id=2820, loss=0.928456, lr=0.001250,acc=0.990,avg_reader_cost: 1.2255686140060424 sec, avg_batch_cost: 1.5144469380378722 sec, avg_samples: 16, avg_ips: 10.564912905254845 images/sec  ETA 21:22:44
+[TRAIN] epoch=4, batch_id=2920, loss=0.928442, lr=0.001250,acc=0.990,avg_reader_cost: 1.22889399766922 sec, avg_batch_cost: 1.5760824704170227 sec, avg_samples: 16, avg_ips: 10.151753033435167 images/sec  ETA 22:12:18
+[TRAIN] epoch=4, batch_id=3020, loss=0.928383, lr=0.001250,acc=0.990,avg_reader_cost: 1.1846231985092164 sec, avg_batch_cost: 1.4813967776298522 sec, avg_samples: 16, avg_ips: 10.80061752638551 images/sec  ETA 20:49:48
+[TRAIN] epoch=4, batch_id=3120, loss=0.928455, lr=0.001250,acc=0.990,avg_reader_cost: 1.217876365184784 sec, avg_batch_cost: 1.5364302897453308 sec, avg_samples: 16, avg_ips: 10.413749394807922 images/sec  ETA 21:33:40
+[TRAIN] epoch=4, batch_id=3220, loss=0.928200, lr=0.001250,acc=0.990,avg_reader_cost: 1.1783194732666016 sec, avg_batch_cost: 1.5222854948043822 sec, avg_samples: 16, avg_ips: 10.510512025903553 images/sec  ETA 21:19:13
+[TRAIN] epoch=4, batch_id=3320, loss=0.927920, lr=0.001250,acc=0.990,avg_reader_cost: 1.194641592502594 sec, avg_batch_cost: 1.4915702056884765 sec, avg_samples: 16, avg_ips: 10.726950658426933 images/sec  ETA 20:50:55
+[TRAIN] epoch=4, batch_id=3420, loss=0.928271, lr=0.001250,acc=0.990,avg_reader_cost: 1.200348846912384 sec, avg_batch_cost: 1.6132973194122315 sec, avg_samples: 16, avg_ips: 9.917576758777011 images/sec  ETA 22:30:19
+[TRAIN] epoch=4, batch_id=3520, loss=0.928675, lr=0.001250,acc=0.990,avg_reader_cost: 1.1977473068237305 sec, avg_batch_cost: 1.5065220618247985 sec, avg_samples: 16, avg_ips: 10.620488345600295 images/sec  ETA 20:58:26
+[TRAIN] epoch=4, batch_id=3620, loss=0.928634, lr=0.001250,acc=0.990,avg_reader_cost: 1.2131582927703857 sec, avg_batch_cost: 1.502033543586731 sec, avg_samples: 16, avg_ips: 10.652225490113446 images/sec  ETA 20:52:11
+[TRAIN] epoch=4, batch_id=3720, loss=0.928548, lr=0.001250,acc=0.990,avg_reader_cost: 1.2002878212928771 sec, avg_batch_cost: 1.5211311411857604 sec, avg_samples: 16, avg_ips: 10.518488226812314 images/sec  ETA 21:05:34
+[TRAIN] epoch=4, batch_id=3820, loss=0.928420, lr=0.001250,acc=0.990,avg_reader_cost: 1.2258084416389465 sec, avg_batch_cost: 1.563214144706726 sec, avg_samples: 16, avg_ips: 10.235321919378968 images/sec  ETA 21:37:59
+[TRAIN] epoch=4, batch_id=3920, loss=0.928288, lr=0.001250,acc=0.990,avg_reader_cost: 1.1779869771003724 sec, avg_batch_cost: 1.4892643761634827 sec, avg_samples: 16, avg_ips: 10.743559206873565 images/sec  ETA 20:34:06
+[TRAIN] epoch=4, batch_id=4020, loss=0.928265, lr=0.001250,acc=0.990,avg_reader_cost: 1.2111258363723756 sec, avg_batch_cost: 1.5040960478782655 sec, avg_samples: 16, avg_ips: 10.637618536775097 images/sec  ETA 20:43:53
+[TRAIN] epoch=4, batch_id=4120, loss=0.928154, lr=0.001250,acc=0.990,avg_reader_cost: 1.2251042866706847 sec, avg_batch_cost: 1.5537247204780578 sec, avg_samples: 16, avg_ips: 10.297834480664658 images/sec  ETA 21:22:20
+[TRAIN] epoch=4, batch_id=4220, loss=0.927986, lr=0.001250,acc=0.990,avg_reader_cost: 1.1742352533340454 sec, avg_batch_cost: 1.4651593708992003 sec, avg_samples: 16, avg_ips: 10.920313733638716 images/sec  ETA 20:06:48
+[TRAIN] epoch=4, batch_id=4320, loss=0.927730, lr=0.001250,acc=0.990,avg_reader_cost: 1.1813212323188782 sec, avg_batch_cost: 1.4929949760437011 sec, avg_samples: 16, avg_ips: 10.716713891696088 images/sec  ETA 20:27:14
+[TRAIN] epoch=4, batch_id=4420, loss=0.927559, lr=0.001250,acc=0.990,avg_reader_cost: 1.2423065972328187 sec, avg_batch_cost: 1.5293634271621703 sec, avg_samples: 16, avg_ips: 10.46186911222861 images/sec  ETA 20:54:35
+[TRAIN] epoch=4, batch_id=4520, loss=0.927334, lr=0.001250,acc=0.990,avg_reader_cost: 1.2032550930976869 sec, avg_batch_cost: 1.4923031210899353 sec, avg_samples: 16, avg_ips: 10.721682327055685 images/sec  ETA 20:21:41
+[TRAIN] epoch=4, batch_id=4620, loss=0.927074, lr=0.001250,acc=0.990,avg_reader_cost: 1.178368170261383 sec, avg_batch_cost: 1.4702147483825683 sec, avg_samples: 16, avg_ips: 10.88276390751904 images/sec  ETA 20:01:09
+[TRAIN] epoch=4, batch_id=4720, loss=0.926927, lr=0.001250,acc=0.990,avg_reader_cost: 1.1630528616905211 sec, avg_batch_cost: 1.4515804624557496 sec, avg_samples: 16, avg_ips: 11.022468553297816 images/sec  ETA 19:43:31
+[TRAIN] epoch=4, batch_id=4820, loss=0.926963, lr=0.001250,acc=0.990,avg_reader_cost: 1.1433541464805603 sec, avg_batch_cost: 1.4664124822616578 sec, avg_samples: 16, avg_ips: 10.910981864613627 images/sec  ETA 19:53:10
+[TRAIN] epoch=4, batch_id=4920, loss=0.926876, lr=0.001250,acc=0.990,avg_reader_cost: 1.1737808895111084 sec, avg_batch_cost: 1.5082293844223023 sec, avg_samples: 16, avg_ips: 10.608465903963598 images/sec  ETA 20:24:40
+[TRAIN] epoch=4, batch_id=5020, loss=0.926580, lr=0.001250,acc=0.990,avg_reader_cost: 1.1735402750968933 sec, avg_batch_cost: 1.4673188829421997 sec, avg_samples: 16, avg_ips: 10.904241869986395 images/sec  ETA 19:49:01
+[TRAIN] epoch=4, batch_id=5120, loss=0.926523, lr=0.001250,acc=0.990,avg_reader_cost: 1.171975119113922 sec, avg_batch_cost: 1.45930335521698 sec, avg_samples: 16, avg_ips: 10.964135690362339 images/sec  ETA 19:40:05
+[TRAIN] epoch=4, batch_id=5220, loss=0.926554, lr=0.001250,acc=0.990,avg_reader_cost: 1.130850214958191 sec, avg_batch_cost: 1.4348162961006166 sec, avg_samples: 16, avg_ips: 11.151253330118296 images/sec  ETA 19:17:53
+[TRAIN] epoch=4, batch_id=5320, loss=0.926396, lr=0.001250,acc=0.990,avg_reader_cost: 1.169305613040924 sec, avg_batch_cost: 1.5063401508331298 sec, avg_samples: 16, avg_ips: 10.62177091352885 images/sec  ETA 20:13:06
+[TRAIN] epoch=4, batch_id=5420, loss=0.926300, lr=0.001250,acc=0.990,avg_reader_cost: 1.1832679009437561 sec, avg_batch_cost: 1.5007511186599731 sec, avg_samples: 16, avg_ips: 10.661328051706846 images/sec  ETA 20:06:06
+[TRAIN] epoch=4, batch_id=5520, loss=0.926424, lr=0.001250,acc=0.990,avg_reader_cost: 1.2101023483276367 sec, avg_batch_cost: 1.5057295513153077 sec, avg_samples: 16, avg_ips: 10.626078226347778 images/sec  ETA 20:07:35
+[TRAIN] epoch=4, batch_id=5620, loss=0.926386, lr=0.001250,acc=0.990,avg_reader_cost: 1.1664235043525695 sec, avg_batch_cost: 1.4673363399505615 sec, avg_samples: 16, avg_ips: 10.90411214141884 images/sec  ETA 19:34:21
+[TRAIN] epoch=4, batch_id=5720, loss=0.926199, lr=0.001250,acc=0.990,avg_reader_cost: 1.1915692353248597 sec, avg_batch_cost: 1.5208230900764466 sec, avg_samples: 16, avg_ips: 10.520618804647249 images/sec  ETA 20:14:37
+[TRAIN] epoch=4, batch_id=5820, loss=0.926046, lr=0.001250,acc=0.990,avg_reader_cost: 1.1804001832008362 sec, avg_batch_cost: 1.4979765176773072 sec, avg_samples: 16, avg_ips: 10.681075311386627 images/sec  ETA 19:53:53
+[TRAIN] epoch=4, batch_id=5920, loss=0.925962, lr=0.001250,acc=0.990,avg_reader_cost: 1.2056891798973084 sec, avg_batch_cost: 1.5757956647872924 sec, avg_samples: 16, avg_ips: 10.153600722184844 images/sec  ETA 20:53:16
+[EVAL] epoch=4
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8554
+top5_acc	0.9596
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8536
+[TRAIN] epoch=5, batch_id=60, loss=0.923128, lr=0.001250,acc=0.990,avg_reader_cost: 7.9710120105743405 sec, avg_batch_cost: 8.304245007038116 sec, avg_samples: 16, avg_ips: 1.9267254261452407 images/sec  ETA 109:50:48
+[TRAIN] epoch=5, batch_id=160, loss=0.921167, lr=0.001250,acc=0.992,avg_reader_cost: 1.1655337238311767 sec, avg_batch_cost: 1.5000019073486328 sec, avg_samples: 16, avg_ips: 10.666653103315857 images/sec  ETA 19:48:00
+[TRAIN] epoch=5, batch_id=260, loss=0.921676, lr=0.001250,acc=0.990,avg_reader_cost: 1.1776265168190003 sec, avg_batch_cost: 1.4604167556762695 sec, avg_samples: 16, avg_ips: 10.955776793036685 images/sec  ETA 19:14:12
+[TRAIN] epoch=5, batch_id=360, loss=0.915888, lr=0.001250,acc=0.992,avg_reader_cost: 1.2021271395683288 sec, avg_batch_cost: 1.5256560492515563 sec, avg_samples: 16, avg_ips: 10.487291685337038 images/sec  ETA 20:03:14
+[TRAIN] epoch=5, batch_id=460, loss=0.915736, lr=0.001250,acc=0.993,avg_reader_cost: 1.1827669024467469 sec, avg_batch_cost: 1.4825514960289001 sec, avg_samples: 16, avg_ips: 10.792205223802966 images/sec  ETA 19:26:46
+[TRAIN] epoch=5, batch_id=560, loss=0.914097, lr=0.001250,acc=0.993,avg_reader_cost: 1.2153585481643676 sec, avg_batch_cost: 1.557757067680359 sec, avg_samples: 16, avg_ips: 10.27117792110258 images/sec  ETA 20:23:21
+[TRAIN] epoch=5, batch_id=660, loss=0.915409, lr=0.001250,acc=0.992,avg_reader_cost: 1.1293779015541077 sec, avg_batch_cost: 1.52923063993454 sec, avg_samples: 16, avg_ips: 10.462777544586011 images/sec  ETA 19:58:24
+[TRAIN] epoch=5, batch_id=760, loss=0.916005, lr=0.001250,acc=0.992,avg_reader_cost: 1.150033700466156 sec, avg_batch_cost: 1.5118253755569457 sec, avg_samples: 16, avg_ips: 10.583232864513677 images/sec  ETA 19:42:14
+[TRAIN] epoch=5, batch_id=860, loss=0.916234, lr=0.001250,acc=0.992,avg_reader_cost: 1.1601060438156128 sec, avg_batch_cost: 1.4305127239227295 sec, avg_samples: 16, avg_ips: 11.184800898607214 images/sec  ETA 18:36:16
+[TRAIN] epoch=5, batch_id=960, loss=0.915547, lr=0.001250,acc=0.992,avg_reader_cost: 1.1805288910865783 sec, avg_batch_cost: 1.5279117107391358 sec, avg_samples: 16, avg_ips: 10.47180925935826 images/sec  ETA 19:49:44
+[TRAIN] epoch=5, batch_id=1060, loss=0.914467, lr=0.001250,acc=0.992,avg_reader_cost: 1.2009091544151307 sec, avg_batch_cost: 1.5384464406967162 sec, avg_samples: 16, avg_ips: 10.400102061891788 images/sec  ETA 19:55:22
+[TRAIN] epoch=5, batch_id=1160, loss=0.914272, lr=0.001250,acc=0.992,avg_reader_cost: 1.1754999089241027 sec, avg_batch_cost: 1.4964884567260741 sec, avg_samples: 16, avg_ips: 10.69169623600293 images/sec  ETA 19:20:16
+[TRAIN] epoch=5, batch_id=1260, loss=0.913831, lr=0.001250,acc=0.992,avg_reader_cost: 1.1492925381660462 sec, avg_batch_cost: 1.443843765258789 sec, avg_samples: 16, avg_ips: 11.081531385171873 images/sec  ETA 18:37:03
+[TRAIN] epoch=5, batch_id=1360, loss=0.913608, lr=0.001250,acc=0.992,avg_reader_cost: 1.2131924962997436 sec, avg_batch_cost: 1.5223671865463257 sec, avg_samples: 16, avg_ips: 10.509948021342957 images/sec  ETA 19:35:16
+[TRAIN] epoch=5, batch_id=1460, loss=0.912845, lr=0.001250,acc=0.993,avg_reader_cost: 1.1728547596931458 sec, avg_batch_cost: 1.5324960494041442 sec, avg_samples: 16, avg_ips: 10.44048368426204 images/sec  ETA 19:40:31
+[TRAIN] epoch=5, batch_id=1560, loss=0.912276, lr=0.001250,acc=0.993,avg_reader_cost: 1.1914544367790223 sec, avg_batch_cost: 1.4787004566192627 sec, avg_samples: 16, avg_ips: 10.820311800390344 images/sec  ETA 18:56:37
+[TRAIN] epoch=5, batch_id=1660, loss=0.911396, lr=0.001250,acc=0.993,avg_reader_cost: 1.1805752205848694 sec, avg_batch_cost: 1.5206299924850464 sec, avg_samples: 16, avg_ips: 10.521954768136892 images/sec  ETA 19:26:19
+[TRAIN] epoch=5, batch_id=1760, loss=0.911322, lr=0.001250,acc=0.993,avg_reader_cost: 1.2071526432037354 sec, avg_batch_cost: 1.5290749454498291 sec, avg_samples: 16, avg_ips: 10.463842892470558 images/sec  ETA 19:30:15
+[TRAIN] epoch=5, batch_id=1860, loss=0.911463, lr=0.001250,acc=0.993,avg_reader_cost: 1.1941715931892396 sec, avg_batch_cost: 1.5369084429740907 sec, avg_samples: 16, avg_ips: 10.410509534997544 images/sec  ETA 19:33:41
+[TRAIN] epoch=5, batch_id=1960, loss=0.911187, lr=0.001250,acc=0.993,avg_reader_cost: 1.1904396653175353 sec, avg_batch_cost: 1.490340576171875 sec, avg_samples: 16, avg_ips: 10.735801101985686 images/sec  ETA 18:55:38
+[TRAIN] epoch=5, batch_id=2060, loss=0.911290, lr=0.001250,acc=0.993,avg_reader_cost: 1.1941534686088562 sec, avg_batch_cost: 1.520359251499176 sec, avg_samples: 16, avg_ips: 10.523828486078491 images/sec  ETA 19:15:58
+[TRAIN] epoch=5, batch_id=2160, loss=0.911264, lr=0.001250,acc=0.992,avg_reader_cost: 1.1998638010025025 sec, avg_batch_cost: 1.4817004919052124 sec, avg_samples: 16, avg_ips: 10.798403650002673 images/sec  ETA 18:44:07
+[TRAIN] epoch=5, batch_id=2260, loss=0.910929, lr=0.001250,acc=0.993,avg_reader_cost: 1.207307469844818 sec, avg_batch_cost: 1.574135835170746 sec, avg_samples: 16, avg_ips: 10.164307070910743 images/sec  ETA 19:51:37
+[TRAIN] epoch=5, batch_id=2360, loss=0.910818, lr=0.001250,acc=0.992,avg_reader_cost: 1.219843065738678 sec, avg_batch_cost: 1.5044222211837768 sec, avg_samples: 16, avg_ips: 10.63531219806775 images/sec  ETA 18:56:20
+[TRAIN] epoch=5, batch_id=2460, loss=0.910682, lr=0.001250,acc=0.993,avg_reader_cost: 1.2094306063652038 sec, avg_batch_cost: 1.5643807196617125 sec, avg_samples: 16, avg_ips: 10.227689333489037 images/sec  ETA 19:39:01
+[TRAIN] epoch=5, batch_id=2560, loss=0.910096, lr=0.001250,acc=0.993,avg_reader_cost: 1.1980840611457824 sec, avg_batch_cost: 1.5104165863990784 sec, avg_samples: 16, avg_ips: 10.59310401122179 images/sec  ETA 18:55:49
+[TRAIN] epoch=5, batch_id=2660, loss=0.910056, lr=0.001250,acc=0.993,avg_reader_cost: 1.1219428753852845 sec, avg_batch_cost: 1.4676559925079347 sec, avg_samples: 16, avg_ips: 10.90173724747252 images/sec  ETA 18:21:13
+[TRAIN] epoch=5, batch_id=2760, loss=0.909952, lr=0.001250,acc=0.993,avg_reader_cost: 1.1834516763687133 sec, avg_batch_cost: 1.5064478516578674 sec, avg_samples: 16, avg_ips: 10.621011528803848 images/sec  ETA 18:47:49
+[TRAIN] epoch=5, batch_id=2860, loss=0.909985, lr=0.001250,acc=0.993,avg_reader_cost: 1.2000199031829835 sec, avg_batch_cost: 1.4907644081115723 sec, avg_samples: 16, avg_ips: 10.73274885886766 images/sec  ETA 18:33:36
+[TRAIN] epoch=5, batch_id=2960, loss=0.909837, lr=0.001250,acc=0.993,avg_reader_cost: 1.1573128509521484 sec, avg_batch_cost: 1.4687559986114502 sec, avg_samples: 16, avg_ips: 10.893572530172655 images/sec  ETA 18:14:42
+[TRAIN] epoch=5, batch_id=3060, loss=0.909926, lr=0.001250,acc=0.993,avg_reader_cost: 1.1734271454811096 sec, avg_batch_cost: 1.4699371194839477 sec, avg_samples: 16, avg_ips: 10.884819349018914 images/sec  ETA 18:13:08
+[TRAIN] epoch=5, batch_id=3160, loss=0.909761, lr=0.001250,acc=0.993,avg_reader_cost: 1.1575137495994567 sec, avg_batch_cost: 1.4832409381866456 sec, avg_samples: 16, avg_ips: 10.787188775655691 images/sec  ETA 18:20:33
+[TRAIN] epoch=5, batch_id=3260, loss=0.909642, lr=0.001250,acc=0.993,avg_reader_cost: 1.2031237864494324 sec, avg_batch_cost: 1.5482227087020874 sec, avg_samples: 16, avg_ips: 10.334430511882355 images/sec  ETA 19:06:12
+[TRAIN] epoch=5, batch_id=3360, loss=0.909379, lr=0.001250,acc=0.993,avg_reader_cost: 1.154764132499695 sec, avg_batch_cost: 1.5286028218269347 sec, avg_samples: 16, avg_ips: 10.467074750573428 images/sec  ETA 18:49:07
+[TRAIN] epoch=5, batch_id=3460, loss=0.909439, lr=0.001250,acc=0.993,avg_reader_cost: 1.1708740234375 sec, avg_batch_cost: 1.500708520412445 sec, avg_samples: 16, avg_ips: 10.661630678023114 images/sec  ETA 18:26:01
+[TRAIN] epoch=5, batch_id=3560, loss=0.909458, lr=0.001250,acc=0.993,avg_reader_cost: 1.1772242379188538 sec, avg_batch_cost: 1.5114033865928649 sec, avg_samples: 16, avg_ips: 10.586187739110848 images/sec  ETA 18:31:23
+[TRAIN] epoch=5, batch_id=3660, loss=0.909430, lr=0.001250,acc=0.993,avg_reader_cost: 1.1525465989112853 sec, avg_batch_cost: 1.512276062965393 sec, avg_samples: 16, avg_ips: 10.580078857180288 images/sec  ETA 18:29:30
+[TRAIN] epoch=5, batch_id=3760, loss=0.909300, lr=0.001250,acc=0.993,avg_reader_cost: 1.1767304849624634 sec, avg_batch_cost: 1.518545367717743 sec, avg_samples: 16, avg_ips: 10.536399069885393 images/sec  ETA 18:31:34
+[TRAIN] epoch=5, batch_id=3860, loss=0.909282, lr=0.001250,acc=0.993,avg_reader_cost: 1.1908723855018615 sec, avg_batch_cost: 1.5543762040138245 sec, avg_samples: 16, avg_ips: 10.293518363626273 images/sec  ETA 18:55:12
+[TRAIN] epoch=5, batch_id=3960, loss=0.909217, lr=0.001250,acc=0.993,avg_reader_cost: 1.194734296798706 sec, avg_batch_cost: 1.500190222263336 sec, avg_samples: 16, avg_ips: 10.665314146535904 images/sec  ETA 18:13:08
+[TRAIN] epoch=5, batch_id=4060, loss=0.909353, lr=0.001250,acc=0.993,avg_reader_cost: 1.2154552125930786 sec, avg_batch_cost: 1.5204860138893128 sec, avg_samples: 16, avg_ips: 10.522951118157906 images/sec  ETA 18:25:23
+[TRAIN] epoch=5, batch_id=4160, loss=0.909296, lr=0.001250,acc=0.993,avg_reader_cost: 1.1931839561462403 sec, avg_batch_cost: 1.529053249359131 sec, avg_samples: 16, avg_ips: 10.463991366360883 images/sec  ETA 18:29:04
+[TRAIN] epoch=5, batch_id=4260, loss=0.909144, lr=0.001250,acc=0.993,avg_reader_cost: 1.1524906539916993 sec, avg_batch_cost: 1.4449844479560852 sec, avg_samples: 16, avg_ips: 11.072783532467652 images/sec  ETA 17:25:41
+[TRAIN] epoch=5, batch_id=4360, loss=0.909039, lr=0.001250,acc=0.993,avg_reader_cost: 1.1691161799430847 sec, avg_batch_cost: 1.4496125650405884 sec, avg_samples: 16, avg_ips: 11.037431922061193 images/sec  ETA 17:26:37
+[TRAIN] epoch=5, batch_id=4460, loss=0.908994, lr=0.001250,acc=0.993,avg_reader_cost: 1.2222207307815551 sec, avg_batch_cost: 1.5431447076797484 sec, avg_samples: 16, avg_ips: 10.368437853153372 images/sec  ETA 18:31:34
+[TRAIN] epoch=5, batch_id=4560, loss=0.908739, lr=0.001250,acc=0.993,avg_reader_cost: 1.1525787281990052 sec, avg_batch_cost: 1.4520456981658936 sec, avg_samples: 16, avg_ips: 11.018936952335524 images/sec  ETA 17:23:32
+[TRAIN] epoch=5, batch_id=4660, loss=0.908585, lr=0.001250,acc=0.993,avg_reader_cost: 1.1747255253791808 sec, avg_batch_cost: 1.4886376929283143 sec, avg_samples: 16, avg_ips: 10.748082005451735 images/sec  ETA 17:47:21
+[TRAIN] epoch=5, batch_id=4760, loss=0.908442, lr=0.001250,acc=0.993,avg_reader_cost: 1.1562050914764403 sec, avg_batch_cost: 1.4841274762153625 sec, avg_samples: 16, avg_ips: 10.780745088556149 images/sec  ETA 17:41:38
+[TRAIN] epoch=5, batch_id=4860, loss=0.908444, lr=0.001250,acc=0.993,avg_reader_cost: 1.1764473390579224 sec, avg_batch_cost: 1.5042873311042786 sec, avg_samples: 16, avg_ips: 10.636265870998594 images/sec  ETA 17:53:33
+[TRAIN] epoch=5, batch_id=4960, loss=0.908389, lr=0.001250,acc=0.993,avg_reader_cost: 1.141029772758484 sec, avg_batch_cost: 1.4960033869743348 sec, avg_samples: 16, avg_ips: 10.69516295170961 images/sec  ETA 17:45:09
+[TRAIN] epoch=5, batch_id=5060, loss=0.908214, lr=0.001250,acc=0.993,avg_reader_cost: 1.1619831371307372 sec, avg_batch_cost: 1.4663637781143188 sec, avg_samples: 16, avg_ips: 10.911344264501212 images/sec  ETA 17:21:36
+[TRAIN] epoch=5, batch_id=5160, loss=0.908158, lr=0.001250,acc=0.993,avg_reader_cost: 1.1688550949096679 sec, avg_batch_cost: 1.482961781024933 sec, avg_samples: 16, avg_ips: 10.78921938833904 images/sec  ETA 17:30:55
+[TRAIN] epoch=5, batch_id=5260, loss=0.908179, lr=0.001250,acc=0.993,avg_reader_cost: 1.2094988656044006 sec, avg_batch_cost: 1.5087678980827333 sec, avg_samples: 16, avg_ips: 10.604679500625643 images/sec  ETA 17:46:41
+[TRAIN] epoch=5, batch_id=5360, loss=0.908092, lr=0.001250,acc=0.993,avg_reader_cost: 1.1643452119827271 sec, avg_batch_cost: 1.4781962490081788 sec, avg_samples: 16, avg_ips: 10.824002571198157 images/sec  ETA 17:22:37
+[TRAIN] epoch=5, batch_id=5460, loss=0.908103, lr=0.001250,acc=0.993,avg_reader_cost: 1.1834039187431336 sec, avg_batch_cost: 1.4985788917541505 sec, avg_samples: 16, avg_ips: 10.676781908539574 images/sec  ETA 17:34:30
+[TRAIN] epoch=5, batch_id=5560, loss=0.908054, lr=0.001250,acc=0.993,avg_reader_cost: 1.181885199546814 sec, avg_batch_cost: 1.4879393577575684 sec, avg_samples: 16, avg_ips: 10.753126407055426 images/sec  ETA 17:24:32
+[TRAIN] epoch=5, batch_id=5660, loss=0.908077, lr=0.001250,acc=0.993,avg_reader_cost: 1.1539769983291626 sec, avg_batch_cost: 1.452585051059723 sec, avg_samples: 16, avg_ips: 11.014845559870876 images/sec  ETA 16:57:17
+[TRAIN] epoch=5, batch_id=5760, loss=0.907998, lr=0.001250,acc=0.993,avg_reader_cost: 1.1477516913414 sec, avg_batch_cost: 1.4663526678085328 sec, avg_samples: 16, avg_ips: 10.911426937908487 images/sec  ETA 17:04:29
+[TRAIN] epoch=5, batch_id=5860, loss=0.907766, lr=0.001250,acc=0.993,avg_reader_cost: 1.1848352336883545 sec, avg_batch_cost: 1.5324827170372008 sec, avg_samples: 16, avg_ips: 10.44057451488479 images/sec  ETA 17:48:08
+[TRAIN] epoch=5, batch_id=5960, loss=0.907644, lr=0.001250,acc=0.993,avg_reader_cost: 1.1524131894111633 sec, avg_batch_cost: 1.4704057240486146 sec, avg_samples: 16, avg_ips: 10.881350458800995 images/sec  ETA 17:02:25
+[EVAL] epoch=5
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8475
+top5_acc	0.9569
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8459
+[TRAIN] epoch=6, batch_id=100, loss=0.890901, lr=0.001250,acc=0.996,avg_reader_cost: 5.055633144378662 sec, avg_batch_cost: 5.349056160449981 sec, avg_samples: 16, avg_ips: 2.9911819057540097 images/sec  ETA 61:50:27
+[TRAIN] epoch=6, batch_id=200, loss=0.894661, lr=0.001250,acc=0.995,avg_reader_cost: 1.1594930005073547 sec, avg_batch_cost: 1.4501994395256042 sec, avg_samples: 16, avg_ips: 11.032965234929337 images/sec  ETA 16:43:32
+[TRAIN] epoch=6, batch_id=300, loss=0.897540, lr=0.001250,acc=0.995,avg_reader_cost: 1.190524423122406 sec, avg_batch_cost: 1.5199621725082397 sec, avg_samples: 16, avg_ips: 10.526577759232534 images/sec  ETA 17:29:16
+[TRAIN] epoch=6, batch_id=400, loss=0.898108, lr=0.001250,acc=0.995,avg_reader_cost: 1.1995679783821105 sec, avg_batch_cost: 1.5358418703079224 sec, avg_samples: 16, avg_ips: 10.417739162686159 images/sec  ETA 17:37:40
+[TRAIN] epoch=6, batch_id=500, loss=0.896285, lr=0.001250,acc=0.995,avg_reader_cost: 1.1949144053459166 sec, avg_batch_cost: 1.52539386510849 sec, avg_samples: 16, avg_ips: 10.489094237219867 images/sec  ETA 17:27:56
+[TRAIN] epoch=6, batch_id=600, loss=0.895455, lr=0.001250,acc=0.995,avg_reader_cost: 1.1701382827758788 sec, avg_batch_cost: 1.495642683506012 sec, avg_samples: 16, avg_ips: 10.69774229931282 images/sec  ETA 17:05:00
+[TRAIN] epoch=6, batch_id=700, loss=0.896481, lr=0.001250,acc=0.995,avg_reader_cost: 1.1763090324401855 sec, avg_batch_cost: 1.4815617322921752 sec, avg_samples: 16, avg_ips: 10.799415003278904 images/sec  ETA 16:52:53
+[TRAIN] epoch=6, batch_id=800, loss=0.897423, lr=0.001250,acc=0.995,avg_reader_cost: 1.1424765753746033 sec, avg_batch_cost: 1.4692046642303467 sec, avg_samples: 16, avg_ips: 10.890245851745723 images/sec  ETA 16:41:59
+[TRAIN] epoch=6, batch_id=900, loss=0.897125, lr=0.001250,acc=0.994,avg_reader_cost: 1.174290874004364 sec, avg_batch_cost: 1.4700719356536864 sec, avg_samples: 16, avg_ips: 10.883821132797419 images/sec  ETA 16:40:08
+[TRAIN] epoch=6, batch_id=1000, loss=0.898027, lr=0.001250,acc=0.994,avg_reader_cost: 1.1456717371940612 sec, avg_batch_cost: 1.4428387522697448 sec, avg_samples: 16, avg_ips: 11.089250253938793 images/sec  ETA 16:19:12
+[TRAIN] epoch=6, batch_id=1100, loss=0.897310, lr=0.001250,acc=0.994,avg_reader_cost: 1.1812812662124634 sec, avg_batch_cost: 1.483326268196106 sec, avg_samples: 16, avg_ips: 10.78656823050658 images/sec  ETA 16:44:12
+[TRAIN] epoch=6, batch_id=1200, loss=0.897161, lr=0.001250,acc=0.994,avg_reader_cost: 1.160197057723999 sec, avg_batch_cost: 1.4306014370918274 sec, avg_samples: 16, avg_ips: 11.184107316797691 images/sec  ETA 16:06:07
+[TRAIN] epoch=6, batch_id=1300, loss=0.897285, lr=0.001250,acc=0.994,avg_reader_cost: 1.1946895241737365 sec, avg_batch_cost: 1.4957991027832032 sec, avg_samples: 16, avg_ips: 10.696623610904114 images/sec  ETA 16:47:40
+[TRAIN] epoch=6, batch_id=1400, loss=0.896981, lr=0.001250,acc=0.994,avg_reader_cost: 1.2202010297775268 sec, avg_batch_cost: 1.53006254196167 sec, avg_samples: 16, avg_ips: 10.457088884410334 images/sec  ETA 17:08:12
+[TRAIN] epoch=6, batch_id=1500, loss=0.896815, lr=0.001250,acc=0.995,avg_reader_cost: 1.1664232659339904 sec, avg_batch_cost: 1.5436332893371583 sec, avg_samples: 16, avg_ips: 10.365156096672713 images/sec  ETA 17:14:44
+[TRAIN] epoch=6, batch_id=1600, loss=0.896645, lr=0.001250,acc=0.994,avg_reader_cost: 1.1857444953918457 sec, avg_batch_cost: 1.4990830159187316 sec, avg_samples: 16, avg_ips: 10.673191431092429 images/sec  ETA 16:42:23
+[TRAIN] epoch=6, batch_id=1700, loss=0.896450, lr=0.001250,acc=0.994,avg_reader_cost: 1.172832305431366 sec, avg_batch_cost: 1.5062801599502564 sec, avg_samples: 16, avg_ips: 10.622193948653209 images/sec  ETA 16:44:41
+[TRAIN] epoch=6, batch_id=1800, loss=0.896554, lr=0.001250,acc=0.994,avg_reader_cost: 1.2192016410827637 sec, avg_batch_cost: 1.5686513948440552 sec, avg_samples: 16, avg_ips: 10.199844307403056 images/sec  ETA 17:23:40
+[TRAIN] epoch=6, batch_id=1900, loss=0.896264, lr=0.001250,acc=0.995,avg_reader_cost: 1.162497684955597 sec, avg_batch_cost: 1.4792893266677856 sec, avg_samples: 16, avg_ips: 10.816004490508456 images/sec  ETA 16:21:45
+[TRAIN] epoch=6, batch_id=2000, loss=0.896089, lr=0.001250,acc=0.995,avg_reader_cost: 1.2022722268104553 sec, avg_batch_cost: 1.4874384331703185 sec, avg_samples: 16, avg_ips: 10.756747737045952 images/sec  ETA 16:24:41
+[TRAIN] epoch=6, batch_id=2100, loss=0.895907, lr=0.001250,acc=0.995,avg_reader_cost: 1.1653730058670044 sec, avg_batch_cost: 1.4953701639175414 sec, avg_samples: 16, avg_ips: 10.699691879690521 images/sec  ETA 16:27:26
+[TRAIN] epoch=6, batch_id=2200, loss=0.895769, lr=0.001250,acc=0.995,avg_reader_cost: 1.1914444828033448 sec, avg_batch_cost: 1.5310260486602782 sec, avg_samples: 16, avg_ips: 10.45050801976934 images/sec  ETA 16:48:26
+[TRAIN] epoch=6, batch_id=2300, loss=0.895761, lr=0.001250,acc=0.995,avg_reader_cost: 1.1894039249420165 sec, avg_batch_cost: 1.5295157861709594 sec, avg_samples: 16, avg_ips: 10.460826978487702 images/sec  ETA 16:44:53
+[TRAIN] epoch=6, batch_id=2400, loss=0.895834, lr=0.001250,acc=0.995,avg_reader_cost: 1.179177622795105 sec, avg_batch_cost: 1.5074820494651795 sec, avg_samples: 16, avg_ips: 10.613725056080394 images/sec  ETA 16:27:54
+[TRAIN] epoch=6, batch_id=2500, loss=0.895722, lr=0.001250,acc=0.995,avg_reader_cost: 1.1995541143417359 sec, avg_batch_cost: 1.515628366470337 sec, avg_samples: 16, avg_ips: 10.556677582685731 images/sec  ETA 16:30:42
+[TRAIN] epoch=6, batch_id=2600, loss=0.895778, lr=0.001250,acc=0.995,avg_reader_cost: 1.1763003325462342 sec, avg_batch_cost: 1.4672002124786376 sec, avg_samples: 16, avg_ips: 10.905123829671583 images/sec  ETA 15:56:36
+[TRAIN] epoch=6, batch_id=2700, loss=0.895980, lr=0.001250,acc=0.995,avg_reader_cost: 1.1419275426864623 sec, avg_batch_cost: 1.4613757610321045 sec, avg_samples: 16, avg_ips: 10.94858723310144 images/sec  ETA 15:50:22
+[TRAIN] epoch=6, batch_id=2800, loss=0.895794, lr=0.001250,acc=0.995,avg_reader_cost: 1.1781587886810303 sec, avg_batch_cost: 1.4774502444267272 sec, avg_samples: 16, avg_ips: 10.829467902797795 images/sec  ETA 15:58:22
+[TRAIN] epoch=6, batch_id=2900, loss=0.895759, lr=0.001250,acc=0.995,avg_reader_cost: 1.2145601677894593 sec, avg_batch_cost: 1.5342419600486756 sec, avg_samples: 16, avg_ips: 10.428602799712491 images/sec  ETA 16:32:39
+[TRAIN] epoch=6, batch_id=3000, loss=0.895685, lr=0.001250,acc=0.995,avg_reader_cost: 1.1418106651306152 sec, avg_batch_cost: 1.4490107846260072 sec, avg_samples: 16, avg_ips: 11.042015815037315 images/sec  ETA 15:35:05
+[TRAIN] epoch=6, batch_id=3100, loss=0.895710, lr=0.001250,acc=0.995,avg_reader_cost: 1.162877230644226 sec, avg_batch_cost: 1.5283318734169007 sec, avg_samples: 16, avg_ips: 10.468930392865984 images/sec  ETA 16:23:44
+[TRAIN] epoch=6, batch_id=3200, loss=0.895595, lr=0.001250,acc=0.995,avg_reader_cost: 1.1917733263969421 sec, avg_batch_cost: 1.501442699432373 sec, avg_samples: 16, avg_ips: 10.656417328512683 images/sec  ETA 16:03:55
+[TRAIN] epoch=6, batch_id=3300, loss=0.895745, lr=0.001250,acc=0.995,avg_reader_cost: 1.1753432393074035 sec, avg_batch_cost: 1.513268826007843 sec, avg_samples: 16, avg_ips: 10.573137915098421 images/sec  ETA 16:08:59
+[TRAIN] epoch=6, batch_id=3400, loss=0.895647, lr=0.001250,acc=0.995,avg_reader_cost: 1.199864912033081 sec, avg_batch_cost: 1.5331689953804015 sec, avg_samples: 16, avg_ips: 10.435901096493389 images/sec  ETA 16:19:11
+[TRAIN] epoch=6, batch_id=3500, loss=0.895805, lr=0.001250,acc=0.995,avg_reader_cost: 1.1879937696456908 sec, avg_batch_cost: 1.5114641976356507 sec, avg_samples: 16, avg_ips: 10.585761822892291 images/sec  ETA 16:02:48
+[TRAIN] epoch=6, batch_id=3600, loss=0.895737, lr=0.001250,acc=0.995,avg_reader_cost: 1.2224599146842956 sec, avg_batch_cost: 1.538254313468933 sec, avg_samples: 16, avg_ips: 10.401401029663448 images/sec  ETA 16:17:18
+[TRAIN] epoch=6, batch_id=3700, loss=0.895666, lr=0.001250,acc=0.995,avg_reader_cost: 1.1704804158210755 sec, avg_batch_cost: 1.4843330883979797 sec, avg_samples: 16, avg_ips: 10.779251722582416 images/sec  ETA 15:40:34
+[TRAIN] epoch=6, batch_id=3800, loss=0.895501, lr=0.001250,acc=0.995,avg_reader_cost: 1.20605042219162 sec, avg_batch_cost: 1.527609052658081 sec, avg_samples: 16, avg_ips: 10.473883990252327 images/sec  ETA 16:05:26
+[TRAIN] epoch=6, batch_id=3900, loss=0.895505, lr=0.001250,acc=0.995,avg_reader_cost: 1.1601435446739197 sec, avg_batch_cost: 1.5082299566268922 sec, avg_samples: 16, avg_ips: 10.608461879237225 images/sec  ETA 15:50:41
+[TRAIN] epoch=6, batch_id=4000, loss=0.895455, lr=0.001250,acc=0.995,avg_reader_cost: 1.1724023604393006 sec, avg_batch_cost: 1.4696683526039123 sec, avg_samples: 16, avg_ips: 10.886809919837834 images/sec  ETA 15:23:55
+[TRAIN] epoch=6, batch_id=4100, loss=0.895494, lr=0.001250,acc=0.995,avg_reader_cost: 1.1827652716636659 sec, avg_batch_cost: 1.4878937435150146 sec, avg_samples: 16, avg_ips: 10.753456064813772 images/sec  ETA 15:32:54
+[TRAIN] epoch=6, batch_id=4200, loss=0.895426, lr=0.001250,acc=0.995,avg_reader_cost: 1.177048351764679 sec, avg_batch_cost: 1.518252968788147 sec, avg_samples: 16, avg_ips: 10.538428265199459 images/sec  ETA 15:49:24
+[TRAIN] epoch=6, batch_id=4300, loss=0.895188, lr=0.001250,acc=0.995,avg_reader_cost: 1.1590235877037047 sec, avg_batch_cost: 1.487193284034729 sec, avg_samples: 16, avg_ips: 10.758520880750808 images/sec  ETA 15:27:30
+[TRAIN] epoch=6, batch_id=4400, loss=0.895129, lr=0.001250,acc=0.995,avg_reader_cost: 1.1845180702209472 sec, avg_batch_cost: 1.5095617651939393 sec, avg_samples: 16, avg_ips: 10.59910257990962 images/sec  ETA 15:38:56
+[TRAIN] epoch=6, batch_id=4500, loss=0.895045, lr=0.001250,acc=0.995,avg_reader_cost: 1.1712854599952698 sec, avg_batch_cost: 1.503976800441742 sec, avg_samples: 16, avg_ips: 10.63846197315048 images/sec  ETA 15:32:58
+[TRAIN] epoch=6, batch_id=4600, loss=0.895047, lr=0.001250,acc=0.995,avg_reader_cost: 1.1402080154418945 sec, avg_batch_cost: 1.439181010723114 sec, avg_samples: 16, avg_ips: 11.117434068950665 images/sec  ETA 14:50:22
+[TRAIN] epoch=6, batch_id=4700, loss=0.894991, lr=0.001250,acc=0.995,avg_reader_cost: 1.1841795682907104 sec, avg_batch_cost: 1.4938433575630188 sec, avg_samples: 16, avg_ips: 10.710627669892778 images/sec  ETA 15:21:42
+[TRAIN] epoch=6, batch_id=4800, loss=0.895030, lr=0.001250,acc=0.995,avg_reader_cost: 1.1572615909576416 sec, avg_batch_cost: 1.4909803557395935 sec, avg_samples: 16, avg_ips: 10.731194370473968 images/sec  ETA 15:17:26
+[TRAIN] epoch=6, batch_id=4900, loss=0.895039, lr=0.001250,acc=0.995,avg_reader_cost: 1.147350444793701 sec, avg_batch_cost: 1.4984167194366456 sec, avg_samples: 16, avg_ips: 10.677937447211256 images/sec  ETA 15:19:31
+[TRAIN] epoch=6, batch_id=5000, loss=0.895006, lr=0.001250,acc=0.995,avg_reader_cost: 1.1299940133094788 sec, avg_batch_cost: 1.445178689956665 sec, avg_samples: 16, avg_ips: 11.071295273859715 images/sec  ETA 14:44:26
+[TRAIN] epoch=6, batch_id=5100, loss=0.894941, lr=0.001250,acc=0.995,avg_reader_cost: 1.15111647605896 sec, avg_batch_cost: 1.4626452398300172 sec, avg_samples: 16, avg_ips: 10.939084587496732 images/sec  ETA 14:52:42
+[TRAIN] epoch=6, batch_id=5200, loss=0.894947, lr=0.001250,acc=0.995,avg_reader_cost: 1.20736980676651 sec, avg_batch_cost: 1.5125606226921082 sec, avg_samples: 16, avg_ips: 10.57808841507631 images/sec  ETA 15:20:38
+[TRAIN] epoch=6, batch_id=5300, loss=0.894730, lr=0.001250,acc=0.995,avg_reader_cost: 1.1390368294715882 sec, avg_batch_cost: 1.4815915608406067 sec, avg_samples: 16, avg_ips: 10.799197581094564 images/sec  ETA 14:59:19
+[TRAIN] epoch=6, batch_id=5400, loss=0.894713, lr=0.001250,acc=0.995,avg_reader_cost: 1.188921227455139 sec, avg_batch_cost: 1.4826337695121765 sec, avg_samples: 16, avg_ips: 10.791606348791312 images/sec  ETA 14:57:29
+[TRAIN] epoch=6, batch_id=5500, loss=0.894702, lr=0.001250,acc=0.995,avg_reader_cost: 1.1678567814826966 sec, avg_batch_cost: 1.5128276395797728 sec, avg_samples: 16, avg_ips: 10.576221362827834 images/sec  ETA 15:13:14
+[TRAIN] epoch=6, batch_id=5600, loss=0.894632, lr=0.001250,acc=0.995,avg_reader_cost: 1.1612879180908202 sec, avg_batch_cost: 1.4612946033477783 sec, avg_samples: 16, avg_ips: 10.949195298021714 images/sec  ETA 14:39:41
+[TRAIN] epoch=6, batch_id=5700, loss=0.894693, lr=0.001250,acc=0.995,avg_reader_cost: 1.1528650784492493 sec, avg_batch_cost: 1.5195042324066161 sec, avg_samples: 16, avg_ips: 10.529750203234993 images/sec  ETA 15:12:12
+[TRAIN] epoch=6, batch_id=5800, loss=0.894611, lr=0.001250,acc=0.995,avg_reader_cost: 1.1727775144577026 sec, avg_batch_cost: 1.4999648499488831 sec, avg_samples: 16, avg_ips: 10.666916628443166 images/sec  ETA 14:57:58
+[TRAIN] epoch=6, batch_id=5900, loss=0.894526, lr=0.001250,acc=0.995,avg_reader_cost: 1.1822864151000976 sec, avg_batch_cost: 1.5026034379005433 sec, avg_samples: 16, avg_ips: 10.648185407026224 images/sec  ETA 14:57:03
+[EVAL] epoch=6
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8496
+top5_acc	0.9551
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8474
+[TRAIN] epoch=7, batch_id=40, loss=0.889008, lr=0.001250,acc=0.997,avg_reader_cost: 8.098351092338563 sec, avg_batch_cost: 8.40247083902359 sec, avg_samples: 16, avg_ips: 1.9042017885609566 images/sec  ETA 83:22:16
+[TRAIN] epoch=7, batch_id=140, loss=0.889261, lr=0.001250,acc=0.995,avg_reader_cost: 1.1580158472061157 sec, avg_batch_cost: 1.45614750623703 sec, avg_samples: 16, avg_ips: 10.98789781355814 images/sec  ETA 14:24:27
+[TRAIN] epoch=7, batch_id=240, loss=0.888255, lr=0.001250,acc=0.995,avg_reader_cost: 1.096882553100586 sec, avg_batch_cost: 1.444905788898468 sec, avg_samples: 16, avg_ips: 11.07338632243815 images/sec  ETA 14:15:23
+[TRAIN] epoch=7, batch_id=340, loss=0.887832, lr=0.001250,acc=0.995,avg_reader_cost: 1.2175234031677247 sec, avg_batch_cost: 1.5758173966407776 sec, avg_samples: 16, avg_ips: 10.153460695450965 images/sec  ETA 15:30:15
+[TRAIN] epoch=7, batch_id=440, loss=0.886400, lr=0.001250,acc=0.996,avg_reader_cost: 1.156437509059906 sec, avg_batch_cost: 1.4696347665786744 sec, avg_samples: 16, avg_ips: 10.887058719526738 images/sec  ETA 14:25:07
+[TRAIN] epoch=7, batch_id=540, loss=0.886038, lr=0.001250,acc=0.995,avg_reader_cost: 1.2076502323150635 sec, avg_batch_cost: 1.5352829027175903 sec, avg_samples: 16, avg_ips: 10.421532065314182 images/sec  ETA 15:01:12
+[TRAIN] epoch=7, batch_id=640, loss=0.887145, lr=0.001250,acc=0.995,avg_reader_cost: 1.150948941707611 sec, avg_batch_cost: 1.4487882137298584 sec, avg_samples: 16, avg_ips: 11.04371215086608 images/sec  ETA 14:08:01
+[TRAIN] epoch=7, batch_id=740, loss=0.888127, lr=0.001250,acc=0.995,avg_reader_cost: 1.1641834783554077 sec, avg_batch_cost: 1.5012611842155457 sec, avg_samples: 16, avg_ips: 10.657705779797727 images/sec  ETA 14:36:14
+[TRAIN] epoch=7, batch_id=840, loss=0.889390, lr=0.001250,acc=0.995,avg_reader_cost: 1.140420081615448 sec, avg_batch_cost: 1.4437987613677978 sec, avg_samples: 16, avg_ips: 11.081876801751951 images/sec  ETA 14:00:17
+[TRAIN] epoch=7, batch_id=940, loss=0.889206, lr=0.001250,acc=0.995,avg_reader_cost: 1.171194212436676 sec, avg_batch_cost: 1.4799772453308107 sec, avg_samples: 16, avg_ips: 10.810977027166127 images/sec  ETA 14:18:52
+[TRAIN] epoch=7, batch_id=1040, loss=0.889859, lr=0.001250,acc=0.995,avg_reader_cost: 1.1506923174858092 sec, avg_batch_cost: 1.467679054737091 sec, avg_samples: 16, avg_ips: 10.901565944106302 images/sec  ETA 14:09:17
+[TRAIN] epoch=7, batch_id=1140, loss=0.889147, lr=0.001250,acc=0.995,avg_reader_cost: 1.1640998792648316 sec, avg_batch_cost: 1.483376693725586 sec, avg_samples: 16, avg_ips: 10.786201554653713 images/sec  ETA 14:15:54
+[TRAIN] epoch=7, batch_id=1240, loss=0.888550, lr=0.001250,acc=0.995,avg_reader_cost: 1.1675749707221985 sec, avg_batch_cost: 1.5117122387886048 sec, avg_samples: 16, avg_ips: 10.584024915232172 images/sec  ETA 14:29:44
+[TRAIN] epoch=7, batch_id=1340, loss=0.887982, lr=0.001250,acc=0.995,avg_reader_cost: 1.1638673973083495 sec, avg_batch_cost: 1.452875645160675 sec, avg_samples: 16, avg_ips: 11.012642446925003 images/sec  ETA 13:53:27
+[TRAIN] epoch=7, batch_id=1440, loss=0.887543, lr=0.001250,acc=0.995,avg_reader_cost: 1.162901759147644 sec, avg_batch_cost: 1.4695197677612304 sec, avg_samples: 16, avg_ips: 10.887910697775453 images/sec  ETA 14:00:33
+[TRAIN] epoch=7, batch_id=1540, loss=0.887868, lr=0.001250,acc=0.995,avg_reader_cost: 1.1599806261062622 sec, avg_batch_cost: 1.4654800772666932 sec, avg_samples: 16, avg_ips: 10.917923926910039 images/sec  ETA 13:55:48
+[TRAIN] epoch=7, batch_id=1640, loss=0.887464, lr=0.001250,acc=0.995,avg_reader_cost: 1.153019618988037 sec, avg_batch_cost: 1.4871286416053773 sec, avg_samples: 16, avg_ips: 10.758988531568972 images/sec  ETA 14:05:40
+[TRAIN] epoch=7, batch_id=1740, loss=0.887729, lr=0.001250,acc=0.995,avg_reader_cost: 1.1930328631401061 sec, avg_batch_cost: 1.5188479208946228 sec, avg_samples: 16, avg_ips: 10.534300228409816 images/sec  ETA 14:21:11
+[TRAIN] epoch=7, batch_id=1840, loss=0.887617, lr=0.001250,acc=0.995,avg_reader_cost: 1.1948656272888183 sec, avg_batch_cost: 1.5401114869117736 sec, avg_samples: 16, avg_ips: 10.388858297578928 images/sec  ETA 14:30:40
+[TRAIN] epoch=7, batch_id=1940, loss=0.887162, lr=0.001250,acc=0.996,avg_reader_cost: 1.1201950240135192 sec, avg_batch_cost: 1.4208844113349914 sec, avg_samples: 16, avg_ips: 11.26059225673903 images/sec  ETA 13:20:54
+[TRAIN] epoch=7, batch_id=2040, loss=0.886948, lr=0.001250,acc=0.996,avg_reader_cost: 1.1723784828186035 sec, avg_batch_cost: 1.4726288771629334 sec, avg_samples: 16, avg_ips: 10.86492343598783 images/sec  ETA 13:47:37
+[TRAIN] epoch=7, batch_id=2140, loss=0.886846, lr=0.001250,acc=0.996,avg_reader_cost: 1.1459749412536622 sec, avg_batch_cost: 1.4560845398902893 sec, avg_samples: 16, avg_ips: 10.988372969886449 images/sec  ETA 13:35:53
+[TRAIN] epoch=7, batch_id=2240, loss=0.886124, lr=0.001250,acc=0.996,avg_reader_cost: 1.1866233348846436 sec, avg_batch_cost: 1.5243021798133851 sec, avg_samples: 16, avg_ips: 10.496606389396375 images/sec  ETA 14:11:34
+[TRAIN] epoch=7, batch_id=2340, loss=0.886016, lr=0.001250,acc=0.996,avg_reader_cost: 1.168540256023407 sec, avg_batch_cost: 1.5151347041130065 sec, avg_samples: 16, avg_ips: 10.560117167513997 images/sec  ETA 14:03:55
+[TRAIN] epoch=7, batch_id=2440, loss=0.885850, lr=0.001250,acc=0.996,avg_reader_cost: 1.1700710201263427 sec, avg_batch_cost: 1.4927593231201173 sec, avg_samples: 16, avg_ips: 10.718405674772352 images/sec  ETA 13:48:58
+[TRAIN] epoch=7, batch_id=2540, loss=0.885802, lr=0.001250,acc=0.996,avg_reader_cost: 1.1677058959007263 sec, avg_batch_cost: 1.4726346826553345 sec, avg_samples: 16, avg_ips: 10.864880603755786 images/sec  ETA 13:35:20
+[TRAIN] epoch=7, batch_id=2640, loss=0.885897, lr=0.001250,acc=0.996,avg_reader_cost: 1.1398492646217346 sec, avg_batch_cost: 1.4245680832862855 sec, avg_samples: 16, avg_ips: 11.231474429140775 images/sec  ETA 13:06:21
+[TRAIN] epoch=7, batch_id=2740, loss=0.885593, lr=0.001250,acc=0.996,avg_reader_cost: 1.1390164685249329 sec, avg_batch_cost: 1.4596881794929504 sec, avg_samples: 16, avg_ips: 10.961245165085803 images/sec  ETA 13:23:18
+[TRAIN] epoch=7, batch_id=2840, loss=0.885407, lr=0.001250,acc=0.996,avg_reader_cost: 1.1798813438415527 sec, avg_batch_cost: 1.4955165719985961 sec, avg_samples: 16, avg_ips: 10.698644401257106 images/sec  ETA 13:40:32
+[TRAIN] epoch=7, batch_id=2940, loss=0.885287, lr=0.001250,acc=0.996,avg_reader_cost: 1.1599999260902405 sec, avg_batch_cost: 1.4879869890213013 sec, avg_samples: 16, avg_ips: 10.752782193696286 images/sec  ETA 13:33:55
+[TRAIN] epoch=7, batch_id=3040, loss=0.885292, lr=0.001250,acc=0.996,avg_reader_cost: 1.116714563369751 sec, avg_batch_cost: 1.4581401467323303 sec, avg_samples: 16, avg_ips: 10.972882158039305 images/sec  ETA 13:15:10
+[TRAIN] epoch=7, batch_id=3140, loss=0.885310, lr=0.001250,acc=0.996,avg_reader_cost: 1.1599598169326781 sec, avg_batch_cost: 1.5375691890716552 sec, avg_samples: 16, avg_ips: 10.406035782793222 images/sec  ETA 13:55:55
+[TRAIN] epoch=7, batch_id=3240, loss=0.885155, lr=0.001250,acc=0.996,avg_reader_cost: 1.1486874747276306 sec, avg_batch_cost: 1.4844844079017638 sec, avg_samples: 16, avg_ips: 10.778152949827954 images/sec  ETA 13:24:35
+[TRAIN] epoch=7, batch_id=3340, loss=0.885026, lr=0.001250,acc=0.996,avg_reader_cost: 1.1527667498588563 sec, avg_batch_cost: 1.488977301120758 sec, avg_samples: 16, avg_ips: 10.745630566669316 images/sec  ETA 13:24:32
+[TRAIN] epoch=7, batch_id=3440, loss=0.885003, lr=0.001250,acc=0.996,avg_reader_cost: 1.1603746104240418 sec, avg_batch_cost: 1.484834644794464 sec, avg_samples: 16, avg_ips: 10.775610641961263 images/sec  ETA 13:19:49
+[TRAIN] epoch=7, batch_id=3540, loss=0.885121, lr=0.001250,acc=0.996,avg_reader_cost: 1.164188621044159 sec, avg_batch_cost: 1.4672947812080384 sec, avg_samples: 16, avg_ips: 10.90442098269241 images/sec  ETA 13:07:56
+[TRAIN] epoch=7, batch_id=3640, loss=0.885024, lr=0.001250,acc=0.996,avg_reader_cost: 1.1238720059394836 sec, avg_batch_cost: 1.4312919473648071 sec, avg_samples: 16, avg_ips: 11.178711673364795 images/sec  ETA 12:46:13
+[TRAIN] epoch=7, batch_id=3740, loss=0.885173, lr=0.001250,acc=0.996,avg_reader_cost: 1.1338048267364502 sec, avg_batch_cost: 1.4732275605201721 sec, avg_samples: 16, avg_ips: 10.860508198985 images/sec  ETA 13:06:12
+[TRAIN] epoch=7, batch_id=3840, loss=0.885215, lr=0.001250,acc=0.996,avg_reader_cost: 1.2151258993148804 sec, avg_batch_cost: 1.5376059603691101 sec, avg_samples: 16, avg_ips: 10.405786926163527 images/sec  ETA 13:38:00
+[TRAIN] epoch=7, batch_id=3940, loss=0.885397, lr=0.001250,acc=0.996,avg_reader_cost: 1.192346796989441 sec, avg_batch_cost: 1.501313223838806 sec, avg_samples: 16, avg_ips: 10.657336354560679 images/sec  ETA 13:16:11
+[TRAIN] epoch=7, batch_id=4040, loss=0.885517, lr=0.001250,acc=0.996,avg_reader_cost: 1.1499914169311523 sec, avg_batch_cost: 1.4753559827804565 sec, avg_samples: 16, avg_ips: 10.844840287187091 images/sec  ETA 12:59:58
+[TRAIN] epoch=7, batch_id=4140, loss=0.885527, lr=0.001250,acc=0.996,avg_reader_cost: 1.177021131515503 sec, avg_batch_cost: 1.4945172381401062 sec, avg_samples: 16, avg_ips: 10.705798228136631 images/sec  ETA 13:07:36
+[TRAIN] epoch=7, batch_id=4240, loss=0.885400, lr=0.001250,acc=0.996,avg_reader_cost: 1.1470222210884093 sec, avg_batch_cost: 1.485494349002838 sec, avg_samples: 16, avg_ips: 10.770825221072203 images/sec  ETA 13:00:22
+[TRAIN] epoch=7, batch_id=4340, loss=0.885292, lr=0.001250,acc=0.996,avg_reader_cost: 1.141234619617462 sec, avg_batch_cost: 1.441457929611206 sec, avg_samples: 16, avg_ips: 11.09987303224005 images/sec  ETA 12:34:50
+[TRAIN] epoch=7, batch_id=4440, loss=0.885220, lr=0.001250,acc=0.996,avg_reader_cost: 1.1537187433242797 sec, avg_batch_cost: 1.505897331237793 sec, avg_samples: 16, avg_ips: 10.624894319222001 images/sec  ETA 13:06:04
+[TRAIN] epoch=7, batch_id=4540, loss=0.885029, lr=0.001250,acc=0.996,avg_reader_cost: 1.1183101034164429 sec, avg_batch_cost: 1.4262547016143798 sec, avg_samples: 16, avg_ips: 11.218192642512992 images/sec  ETA 12:22:07
+[TRAIN] epoch=7, batch_id=4640, loss=0.884952, lr=0.001250,acc=0.996,avg_reader_cost: 1.1546298480033874 sec, avg_batch_cost: 1.5048089504241944 sec, avg_samples: 16, avg_ips: 10.632578969901608 images/sec  ETA 13:00:29
+[TRAIN] epoch=7, batch_id=4740, loss=0.885001, lr=0.001250,acc=0.996,avg_reader_cost: 1.1410878086090088 sec, avg_batch_cost: 1.4846351647377014 sec, avg_samples: 16, avg_ips: 10.77705848549452 images/sec  ETA 12:47:33
+[TRAIN] epoch=7, batch_id=4840, loss=0.885083, lr=0.001250,acc=0.996,avg_reader_cost: 1.130346987247467 sec, avg_batch_cost: 1.457378466129303 sec, avg_samples: 16, avg_ips: 10.97861699747417 images/sec  ETA 12:31:02
+[TRAIN] epoch=7, batch_id=4940, loss=0.885125, lr=0.001250,acc=0.996,avg_reader_cost: 1.1483181357383727 sec, avg_batch_cost: 1.4567464923858642 sec, avg_samples: 16, avg_ips: 10.983379801241291 images/sec  ETA 12:28:16
+[TRAIN] epoch=7, batch_id=5040, loss=0.885025, lr=0.001250,acc=0.996,avg_reader_cost: 1.1459214496612549 sec, avg_batch_cost: 1.4550263833999635 sec, avg_samples: 16, avg_ips: 10.996364177680933 images/sec  ETA 12:24:58
+[TRAIN] epoch=7, batch_id=5140, loss=0.885071, lr=0.001250,acc=0.996,avg_reader_cost: 1.1207081389427185 sec, avg_batch_cost: 1.4413590335845947 sec, avg_samples: 16, avg_ips: 11.100634628284615 images/sec  ETA 12:15:34
+[TRAIN] epoch=7, batch_id=5240, loss=0.885076, lr=0.001250,acc=0.996,avg_reader_cost: 1.0908809041976928 sec, avg_batch_cost: 1.4350813150405883 sec, avg_samples: 16, avg_ips: 11.14919400894539 images/sec  ETA 12:09:58
+[TRAIN] epoch=7, batch_id=5340, loss=0.884937, lr=0.001250,acc=0.996,avg_reader_cost: 1.146676049232483 sec, avg_batch_cost: 1.5015049386024475 sec, avg_samples: 16, avg_ips: 10.655975607307882 images/sec  ETA 12:41:15
+[TRAIN] epoch=7, batch_id=5440, loss=0.884811, lr=0.001250,acc=0.996,avg_reader_cost: 1.0949640202522277 sec, avg_batch_cost: 1.4159177541732788 sec, avg_samples: 16, avg_ips: 11.300091373839736 images/sec  ETA 11:55:30
+[TRAIN] epoch=7, batch_id=5540, loss=0.884725, lr=0.001250,acc=0.996,avg_reader_cost: 1.1307804298400879 sec, avg_batch_cost: 1.4791671204566956 sec, avg_samples: 16, avg_ips: 10.816898089960228 images/sec  ETA 12:25:00
+[TRAIN] epoch=7, batch_id=5640, loss=0.884701, lr=0.001250,acc=0.996,avg_reader_cost: 1.1164341926574708 sec, avg_batch_cost: 1.4620388340950012 sec, avg_samples: 16, avg_ips: 10.943621760843284 images/sec  ETA 12:13:56
+[TRAIN] epoch=7, batch_id=5740, loss=0.884740, lr=0.001250,acc=0.996,avg_reader_cost: 1.102482578754425 sec, avg_batch_cost: 1.4833188319206239 sec, avg_samples: 16, avg_ips: 10.786622306468635 images/sec  ETA 12:22:09
+[TRAIN] epoch=7, batch_id=5840, loss=0.884570, lr=0.001250,acc=0.996,avg_reader_cost: 1.0998758268356323 sec, avg_batch_cost: 1.4866402816772462 sec, avg_samples: 16, avg_ips: 10.762522849137788 images/sec  ETA 12:21:20
+[TRAIN] epoch=7, batch_id=5940, loss=0.884505, lr=0.001250,acc=0.996,avg_reader_cost: 1.087976906299591 sec, avg_batch_cost: 1.4411274909973144 sec, avg_samples: 16, avg_ips: 11.10241814131753 images/sec  ETA 11:56:14
+[EVAL] epoch=7
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8541
+top5_acc	0.9572
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8532
+[TRAIN] epoch=8, batch_id=80, loss=0.879553, lr=0.001250,acc=0.996,avg_reader_cost: 4.974622447490692 sec, avg_batch_cost: 5.337382786273956 sec, avg_samples: 16, avg_ips: 2.997723910892599 images/sec  ETA 44:03:47
+[TRAIN] epoch=8, batch_id=180, loss=0.881930, lr=0.001250,acc=0.996,avg_reader_cost: 1.1040626764297485 sec, avg_batch_cost: 1.482690076828003 sec, avg_samples: 16, avg_ips: 10.791196521817724 images/sec  ETA 12:11:57
+[TRAIN] epoch=8, batch_id=280, loss=0.882215, lr=0.001250,acc=0.995,avg_reader_cost: 1.126137752532959 sec, avg_batch_cost: 1.4959985995292664 sec, avg_samples: 16, avg_ips: 10.695197178015132 images/sec  ETA 12:16:01
+[TRAIN] epoch=8, batch_id=380, loss=0.881758, lr=0.001250,acc=0.996,avg_reader_cost: 1.153505070209503 sec, avg_batch_cost: 1.5251433277130126 sec, avg_samples: 16, avg_ips: 10.490817295179966 images/sec  ETA 12:27:49
+[TRAIN] epoch=8, batch_id=480, loss=0.880626, lr=0.001250,acc=0.996,avg_reader_cost: 1.132465145587921 sec, avg_batch_cost: 1.4944344472885132 sec, avg_samples: 16, avg_ips: 10.706391323507189 images/sec  ETA 12:10:16
+[TRAIN] epoch=8, batch_id=580, loss=0.879404, lr=0.001250,acc=0.996,avg_reader_cost: 1.1918873953819276 sec, avg_batch_cost: 1.4846440005302428 sec, avg_samples: 16, avg_ips: 10.776994346311692 images/sec  ETA 12:03:01
+[TRAIN] epoch=8, batch_id=680, loss=0.880172, lr=0.001250,acc=0.996,avg_reader_cost: 1.159074981212616 sec, avg_batch_cost: 1.4591326594352723 sec, avg_samples: 16, avg_ips: 10.965418323370594 images/sec  ETA 11:48:09
+[TRAIN] epoch=8, batch_id=780, loss=0.881121, lr=0.001250,acc=0.996,avg_reader_cost: 1.1478095579147338 sec, avg_batch_cost: 1.4322556567192077 sec, avg_samples: 16, avg_ips: 11.171189951276125 images/sec  ETA 11:32:44
+[TRAIN] epoch=8, batch_id=880, loss=0.881332, lr=0.001250,acc=0.996,avg_reader_cost: 1.1491434264183045 sec, avg_batch_cost: 1.445519096851349 sec, avg_samples: 16, avg_ips: 11.068688082261547 images/sec  ETA 11:36:44
+[TRAIN] epoch=8, batch_id=980, loss=0.881620, lr=0.001250,acc=0.996,avg_reader_cost: 1.151672351360321 sec, avg_batch_cost: 1.4411756014823913 sec, avg_samples: 16, avg_ips: 11.102047511449973 images/sec  ETA 11:32:14
+[TRAIN] epoch=8, batch_id=1080, loss=0.881190, lr=0.001250,acc=0.996,avg_reader_cost: 1.1642412185668944 sec, avg_batch_cost: 1.4544009780883789 sec, avg_samples: 16, avg_ips: 11.00109271174303 images/sec  ETA 11:36:10
+[TRAIN] epoch=8, batch_id=1180, loss=0.880776, lr=0.001250,acc=0.996,avg_reader_cost: 1.138314437866211 sec, avg_batch_cost: 1.413166663646698 sec, avg_samples: 16, avg_ips: 11.322089893283895 images/sec  ETA 11:14:04
+[TRAIN] epoch=8, batch_id=1280, loss=0.880583, lr=0.001250,acc=0.996,avg_reader_cost: 1.133880934715271 sec, avg_batch_cost: 1.4453016829490661 sec, avg_samples: 16, avg_ips: 11.070353123337403 images/sec  ETA 11:27:00
+[TRAIN] epoch=8, batch_id=1380, loss=0.880042, lr=0.001250,acc=0.996,avg_reader_cost: 1.1982012963294983 sec, avg_batch_cost: 1.5135884833335878 sec, avg_samples: 16, avg_ips: 10.570904956121865 images/sec  ETA 11:56:56
+[TRAIN] epoch=8, batch_id=1480, loss=0.879261, lr=0.001250,acc=0.996,avg_reader_cost: 1.1566537809371948 sec, avg_batch_cost: 1.4331497979164123 sec, avg_samples: 16, avg_ips: 11.164220253361952 images/sec  ETA 11:16:26
+[TRAIN] epoch=8, batch_id=1580, loss=0.879234, lr=0.001250,acc=0.996,avg_reader_cost: 1.1661149311065673 sec, avg_batch_cost: 1.480035412311554 sec, avg_samples: 16, avg_ips: 10.810552144161758 images/sec  ETA 11:36:06
+[TRAIN] epoch=8, batch_id=1680, loss=0.878849, lr=0.001250,acc=0.996,avg_reader_cost: 1.17093816280365 sec, avg_batch_cost: 1.4904746294021607 sec, avg_samples: 16, avg_ips: 10.734835524451501 images/sec  ETA 11:38:32
+[TRAIN] epoch=8, batch_id=1780, loss=0.879069, lr=0.001250,acc=0.996,avg_reader_cost: 1.1565279269218445 sec, avg_batch_cost: 1.5158613157272338 sec, avg_samples: 16, avg_ips: 10.55505529034759 images/sec  ETA 11:47:54
+[TRAIN] epoch=8, batch_id=1880, loss=0.879197, lr=0.001250,acc=0.996,avg_reader_cost: 1.164117636680603 sec, avg_batch_cost: 1.4891009306907654 sec, avg_samples: 16, avg_ips: 10.744738432590937 images/sec  ETA 11:32:55
+[TRAIN] epoch=8, batch_id=1980, loss=0.878914, lr=0.001250,acc=0.996,avg_reader_cost: 1.1497909092903138 sec, avg_batch_cost: 1.52781085729599 sec, avg_samples: 16, avg_ips: 10.47250052164032 images/sec  ETA 11:48:23
+[TRAIN] epoch=8, batch_id=2080, loss=0.879158, lr=0.001250,acc=0.996,avg_reader_cost: 1.1703613543510436 sec, avg_batch_cost: 1.5223719263076783 sec, avg_samples: 16, avg_ips: 10.509915299611436 images/sec  ETA 11:43:20
+[TRAIN] epoch=8, batch_id=2180, loss=0.878828, lr=0.001250,acc=0.996,avg_reader_cost: 1.184830973148346 sec, avg_batch_cost: 1.4871981239318848 sec, avg_samples: 16, avg_ips: 10.758485868512848 images/sec  ETA 11:24:36
+[TRAIN] epoch=8, batch_id=2280, loss=0.879012, lr=0.001250,acc=0.996,avg_reader_cost: 1.1727557468414307 sec, avg_batch_cost: 1.5171155142784118 sec, avg_samples: 16, avg_ips: 10.54632943201435 images/sec  ETA 11:35:51
+[TRAIN] epoch=8, batch_id=2380, loss=0.878802, lr=0.001250,acc=0.996,avg_reader_cost: 1.1630713200569154 sec, avg_batch_cost: 1.482726354598999 sec, avg_samples: 16, avg_ips: 10.790932494301806 images/sec  ETA 11:17:36
+[TRAIN] epoch=8, batch_id=2480, loss=0.878613, lr=0.001250,acc=0.996,avg_reader_cost: 1.163217225074768 sec, avg_batch_cost: 1.4912042713165283 sec, avg_samples: 16, avg_ips: 10.72958300064028 images/sec  ETA 11:18:59
+[TRAIN] epoch=8, batch_id=2580, loss=0.878359, lr=0.001250,acc=0.996,avg_reader_cost: 1.2182640290260316 sec, avg_batch_cost: 1.51567462682724 sec, avg_samples: 16, avg_ips: 10.556355379183712 images/sec  ETA 11:27:36
+[TRAIN] epoch=8, batch_id=2680, loss=0.878340, lr=0.001250,acc=0.996,avg_reader_cost: 1.132924554347992 sec, avg_batch_cost: 1.4225764417648314 sec, avg_samples: 16, avg_ips: 11.247198765748285 images/sec  ETA 10:43:00
+[TRAIN] epoch=8, batch_id=2780, loss=0.878455, lr=0.001250,acc=0.996,avg_reader_cost: 1.1395735096931459 sec, avg_batch_cost: 1.438186812400818 sec, avg_samples: 16, avg_ips: 11.125119394809785 images/sec  ETA 10:47:39
+[TRAIN] epoch=8, batch_id=2880, loss=0.878303, lr=0.001250,acc=0.996,avg_reader_cost: 1.1727051115036011 sec, avg_batch_cost: 1.4926101875305176 sec, avg_samples: 16, avg_ips: 10.71947661463544 images/sec  ETA 11:09:41
+[TRAIN] epoch=8, batch_id=2980, loss=0.878113, lr=0.001250,acc=0.997,avg_reader_cost: 1.1382525038719178 sec, avg_batch_cost: 1.4733073687553406 sec, avg_samples: 16, avg_ips: 10.85991989133734 images/sec  ETA 10:58:34
+[TRAIN] epoch=8, batch_id=3080, loss=0.878201, lr=0.001250,acc=0.996,avg_reader_cost: 1.1307482862472533 sec, avg_batch_cost: 1.4736114716529847 sec, avg_samples: 16, avg_ips: 10.857678776110792 images/sec  ETA 10:56:14
+[TRAIN] epoch=8, batch_id=3180, loss=0.877942, lr=0.001250,acc=0.997,avg_reader_cost: 1.19138729095459 sec, avg_batch_cost: 1.5427851629257203 sec, avg_samples: 16, avg_ips: 10.370854208668808 images/sec  ETA 11:24:28
+[TRAIN] epoch=8, batch_id=3280, loss=0.877932, lr=0.001250,acc=0.997,avg_reader_cost: 1.172332284450531 sec, avg_batch_cost: 1.4914801955223083 sec, avg_samples: 16, avg_ips: 10.727598025126232 images/sec  ETA 10:59:14
+[TRAIN] epoch=8, batch_id=3380, loss=0.877724, lr=0.001250,acc=0.997,avg_reader_cost: 1.1558895802497864 sec, avg_batch_cost: 1.5005338406562805 sec, avg_samples: 16, avg_ips: 10.662871817007582 images/sec  ETA 11:00:44
+[TRAIN] epoch=8, batch_id=3480, loss=0.877818, lr=0.001250,acc=0.997,avg_reader_cost: 1.147544891834259 sec, avg_batch_cost: 1.4563573670387269 sec, avg_samples: 16, avg_ips: 10.986314459708112 images/sec  ETA 10:38:51
+[TRAIN] epoch=8, batch_id=3580, loss=0.877824, lr=0.001250,acc=0.996,avg_reader_cost: 1.2026773333549499 sec, avg_batch_cost: 1.5104357981681824 sec, avg_samples: 16, avg_ips: 10.592969273771443 images/sec  ETA 11:00:03
+[TRAIN] epoch=8, batch_id=3680, loss=0.877807, lr=0.001250,acc=0.996,avg_reader_cost: 1.1419027376174926 sec, avg_batch_cost: 1.4414393305778503 sec, avg_samples: 16, avg_ips: 11.100016254992745 images/sec  ETA 10:27:30
+[TRAIN] epoch=8, batch_id=3780, loss=0.877728, lr=0.001250,acc=0.996,avg_reader_cost: 1.1577015566825866 sec, avg_batch_cost: 1.523867771625519 sec, avg_samples: 16, avg_ips: 10.499598651484508 images/sec  ETA 11:00:51
+[TRAIN] epoch=8, batch_id=3880, loss=0.877757, lr=0.001250,acc=0.996,avg_reader_cost: 1.2146775197982789 sec, avg_batch_cost: 1.538086667060852 sec, avg_samples: 16, avg_ips: 10.402534748301662 images/sec  ETA 11:04:27
+[TRAIN] epoch=8, batch_id=3980, loss=0.877827, lr=0.001250,acc=0.996,avg_reader_cost: 1.1667738699913024 sec, avg_batch_cost: 1.4807669448852538 sec, avg_samples: 16, avg_ips: 10.805211485349476 images/sec  ETA 10:37:13
+[TRAIN] epoch=8, batch_id=4080, loss=0.877757, lr=0.001250,acc=0.996,avg_reader_cost: 1.13778240442276 sec, avg_batch_cost: 1.4743529081344604 sec, avg_samples: 16, avg_ips: 10.852218564309167 images/sec  ETA 10:32:00
+[TRAIN] epoch=8, batch_id=4180, loss=0.877682, lr=0.001250,acc=0.996,avg_reader_cost: 1.1531596302986145 sec, avg_batch_cost: 1.457721426486969 sec, avg_samples: 16, avg_ips: 10.976034041400592 images/sec  ETA 10:22:26
+[TRAIN] epoch=8, batch_id=4280, loss=0.877528, lr=0.001250,acc=0.996,avg_reader_cost: 1.1155678606033326 sec, avg_batch_cost: 1.4410144734382628 sec, avg_samples: 16, avg_ips: 11.103288894679853 images/sec  ETA 10:12:54
+[TRAIN] epoch=8, batch_id=4380, loss=0.877457, lr=0.001250,acc=0.996,avg_reader_cost: 1.1461386680603027 sec, avg_batch_cost: 1.4513741540908813 sec, avg_samples: 16, avg_ips: 11.024035363246602 images/sec  ETA 10:14:53
+[TRAIN] epoch=8, batch_id=4480, loss=0.877496, lr=0.001250,acc=0.996,avg_reader_cost: 1.173019633293152 sec, avg_batch_cost: 1.4853247547149657 sec, avg_samples: 16, avg_ips: 10.772055033224303 images/sec  ETA 10:26:48
+[TRAIN] epoch=8, batch_id=4580, loss=0.877426, lr=0.001250,acc=0.997,avg_reader_cost: 1.135362434387207 sec, avg_batch_cost: 1.4947178077697754 sec, avg_samples: 16, avg_ips: 10.704361664007424 images/sec  ETA 10:28:16
+[TRAIN] epoch=8, batch_id=4680, loss=0.877400, lr=0.001250,acc=0.997,avg_reader_cost: 1.1757010912895203 sec, avg_batch_cost: 1.4716779136657714 sec, avg_samples: 16, avg_ips: 10.87194409281168 images/sec  ETA 10:16:08
+[TRAIN] epoch=8, batch_id=4780, loss=0.877468, lr=0.001250,acc=0.996,avg_reader_cost: 1.151930067539215 sec, avg_batch_cost: 1.4308000564575196 sec, avg_samples: 16, avg_ips: 11.182554772617204 images/sec  ETA 09:56:38
+[TRAIN] epoch=8, batch_id=4880, loss=0.877490, lr=0.001250,acc=0.996,avg_reader_cost: 1.1136010599136352 sec, avg_batch_cost: 1.441764199733734 sec, avg_samples: 16, avg_ips: 11.09751511582469 images/sec  ETA 09:58:48
+[TRAIN] epoch=8, batch_id=4980, loss=0.877494, lr=0.001250,acc=0.996,avg_reader_cost: 1.1387238311767578 sec, avg_batch_cost: 1.4352759552001952 sec, avg_samples: 16, avg_ips: 11.147682048201167 images/sec  ETA 09:53:43
+[TRAIN] epoch=8, batch_id=5080, loss=0.877486, lr=0.001250,acc=0.996,avg_reader_cost: 1.135519907474518 sec, avg_batch_cost: 1.4631477475166321 sec, avg_samples: 16, avg_ips: 10.935327636704114 images/sec  ETA 10:02:49
+[TRAIN] epoch=8, batch_id=5180, loss=0.877400, lr=0.001250,acc=0.996,avg_reader_cost: 1.1449957442283631 sec, avg_batch_cost: 1.4689832878112794 sec, avg_samples: 16, avg_ips: 10.891887016522357 images/sec  ETA 10:02:46
+[TRAIN] epoch=8, batch_id=5280, loss=0.877387, lr=0.001250,acc=0.996,avg_reader_cost: 1.1461067605018616 sec, avg_batch_cost: 1.437219157218933 sec, avg_samples: 16, avg_ips: 11.132609748231115 images/sec  ETA 09:47:20
+[TRAIN] epoch=8, batch_id=5380, loss=0.877281, lr=0.001250,acc=0.996,avg_reader_cost: 1.1597245669364928 sec, avg_batch_cost: 1.48243257522583 sec, avg_samples: 16, avg_ips: 10.793070974956551 images/sec  ETA 10:03:21
+[TRAIN] epoch=8, batch_id=5480, loss=0.877283, lr=0.001250,acc=0.996,avg_reader_cost: 1.1726008439064026 sec, avg_batch_cost: 1.5134801411628722 sec, avg_samples: 16, avg_ips: 10.571661672221552 images/sec  ETA 10:13:27
+[TRAIN] epoch=8, batch_id=5580, loss=0.877355, lr=0.001250,acc=0.996,avg_reader_cost: 1.1842290449142456 sec, avg_batch_cost: 1.5044369506835937 sec, avg_samples: 16, avg_ips: 10.635208070853244 images/sec  ETA 10:07:17
+[TRAIN] epoch=8, batch_id=5680, loss=0.877471, lr=0.001250,acc=0.996,avg_reader_cost: 1.138849835395813 sec, avg_batch_cost: 1.457663230895996 sec, avg_samples: 16, avg_ips: 10.976472247410072 images/sec  ETA 09:45:58
+[TRAIN] epoch=8, batch_id=5780, loss=0.877480, lr=0.001250,acc=0.996,avg_reader_cost: 1.1146384716033935 sec, avg_batch_cost: 1.4630772805213927 sec, avg_samples: 16, avg_ips: 10.935854320899661 images/sec  ETA 09:45:43
+[TRAIN] epoch=8, batch_id=5880, loss=0.877403, lr=0.001250,acc=0.996,avg_reader_cost: 1.1768860936164856 sec, avg_batch_cost: 1.501929919719696 sec, avg_samples: 16, avg_ips: 10.652960427731585 images/sec  ETA 09:58:46
+[EVAL] epoch=8
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8533
+top5_acc	0.9574
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8520
+[TRAIN] epoch=9, batch_id=20, loss=0.880387, lr=0.001250,acc=0.997,avg_reader_cost: 7.993809070587158 sec, avg_batch_cost: 8.305052118301392 sec, avg_samples: 16, avg_ips: 1.9265381808672422 images/sec  ETA 54:57:06
+[TRAIN] epoch=9, batch_id=120, loss=0.879882, lr=0.001250,acc=0.995,avg_reader_cost: 1.1429445505142213 sec, avg_batch_cost: 1.4502049207687377 sec, avg_samples: 16, avg_ips: 11.032923534364079 images/sec  ETA 09:33:18
+[TRAIN] epoch=9, batch_id=220, loss=0.876551, lr=0.001250,acc=0.995,avg_reader_cost: 1.1156393480300903 sec, avg_batch_cost: 1.4017158985137939 sec, avg_samples: 16, avg_ips: 11.414581240723901 images/sec  ETA 09:11:48
+[TRAIN] epoch=9, batch_id=320, loss=0.874221, lr=0.001250,acc=0.996,avg_reader_cost: 1.1686388921737672 sec, avg_batch_cost: 1.5198983478546142 sec, avg_samples: 16, avg_ips: 10.527019798780964 images/sec  ETA 09:55:48
+[TRAIN] epoch=9, batch_id=420, loss=0.874306, lr=0.001250,acc=0.996,avg_reader_cost: 1.1558215951919555 sec, avg_batch_cost: 1.4630551028251648 sec, avg_samples: 16, avg_ips: 10.936020091863895 images/sec  ETA 09:31:04
+[TRAIN] epoch=9, batch_id=520, loss=0.874340, lr=0.001250,acc=0.996,avg_reader_cost: 1.1636371517181396 sec, avg_batch_cost: 1.514218168258667 sec, avg_samples: 16, avg_ips: 10.56650906414616 images/sec  ETA 09:48:31
+[TRAIN] epoch=9, batch_id=620, loss=0.874311, lr=0.001250,acc=0.996,avg_reader_cost: 1.1465317678451539 sec, avg_batch_cost: 1.4546702265739442 sec, avg_samples: 16, avg_ips: 10.999056492469348 images/sec  ETA 09:22:57
+[TRAIN] epoch=9, batch_id=720, loss=0.875637, lr=0.001250,acc=0.996,avg_reader_cost: 1.1674453997612 sec, avg_batch_cost: 1.4964141154289246 sec, avg_samples: 16, avg_ips: 10.692227395498632 images/sec  ETA 09:36:37
+[TRAIN] epoch=9, batch_id=820, loss=0.876296, lr=0.001250,acc=0.996,avg_reader_cost: 1.1281395220756532 sec, avg_batch_cost: 1.4346863293647767 sec, avg_samples: 16, avg_ips: 11.152263510508375 images/sec  ETA 09:10:26
+[TRAIN] epoch=9, batch_id=920, loss=0.875987, lr=0.001250,acc=0.996,avg_reader_cost: 1.1487754344940186 sec, avg_batch_cost: 1.4632351541519164 sec, avg_samples: 16, avg_ips: 10.934674412790143 images/sec  ETA 09:18:57
+[TRAIN] epoch=9, batch_id=1020, loss=0.875659, lr=0.001250,acc=0.996,avg_reader_cost: 1.117059428691864 sec, avg_batch_cost: 1.4790613317489625 sec, avg_samples: 16, avg_ips: 10.817671760156355 images/sec  ETA 09:22:32
+[TRAIN] epoch=9, batch_id=1120, loss=0.875899, lr=0.001250,acc=0.996,avg_reader_cost: 1.2014450240135193 sec, avg_batch_cost: 1.5031030035018922 sec, avg_samples: 16, avg_ips: 10.644646416595267 images/sec  ETA 09:29:10
+[TRAIN] epoch=9, batch_id=1220, loss=0.875726, lr=0.001250,acc=0.996,avg_reader_cost: 1.1421330666542053 sec, avg_batch_cost: 1.4667757868766784 sec, avg_samples: 16, avg_ips: 10.908279331546687 images/sec  ETA 09:12:58
+[TRAIN] epoch=9, batch_id=1320, loss=0.875359, lr=0.001250,acc=0.996,avg_reader_cost: 1.1567456746101379 sec, avg_batch_cost: 1.4646076512336732 sec, avg_samples: 16, avg_ips: 10.924427430460865 images/sec  ETA 09:09:42
+[TRAIN] epoch=9, batch_id=1420, loss=0.874708, lr=0.001250,acc=0.996,avg_reader_cost: 1.1772244668006897 sec, avg_batch_cost: 1.5121020913124084 sec, avg_samples: 16, avg_ips: 10.581296125391255 images/sec  ETA 09:25:01
+[TRAIN] epoch=9, batch_id=1520, loss=0.874643, lr=0.001250,acc=0.996,avg_reader_cost: 1.150627110004425 sec, avg_batch_cost: 1.4906660175323487 sec, avg_samples: 16, avg_ips: 10.733457267971017 images/sec  ETA 09:14:31
+[TRAIN] epoch=9, batch_id=1620, loss=0.874165, lr=0.001250,acc=0.996,avg_reader_cost: 1.1783631467819213 sec, avg_batch_cost: 1.479083740711212 sec, avg_samples: 16, avg_ips: 10.817507866259458 images/sec  ETA 09:07:45
+[TRAIN] epoch=9, batch_id=1720, loss=0.874332, lr=0.001250,acc=0.996,avg_reader_cost: 1.1757219648361206 sec, avg_batch_cost: 1.4976804733276368 sec, avg_samples: 16, avg_ips: 10.683186624213798 images/sec  ETA 09:12:08
+[TRAIN] epoch=9, batch_id=1820, loss=0.873885, lr=0.001250,acc=0.996,avg_reader_cost: 1.1821656918525696 sec, avg_batch_cost: 1.5315492367744445 sec, avg_samples: 16, avg_ips: 10.446938051888674 images/sec  ETA 09:22:04
+[TRAIN] epoch=9, batch_id=1920, loss=0.873475, lr=0.001250,acc=0.996,avg_reader_cost: 1.1380441164970398 sec, avg_batch_cost: 1.4561865377426146 sec, avg_samples: 16, avg_ips: 10.98760329483835 images/sec  ETA 08:51:59
+[TRAIN] epoch=9, batch_id=2020, loss=0.873268, lr=0.001250,acc=0.996,avg_reader_cost: 1.1269393897056579 sec, avg_batch_cost: 1.4712496542930602 sec, avg_samples: 16, avg_ips: 10.875108757587473 images/sec  ETA 08:55:02
+[TRAIN] epoch=9, batch_id=2120, loss=0.873450, lr=0.001250,acc=0.996,avg_reader_cost: 1.1401321125030517 sec, avg_batch_cost: 1.4332996916770935 sec, avg_samples: 16, avg_ips: 11.16305270482443 images/sec  ETA 08:38:51
+[TRAIN] epoch=9, batch_id=2220, loss=0.873146, lr=0.001250,acc=0.996,avg_reader_cost: 1.1908384346961975 sec, avg_batch_cost: 1.5458417081832885 sec, avg_samples: 16, avg_ips: 10.350348237662443 images/sec  ETA 09:17:01
+[TRAIN] epoch=9, batch_id=2320, loss=0.873033, lr=0.001250,acc=0.996,avg_reader_cost: 1.182454478740692 sec, avg_batch_cost: 1.507289345264435 sec, avg_samples: 16, avg_ips: 10.615082001520419 images/sec  ETA 09:00:36
+[TRAIN] epoch=9, batch_id=2420, loss=0.872898, lr=0.001250,acc=0.996,avg_reader_cost: 1.1786803317070007 sec, avg_batch_cost: 1.5204288983345031 sec, avg_samples: 16, avg_ips: 10.523346417268575 images/sec  ETA 09:02:47
+[TRAIN] epoch=9, batch_id=2520, loss=0.872571, lr=0.001250,acc=0.997,avg_reader_cost: 1.2172465014457703 sec, avg_batch_cost: 1.5132178950309754 sec, avg_samples: 16, avg_ips: 10.573493779408736 images/sec  ETA 08:57:41
+[TRAIN] epoch=9, batch_id=2620, loss=0.872575, lr=0.001250,acc=0.996,avg_reader_cost: 1.2031213879585265 sec, avg_batch_cost: 1.4852068996429444 sec, avg_samples: 16, avg_ips: 10.772909824110384 images/sec  ETA 08:45:16
+[TRAIN] epoch=9, batch_id=2720, loss=0.872806, lr=0.001250,acc=0.996,avg_reader_cost: 1.1350747799873353 sec, avg_batch_cost: 1.4472564816474915 sec, avg_samples: 16, avg_ips: 11.055400478694917 images/sec  ETA 08:29:26
+[TRAIN] epoch=9, batch_id=2820, loss=0.872863, lr=0.001250,acc=0.996,avg_reader_cost: 1.1593526959419251 sec, avg_batch_cost: 1.4608188891410827 sec, avg_samples: 16, avg_ips: 10.95276089249333 images/sec  ETA 08:31:46
+[TRAIN] epoch=9, batch_id=2920, loss=0.872837, lr=0.001250,acc=0.996,avg_reader_cost: 1.191231791973114 sec, avg_batch_cost: 1.5095172238349914 sec, avg_samples: 16, avg_ips: 10.59941532786975 images/sec  ETA 08:46:19
+[TRAIN] epoch=9, batch_id=3020, loss=0.872935, lr=0.001250,acc=0.996,avg_reader_cost: 1.1116865515708922 sec, avg_batch_cost: 1.4160723996162414 sec, avg_samples: 16, avg_ips: 11.29885732137427 images/sec  ETA 08:11:22
+[TRAIN] epoch=9, batch_id=3120, loss=0.873141, lr=0.001250,acc=0.996,avg_reader_cost: 1.1712055397033692 sec, avg_batch_cost: 1.470948269367218 sec, avg_samples: 16, avg_ips: 10.87733697588358 images/sec  ETA 08:27:58
+[TRAIN] epoch=9, batch_id=3220, loss=0.872981, lr=0.001250,acc=0.996,avg_reader_cost: 1.13737788438797 sec, avg_batch_cost: 1.438540632724762 sec, avg_samples: 16, avg_ips: 11.122383084650277 images/sec  ETA 08:14:22
+[TRAIN] epoch=9, batch_id=3320, loss=0.872957, lr=0.001250,acc=0.996,avg_reader_cost: 1.1586081075668335 sec, avg_batch_cost: 1.4895745825767517 sec, avg_samples: 16, avg_ips: 10.741321842590978 images/sec  ETA 08:29:26
+[TRAIN] epoch=9, batch_id=3420, loss=0.873060, lr=0.001250,acc=0.996,avg_reader_cost: 1.1896826648712158 sec, avg_batch_cost: 1.539990234375 sec, avg_samples: 16, avg_ips: 10.389676273819715 images/sec  ETA 08:44:06
+[TRAIN] epoch=9, batch_id=3520, loss=0.873172, lr=0.001250,acc=0.996,avg_reader_cost: 1.1538992142677307 sec, avg_batch_cost: 1.49097275018692 sec, avg_samples: 16, avg_ips: 10.731249111021052 images/sec  ETA 08:24:56
+[TRAIN] epoch=9, batch_id=3620, loss=0.873163, lr=0.001250,acc=0.996,avg_reader_cost: 1.1235174822807312 sec, avg_batch_cost: 1.4645073771476746 sec, avg_samples: 16, avg_ips: 10.925175420530932 images/sec  ETA 08:13:32
+[TRAIN] epoch=9, batch_id=3720, loss=0.873126, lr=0.001250,acc=0.996,avg_reader_cost: 1.135490517616272 sec, avg_batch_cost: 1.4719466805458068 sec, avg_samples: 16, avg_ips: 10.869958953993565 images/sec  ETA 08:13:35
+[TRAIN] epoch=9, batch_id=3820, loss=0.873076, lr=0.001250,acc=0.996,avg_reader_cost: 1.1249091196060181 sec, avg_batch_cost: 1.5799958562850953 sec, avg_samples: 16, avg_ips: 10.126608836569602 images/sec  ETA 08:47:11
+[TRAIN] epoch=9, batch_id=3920, loss=0.873083, lr=0.001250,acc=0.996,avg_reader_cost: 1.11032616853714 sec, avg_batch_cost: 1.4432236409187318 sec, avg_samples: 16, avg_ips: 11.086292897623732 images/sec  ETA 07:59:09
+[TRAIN] epoch=9, batch_id=4020, loss=0.873146, lr=0.001250,acc=0.996,avg_reader_cost: 1.1162196016311645 sec, avg_batch_cost: 1.4991931486129761 sec, avg_samples: 16, avg_ips: 10.672407364456596 images/sec  ETA 08:15:14
+[TRAIN] epoch=9, batch_id=4120, loss=0.873126, lr=0.001250,acc=0.996,avg_reader_cost: 1.1419042205810548 sec, avg_batch_cost: 1.4759387040138245 sec, avg_samples: 16, avg_ips: 10.840558592635249 images/sec  ETA 08:05:05
+[TRAIN] epoch=9, batch_id=4220, loss=0.873026, lr=0.001250,acc=0.996,avg_reader_cost: 1.1001384329795838 sec, avg_batch_cost: 1.41532244682312 sec, avg_samples: 16, avg_ips: 11.304844373742629 images/sec  ETA 07:42:48
+[TRAIN] epoch=9, batch_id=4320, loss=0.872947, lr=0.001250,acc=0.996,avg_reader_cost: 1.120504834651947 sec, avg_batch_cost: 1.4577589774131774 sec, avg_samples: 16, avg_ips: 10.975751305879331 images/sec  ETA 07:54:15
+[TRAIN] epoch=9, batch_id=4420, loss=0.872864, lr=0.001250,acc=0.996,avg_reader_cost: 1.1507909297943115 sec, avg_batch_cost: 1.5020759010314941 sec, avg_samples: 16, avg_ips: 10.651925105124583 images/sec  ETA 08:06:10
+[TRAIN] epoch=9, batch_id=4520, loss=0.872721, lr=0.001250,acc=0.996,avg_reader_cost: 1.1314564943313599 sec, avg_batch_cost: 1.4460667777061462 sec, avg_samples: 16, avg_ips: 11.064495946293944 images/sec  ETA 07:45:38
+[TRAIN] epoch=9, batch_id=4620, loss=0.872831, lr=0.001250,acc=0.996,avg_reader_cost: 1.1248368573188783 sec, avg_batch_cost: 1.4534534573554994 sec, avg_samples: 16, avg_ips: 11.008264433256338 images/sec  ETA 07:45:35
+[TRAIN] epoch=9, batch_id=4720, loss=0.872889, lr=0.001250,acc=0.996,avg_reader_cost: 1.1307524204254151 sec, avg_batch_cost: 1.4304180812835694 sec, avg_samples: 16, avg_ips: 11.185540933349069 images/sec  ETA 07:35:49
+[TRAIN] epoch=9, batch_id=4820, loss=0.872966, lr=0.001250,acc=0.996,avg_reader_cost: 1.091573736667633 sec, avg_batch_cost: 1.4418321919441224 sec, avg_samples: 16, avg_ips: 11.096991792384722 images/sec  ETA 07:37:03
+[TRAIN] epoch=9, batch_id=4920, loss=0.872961, lr=0.001250,acc=0.996,avg_reader_cost: 1.1159853148460388 sec, avg_batch_cost: 1.461423466205597 sec, avg_samples: 16, avg_ips: 10.94822983891315 images/sec  ETA 07:40:50
+[TRAIN] epoch=9, batch_id=5020, loss=0.872877, lr=0.001250,acc=0.996,avg_reader_cost: 1.123733744621277 sec, avg_batch_cost: 1.4645380473136902 sec, avg_samples: 16, avg_ips: 10.924946626922933 images/sec  ETA 07:39:22
+[TRAIN] epoch=9, batch_id=5120, loss=0.872852, lr=0.001250,acc=0.996,avg_reader_cost: 1.102126383781433 sec, avg_batch_cost: 1.4345090889930725 sec, avg_samples: 16, avg_ips: 11.153641425326143 images/sec  ETA 07:27:34
+[TRAIN] epoch=9, batch_id=5220, loss=0.872854, lr=0.001250,acc=0.996,avg_reader_cost: 1.1440992474555969 sec, avg_batch_cost: 1.5058772134780884 sec, avg_samples: 16, avg_ips: 10.625036262448772 images/sec  ETA 07:47:19
+[TRAIN] epoch=9, batch_id=5320, loss=0.872838, lr=0.001250,acc=0.996,avg_reader_cost: 1.1338127326965333 sec, avg_batch_cost: 1.491643271446228 sec, avg_samples: 16, avg_ips: 10.726425215921193 images/sec  ETA 07:40:25
+[TRAIN] epoch=9, batch_id=5420, loss=0.872840, lr=0.001250,acc=0.996,avg_reader_cost: 1.1090143322944641 sec, avg_batch_cost: 1.4406980228424073 sec, avg_samples: 16, avg_ips: 11.105727741912908 images/sec  ETA 07:22:17
+[TRAIN] epoch=9, batch_id=5520, loss=0.872896, lr=0.001250,acc=0.996,avg_reader_cost: 1.143888726234436 sec, avg_batch_cost: 1.4600023770332335 sec, avg_samples: 16, avg_ips: 10.958886267372014 images/sec  ETA 07:25:47
+[TRAIN] epoch=9, batch_id=5620, loss=0.872806, lr=0.001250,acc=0.996,avg_reader_cost: 1.1158934926986694 sec, avg_batch_cost: 1.4374564838409425 sec, avg_samples: 16, avg_ips: 11.13077173456225 images/sec  ETA 07:16:30
+[TRAIN] epoch=9, batch_id=5720, loss=0.872771, lr=0.001250,acc=0.996,avg_reader_cost: 1.1115389204025268 sec, avg_batch_cost: 1.5131019377708435 sec, avg_samples: 16, avg_ips: 10.57430408394809 images/sec  ETA 07:36:57
+[TRAIN] epoch=9, batch_id=5820, loss=0.872717, lr=0.001250,acc=0.996,avg_reader_cost: 1.1085152292251588 sec, avg_batch_cost: 1.4436803364753723 sec, avg_samples: 16, avg_ips: 11.082785846527974 images/sec  ETA 07:13:35
+[TRAIN] epoch=9, batch_id=5920, loss=0.872785, lr=0.001250,acc=0.996,avg_reader_cost: 1.0860380578041076 sec, avg_batch_cost: 1.4261185026168823 sec, avg_samples: 16, avg_ips: 11.219264016728278 images/sec  ETA 07:05:56
+[EVAL] epoch=9
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8528
+top5_acc	0.9582
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8517
+[TRAIN] epoch=10, batch_id=60, loss=0.868784, lr=0.000125,acc=0.997,avg_reader_cost: 4.929258971214295 sec, avg_batch_cost: 5.3106336951255795 sec, avg_samples: 16, avg_ips: 3.0128231240437024 images/sec  ETA 26:17:15
+[TRAIN] epoch=10, batch_id=160, loss=0.867403, lr=0.000125,acc=0.998,avg_reader_cost: 1.1151916646957398 sec, avg_batch_cost: 1.4372370290756225 sec, avg_samples: 16, avg_ips: 11.132471315667818 images/sec  ETA 07:04:27
+[TRAIN] epoch=10, batch_id=260, loss=0.867962, lr=0.000125,acc=0.997,avg_reader_cost: 1.1165360832214355 sec, avg_batch_cost: 1.4112925767898559 sec, avg_samples: 16, avg_ips: 11.337124748713554 images/sec  ETA 06:54:26
+[TRAIN] epoch=10, batch_id=360, loss=0.865438, lr=0.000125,acc=0.997,avg_reader_cost: 1.16095974445343 sec, avg_batch_cost: 1.4688029861450196 sec, avg_samples: 16, avg_ips: 10.89322404088595 images/sec  ETA 07:08:53
+[TRAIN] epoch=10, batch_id=460, loss=0.865061, lr=0.000125,acc=0.997,avg_reader_cost: 1.1499305224418641 sec, avg_batch_cost: 1.5074022436141967 sec, avg_samples: 16, avg_ips: 10.614286974681608 images/sec  ETA 07:17:38
+[TRAIN] epoch=10, batch_id=560, loss=0.863479, lr=0.000125,acc=0.998,avg_reader_cost: 1.1689875555038451 sec, avg_batch_cost: 1.485952308177948 sec, avg_samples: 16, avg_ips: 10.767505734836776 images/sec  ETA 07:08:56
+[TRAIN] epoch=10, batch_id=660, loss=0.863672, lr=0.000125,acc=0.997,avg_reader_cost: 1.1483229780197144 sec, avg_batch_cost: 1.4574775624275207 sec, avg_samples: 16, avg_ips: 10.977870543235666 images/sec  ETA 06:58:17
+[TRAIN] epoch=10, batch_id=760, loss=0.864034, lr=0.000125,acc=0.997,avg_reader_cost: 1.1872621822357177 sec, avg_batch_cost: 1.5000493812561035 sec, avg_samples: 16, avg_ips: 10.666315522627665 images/sec  ETA 07:08:00
+[TRAIN] epoch=10, batch_id=860, loss=0.864362, lr=0.000125,acc=0.997,avg_reader_cost: 1.1104259419441223 sec, avg_batch_cost: 1.4293247699737548 sec, avg_samples: 16, avg_ips: 11.194096916331892 images/sec  ETA 06:45:27
+[TRAIN] epoch=10, batch_id=960, loss=0.864543, lr=0.000125,acc=0.997,avg_reader_cost: 1.1426770091056824 sec, avg_batch_cost: 1.4461863732337952 sec, avg_samples: 16, avg_ips: 11.063580943735934 images/sec  ETA 06:47:49
+[TRAIN] epoch=10, batch_id=1060, loss=0.864318, lr=0.000125,acc=0.997,avg_reader_cost: 1.1340614295005798 sec, avg_batch_cost: 1.4689000272750854 sec, avg_samples: 16, avg_ips: 10.892504393019275 images/sec  ETA 06:51:46
+[TRAIN] epoch=10, batch_id=1160, loss=0.863747, lr=0.000125,acc=0.997,avg_reader_cost: 1.127437000274658 sec, avg_batch_cost: 1.4427546763420105 sec, avg_samples: 16, avg_ips: 11.08989647537773 images/sec  ETA 06:42:02
+[TRAIN] epoch=10, batch_id=1260, loss=0.863498, lr=0.000125,acc=0.997,avg_reader_cost: 1.1357996082305908 sec, avg_batch_cost: 1.4373330545425416 sec, avg_samples: 16, avg_ips: 11.131727576593097 images/sec  ETA 06:38:08
+[TRAIN] epoch=10, batch_id=1360, loss=0.863069, lr=0.000125,acc=0.997,avg_reader_cost: 1.1552499127388 sec, avg_batch_cost: 1.463889513015747 sec, avg_samples: 16, avg_ips: 10.929786611448927 images/sec  ETA 06:43:03
+[TRAIN] epoch=10, batch_id=1460, loss=0.862996, lr=0.000125,acc=0.997,avg_reader_cost: 1.1502502107620238 sec, avg_batch_cost: 1.4501300764083862 sec, avg_samples: 16, avg_ips: 11.03349296749161 images/sec  ETA 06:36:51
+[TRAIN] epoch=10, batch_id=1560, loss=0.863026, lr=0.000125,acc=0.997,avg_reader_cost: 1.1720039463043213 sec, avg_batch_cost: 1.4683453798294068 sec, avg_samples: 16, avg_ips: 10.896618888029524 images/sec  ETA 06:39:23
+[TRAIN] epoch=10, batch_id=1660, loss=0.862660, lr=0.000125,acc=0.997,avg_reader_cost: 1.1447918462753295 sec, avg_batch_cost: 1.4626698899269104 sec, avg_samples: 16, avg_ips: 10.938900233188994 images/sec  ETA 06:35:24
+[TRAIN] epoch=10, batch_id=1760, loss=0.862902, lr=0.000125,acc=0.997,avg_reader_cost: 1.1852074432373048 sec, avg_batch_cost: 1.5593279218673706 sec, avg_samples: 16, avg_ips: 10.260830820523772 images/sec  ETA 06:58:56
+[TRAIN] epoch=10, batch_id=1860, loss=0.862627, lr=0.000125,acc=0.997,avg_reader_cost: 1.139429121017456 sec, avg_batch_cost: 1.4834920692443847 sec, avg_samples: 16, avg_ips: 10.785362680199285 images/sec  ETA 06:36:05
+[TRAIN] epoch=10, batch_id=1960, loss=0.862628, lr=0.000125,acc=0.997,avg_reader_cost: 1.1613967394828797 sec, avg_batch_cost: 1.4609208345413207 sec, avg_samples: 16, avg_ips: 10.951996591261876 images/sec  ETA 06:27:37
+[TRAIN] epoch=10, batch_id=2060, loss=0.862390, lr=0.000125,acc=0.997,avg_reader_cost: 1.1686925864219666 sec, avg_batch_cost: 1.4714873123168946 sec, avg_samples: 16, avg_ips: 10.873352332754802 images/sec  ETA 06:27:58
+[TRAIN] epoch=10, batch_id=2160, loss=0.862323, lr=0.000125,acc=0.997,avg_reader_cost: 1.1484746789932252 sec, avg_batch_cost: 1.5166740393638611 sec, avg_samples: 16, avg_ips: 10.549399267565022 images/sec  ETA 06:37:22
+[TRAIN] epoch=10, batch_id=2260, loss=0.862122, lr=0.000125,acc=0.997,avg_reader_cost: 1.1840449976921081 sec, avg_batch_cost: 1.4777186155319213 sec, avg_samples: 16, avg_ips: 10.827501143876855 images/sec  ETA 06:24:41
+[TRAIN] epoch=10, batch_id=2360, loss=0.862095, lr=0.000125,acc=0.997,avg_reader_cost: 1.182051157951355 sec, avg_batch_cost: 1.4815300035476684 sec, avg_samples: 16, avg_ips: 10.799646285722487 images/sec  ETA 06:23:13
+[TRAIN] epoch=10, batch_id=2460, loss=0.862011, lr=0.000125,acc=0.997,avg_reader_cost: 1.1809802722930909 sec, avg_batch_cost: 1.4906029391288758 sec, avg_samples: 16, avg_ips: 10.733911479706709 images/sec  ETA 06:23:05
+[TRAIN] epoch=10, batch_id=2560, loss=0.861712, lr=0.000125,acc=0.998,avg_reader_cost: 1.195843720436096 sec, avg_batch_cost: 1.5154148197174073 sec, avg_samples: 16, avg_ips: 10.558165191352463 images/sec  ETA 06:26:56
+[TRAIN] epoch=10, batch_id=2660, loss=0.861767, lr=0.000125,acc=0.997,avg_reader_cost: 1.1283582067489624 sec, avg_batch_cost: 1.413882040977478 sec, avg_samples: 16, avg_ips: 11.316361292020165 images/sec  ETA 05:58:39
+[TRAIN] epoch=10, batch_id=2760, loss=0.861709, lr=0.000125,acc=0.997,avg_reader_cost: 1.1513458561897278 sec, avg_batch_cost: 1.5553098845481872 sec, avg_samples: 16, avg_ips: 10.287338979169384 images/sec  ETA 06:31:56
+[TRAIN] epoch=10, batch_id=2860, loss=0.861544, lr=0.000125,acc=0.998,avg_reader_cost: 1.1755627632141112 sec, avg_batch_cost: 1.4798277068138121 sec, avg_samples: 16, avg_ips: 10.812069490474189 images/sec  ETA 06:10:27
+[TRAIN] epoch=10, batch_id=2960, loss=0.861418, lr=0.000125,acc=0.998,avg_reader_cost: 1.1079149293899535 sec, avg_batch_cost: 1.4767147135734557 sec, avg_samples: 16, avg_ips: 10.834861908622893 images/sec  ETA 06:07:12
+[TRAIN] epoch=10, batch_id=3060, loss=0.861403, lr=0.000125,acc=0.998,avg_reader_cost: 1.135700023174286 sec, avg_batch_cost: 1.4175535893440248 sec, avg_samples: 16, avg_ips: 11.28705124114851 images/sec  ETA 05:50:08
+[TRAIN] epoch=10, batch_id=3160, loss=0.861385, lr=0.000125,acc=0.998,avg_reader_cost: 1.1313603663444518 sec, avg_batch_cost: 1.4320183777809143 sec, avg_samples: 16, avg_ips: 11.17304096669062 images/sec  ETA 05:51:19
+[TRAIN] epoch=10, batch_id=3260, loss=0.861172, lr=0.000125,acc=0.998,avg_reader_cost: 1.1718901443481444 sec, avg_batch_cost: 1.496803765296936 sec, avg_samples: 16, avg_ips: 10.689443981206127 images/sec  ETA 06:04:43
+[TRAIN] epoch=10, batch_id=3360, loss=0.861100, lr=0.000125,acc=0.998,avg_reader_cost: 1.1562738704681397 sec, avg_batch_cost: 1.5115762591361999 sec, avg_samples: 16, avg_ips: 10.58497704187502 images/sec  ETA 06:05:48
+[TRAIN] epoch=10, batch_id=3460, loss=0.861102, lr=0.000125,acc=0.998,avg_reader_cost: 1.1484251737594604 sec, avg_batch_cost: 1.47739718914032 sec, avg_samples: 16, avg_ips: 10.829856803308399 images/sec  ETA 05:55:04
+[TRAIN] epoch=10, batch_id=3560, loss=0.861156, lr=0.000125,acc=0.997,avg_reader_cost: 1.1467083120346069 sec, avg_batch_cost: 1.469590187072754 sec, avg_samples: 16, avg_ips: 10.887388974656988 images/sec  ETA 05:50:44
+[TRAIN] epoch=10, batch_id=3660, loss=0.861028, lr=0.000125,acc=0.997,avg_reader_cost: 1.122769401073456 sec, avg_batch_cost: 1.4588921427726746 sec, avg_samples: 16, avg_ips: 10.967226110075178 images/sec  ETA 05:45:45
+[TRAIN] epoch=10, batch_id=3760, loss=0.861025, lr=0.000125,acc=0.997,avg_reader_cost: 1.1274577569961548 sec, avg_batch_cost: 1.4806779265403747 sec, avg_samples: 16, avg_ips: 10.805861094575937 images/sec  ETA 05:48:27
+[TRAIN] epoch=10, batch_id=3860, loss=0.861052, lr=0.000125,acc=0.997,avg_reader_cost: 1.192545771598816 sec, avg_batch_cost: 1.4945118761062621 sec, avg_samples: 16, avg_ips: 10.705836638572402 images/sec  ETA 05:49:13
+[TRAIN] epoch=10, batch_id=3960, loss=0.860968, lr=0.000125,acc=0.997,avg_reader_cost: 1.163488438129425 sec, avg_batch_cost: 1.499304962158203 sec, avg_samples: 16, avg_ips: 10.671611449193428 images/sec  ETA 05:47:50
+[TRAIN] epoch=10, batch_id=4060, loss=0.860937, lr=0.000125,acc=0.997,avg_reader_cost: 1.1602233934402466 sec, avg_batch_cost: 1.467452311515808 sec, avg_samples: 16, avg_ips: 10.903250398285696 images/sec  ETA 05:38:00
+[TRAIN] epoch=10, batch_id=4160, loss=0.860894, lr=0.000125,acc=0.997,avg_reader_cost: 1.1712815165519714 sec, avg_batch_cost: 1.4628118777275085 sec, avg_samples: 16, avg_ips: 10.937838449094455 images/sec  ETA 05:34:29
+[TRAIN] epoch=10, batch_id=4260, loss=0.860774, lr=0.000125,acc=0.997,avg_reader_cost: 1.123569564819336 sec, avg_batch_cost: 1.414918303489685 sec, avg_samples: 16, avg_ips: 11.308073378186137 images/sec  ETA 05:21:11
+[TRAIN] epoch=10, batch_id=4360, loss=0.860687, lr=0.000125,acc=0.997,avg_reader_cost: 1.1346058106422425 sec, avg_batch_cost: 1.467901382446289 sec, avg_samples: 16, avg_ips: 10.899914797638285 images/sec  ETA 05:30:46
+[TRAIN] epoch=10, batch_id=4460, loss=0.860602, lr=0.000125,acc=0.997,avg_reader_cost: 1.185674934387207 sec, avg_batch_cost: 1.482937307357788 sec, avg_samples: 16, avg_ips: 10.789397448303378 images/sec  ETA 05:31:41
+[TRAIN] epoch=10, batch_id=4560, loss=0.860484, lr=0.000125,acc=0.998,avg_reader_cost: 1.1106903052330017 sec, avg_batch_cost: 1.4054909873008727 sec, avg_samples: 16, avg_ips: 11.383922162835534 images/sec  ETA 05:12:01
+[TRAIN] epoch=10, batch_id=4660, loss=0.860393, lr=0.000125,acc=0.998,avg_reader_cost: 1.1625032997131348 sec, avg_batch_cost: 1.5048185253143311 sec, avg_samples: 16, avg_ips: 10.632511316710346 images/sec  ETA 05:31:33
+[TRAIN] epoch=10, batch_id=4760, loss=0.860408, lr=0.000125,acc=0.998,avg_reader_cost: 1.1355618906021119 sec, avg_batch_cost: 1.4207448148727417 sec, avg_samples: 16, avg_ips: 11.261698675587384 images/sec  ETA 05:10:40
+[TRAIN] epoch=10, batch_id=4860, loss=0.860309, lr=0.000125,acc=0.998,avg_reader_cost: 1.131474676132202 sec, avg_batch_cost: 1.4791745281219482 sec, avg_samples: 16, avg_ips: 10.81684391923284 images/sec  ETA 05:20:58
+[TRAIN] epoch=10, batch_id=4960, loss=0.860202, lr=0.000125,acc=0.998,avg_reader_cost: 1.1209133458137512 sec, avg_batch_cost: 1.439146180152893 sec, avg_samples: 16, avg_ips: 11.117703135827508 images/sec  ETA 05:09:53
+[TRAIN] epoch=10, batch_id=5060, loss=0.860007, lr=0.000125,acc=0.998,avg_reader_cost: 1.153272979259491 sec, avg_batch_cost: 1.4586724877357482 sec, avg_samples: 16, avg_ips: 10.968877616137329 images/sec  ETA 05:11:40
+[TRAIN] epoch=10, batch_id=5160, loss=0.860045, lr=0.000125,acc=0.998,avg_reader_cost: 1.1395088934898376 sec, avg_batch_cost: 1.4364175391197205 sec, avg_samples: 16, avg_ips: 11.138822497116873 images/sec  ETA 05:04:31
+[TRAIN] epoch=10, batch_id=5260, loss=0.859972, lr=0.000125,acc=0.998,avg_reader_cost: 1.142198781967163 sec, avg_batch_cost: 1.4437544655799865 sec, avg_samples: 16, avg_ips: 11.082216804484455 images/sec  ETA 05:03:40
+[TRAIN] epoch=10, batch_id=5360, loss=0.859881, lr=0.000125,acc=0.998,avg_reader_cost: 1.1231201434135436 sec, avg_batch_cost: 1.4577744150161742 sec, avg_samples: 16, avg_ips: 10.975635074390079 images/sec  ETA 05:04:11
+[TRAIN] epoch=10, batch_id=5460, loss=0.859812, lr=0.000125,acc=0.998,avg_reader_cost: 1.17133225440979 sec, avg_batch_cost: 1.5006546115875243 sec, avg_samples: 16, avg_ips: 10.662013681531818 images/sec  ETA 05:10:38
+[TRAIN] epoch=10, batch_id=5560, loss=0.859788, lr=0.000125,acc=0.998,avg_reader_cost: 1.1467511677742004 sec, avg_batch_cost: 1.462633295059204 sec, avg_samples: 16, avg_ips: 10.939173922847392 images/sec  ETA 05:00:19
+[TRAIN] epoch=10, batch_id=5660, loss=0.859720, lr=0.000125,acc=0.998,avg_reader_cost: 1.103282220363617 sec, avg_batch_cost: 1.4901909852027893 sec, avg_samples: 16, avg_ips: 10.736878802029981 images/sec  ETA 05:03:30
+[TRAIN] epoch=10, batch_id=5760, loss=0.859631, lr=0.000125,acc=0.998,avg_reader_cost: 1.1345442867279052 sec, avg_batch_cost: 1.4385421562194824 sec, avg_samples: 16, avg_ips: 11.122371305439056 images/sec  ETA 04:50:35
+[TRAIN] epoch=10, batch_id=5860, loss=0.859478, lr=0.000125,acc=0.998,avg_reader_cost: 1.1539256191253662 sec, avg_batch_cost: 1.4818872594833374 sec, avg_samples: 16, avg_ips: 10.797042688374571 images/sec  ETA 04:56:52
+[TRAIN] epoch=10, batch_id=5960, loss=0.859351, lr=0.000125,acc=0.998,avg_reader_cost: 1.1197274255752563 sec, avg_batch_cost: 1.43636638879776 sec, avg_samples: 16, avg_ips: 11.139219160782519 images/sec  ETA 04:45:21
+[EVAL] epoch=10
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8570
+top5_acc	0.9625
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8552
+[TRAIN] epoch=11, batch_id=100, loss=0.855128, lr=0.000125,acc=0.999,avg_reader_cost: 7.703907570838928 sec, avg_batch_cost: 7.997012615203857 sec, avg_samples: 16, avg_ips: 2.000747125192841 images/sec  ETA 26:15:24
+[TRAIN] epoch=11, batch_id=200, loss=0.857157, lr=0.000125,acc=0.998,avg_reader_cost: 1.098552393913269 sec, avg_batch_cost: 1.4229806876182556 sec, avg_samples: 16, avg_ips: 11.244003618053554 images/sec  ETA 04:37:57
+[TRAIN] epoch=11, batch_id=300, loss=0.857917, lr=0.000125,acc=0.998,avg_reader_cost: 1.1586080884933472 sec, avg_batch_cost: 1.4584193301200867 sec, avg_samples: 16, avg_ips: 10.970781632935813 images/sec  ETA 04:42:26
+[TRAIN] epoch=11, batch_id=400, loss=0.858051, lr=0.000125,acc=0.997,avg_reader_cost: 1.1487277007102967 sec, avg_batch_cost: 1.4850745964050294 sec, avg_samples: 16, avg_ips: 10.773869567718513 images/sec  ETA 04:45:08
+[TRAIN] epoch=11, batch_id=500, loss=0.857140, lr=0.000125,acc=0.998,avg_reader_cost: 1.1438450169563295 sec, avg_batch_cost: 1.4411161398887635 sec, avg_samples: 16, avg_ips: 11.102505590725674 images/sec  ETA 04:34:17
+[TRAIN] epoch=11, batch_id=600, loss=0.857006, lr=0.000125,acc=0.998,avg_reader_cost: 1.139524483680725 sec, avg_batch_cost: 1.456357548236847 sec, avg_samples: 16, avg_ips: 10.986313092805096 images/sec  ETA 04:34:45
+[TRAIN] epoch=11, batch_id=700, loss=0.858401, lr=0.000125,acc=0.998,avg_reader_cost: 1.1475733876228333 sec, avg_batch_cost: 1.4725075769424438 sec, avg_samples: 16, avg_ips: 10.865818451829531 images/sec  ETA 04:35:21
+[TRAIN] epoch=11, batch_id=800, loss=0.858990, lr=0.000125,acc=0.997,avg_reader_cost: 1.117292172908783 sec, avg_batch_cost: 1.4616651487350465 sec, avg_samples: 16, avg_ips: 10.946419577593892 images/sec  ETA 04:30:53
+[TRAIN] epoch=11, batch_id=900, loss=0.858944, lr=0.000125,acc=0.997,avg_reader_cost: 1.1148913168907166 sec, avg_batch_cost: 1.4376319003105165 sec, avg_samples: 16, avg_ips: 11.129413583925158 images/sec  ETA 04:24:02
+[TRAIN] epoch=11, batch_id=1000, loss=0.859248, lr=0.000125,acc=0.997,avg_reader_cost: 1.1600730729103088 sec, avg_batch_cost: 1.4474184370040895 sec, avg_samples: 16, avg_ips: 11.054163461616037 images/sec  ETA 04:23:25
+[TRAIN] epoch=11, batch_id=1100, loss=0.858698, lr=0.000125,acc=0.997,avg_reader_cost: 1.1505607104301452 sec, avg_batch_cost: 1.475027446746826 sec, avg_samples: 16, avg_ips: 10.847255781774102 images/sec  ETA 04:25:59
+[TRAIN] epoch=11, batch_id=1200, loss=0.858329, lr=0.000125,acc=0.997,avg_reader_cost: 1.1031925463676453 sec, avg_batch_cost: 1.3978757739067078 sec, avg_samples: 16, avg_ips: 11.445938400723595 images/sec  ETA 04:09:45
+[TRAIN] epoch=11, batch_id=1300, loss=0.858219, lr=0.000125,acc=0.998,avg_reader_cost: 1.1587107181549072 sec, avg_batch_cost: 1.468013072013855 sec, avg_samples: 16, avg_ips: 10.89908550885778 images/sec  ETA 04:19:50
+[TRAIN] epoch=11, batch_id=1400, loss=0.857881, lr=0.000125,acc=0.998,avg_reader_cost: 1.1697878766059875 sec, avg_batch_cost: 1.4589750051498414 sec, avg_samples: 16, avg_ips: 10.966603227281984 images/sec  ETA 04:15:48
+[TRAIN] epoch=11, batch_id=1500, loss=0.857991, lr=0.000125,acc=0.998,avg_reader_cost: 1.1482418704032897 sec, avg_batch_cost: 1.4418758702278138 sec, avg_samples: 16, avg_ips: 11.096655634768357 images/sec  ETA 04:10:24
+[TRAIN] epoch=11, batch_id=1600, loss=0.857861, lr=0.000125,acc=0.998,avg_reader_cost: 1.1632490873336792 sec, avg_batch_cost: 1.448092701435089 sec, avg_samples: 16, avg_ips: 11.04901639525127 images/sec  ETA 04:09:04
+[TRAIN] epoch=11, batch_id=1700, loss=0.857839, lr=0.000125,acc=0.998,avg_reader_cost: 1.163805365562439 sec, avg_batch_cost: 1.5035460948944093 sec, avg_samples: 16, avg_ips: 10.641509465078052 images/sec  ETA 04:16:06
+[TRAIN] epoch=11, batch_id=1800, loss=0.857635, lr=0.000125,acc=0.998,avg_reader_cost: 1.1290756106376647 sec, avg_batch_cost: 1.5459180545806885 sec, avg_samples: 16, avg_ips: 10.349837077450916 images/sec  ETA 04:20:44
+[TRAIN] epoch=11, batch_id=1900, loss=0.857600, lr=0.000125,acc=0.998,avg_reader_cost: 1.1420874333381652 sec, avg_batch_cost: 1.458960633277893 sec, avg_samples: 16, avg_ips: 10.96671125666516 images/sec  ETA 04:03:38
+[TRAIN] epoch=11, batch_id=2000, loss=0.857430, lr=0.000125,acc=0.998,avg_reader_cost: 1.1305312991142273 sec, avg_batch_cost: 1.4184530091285705 sec, avg_samples: 16, avg_ips: 11.2798942911966 images/sec  ETA 03:54:31
+[TRAIN] epoch=11, batch_id=2100, loss=0.857510, lr=0.000125,acc=0.998,avg_reader_cost: 1.1349252486228942 sec, avg_batch_cost: 1.4829426360130311 sec, avg_samples: 16, avg_ips: 10.78935867877994 images/sec  ETA 04:02:42
+[TRAIN] epoch=11, batch_id=2200, loss=0.857350, lr=0.000125,acc=0.998,avg_reader_cost: 1.135658757686615 sec, avg_batch_cost: 1.4654619073867798 sec, avg_samples: 16, avg_ips: 10.918059295400788 images/sec  ETA 03:57:24
+[TRAIN] epoch=11, batch_id=2300, loss=0.857265, lr=0.000125,acc=0.998,avg_reader_cost: 1.1602776980400085 sec, avg_batch_cost: 1.4928143763542174 sec, avg_samples: 16, avg_ips: 10.718010392608582 images/sec  ETA 03:59:20
+[TRAIN] epoch=11, batch_id=2400, loss=0.857112, lr=0.000125,acc=0.998,avg_reader_cost: 1.134293475151062 sec, avg_batch_cost: 1.475093207359314 sec, avg_samples: 16, avg_ips: 10.846772204071714 images/sec  ETA 03:54:02
+[TRAIN] epoch=11, batch_id=2500, loss=0.857130, lr=0.000125,acc=0.998,avg_reader_cost: 1.1976350903511048 sec, avg_batch_cost: 1.496255784034729 sec, avg_samples: 16, avg_ips: 10.693358829902195 images/sec  ETA 03:54:54
+[TRAIN] epoch=11, batch_id=2600, loss=0.857064, lr=0.000125,acc=0.998,avg_reader_cost: 1.1317375707626343 sec, avg_batch_cost: 1.415328142642975 sec, avg_samples: 16, avg_ips: 11.304798878740375 images/sec  ETA 03:39:50
+[TRAIN] epoch=11, batch_id=2700, loss=0.857286, lr=0.000125,acc=0.998,avg_reader_cost: 1.1161296677589416 sec, avg_batch_cost: 1.4380563235282897 sec, avg_samples: 16, avg_ips: 11.126128885372024 images/sec  ETA 03:40:58
+[TRAIN] epoch=11, batch_id=2800, loss=0.857232, lr=0.000125,acc=0.998,avg_reader_cost: 1.1338110303878783 sec, avg_batch_cost: 1.4855627775192262 sec, avg_samples: 16, avg_ips: 10.770329091523651 images/sec  ETA 03:45:48
+[TRAIN] epoch=11, batch_id=2900, loss=0.857089, lr=0.000125,acc=0.998,avg_reader_cost: 1.1415514612197877 sec, avg_batch_cost: 1.4610316276550293 sec, avg_samples: 16, avg_ips: 10.951166078232108 images/sec  ETA 03:39:38
+[TRAIN] epoch=11, batch_id=3000, loss=0.856911, lr=0.000125,acc=0.998,avg_reader_cost: 1.1419125699996948 sec, avg_batch_cost: 1.421800971031189 sec, avg_samples: 16, avg_ips: 11.253333149994747 images/sec  ETA 03:31:22
+[TRAIN] epoch=11, batch_id=3100, loss=0.856919, lr=0.000125,acc=0.998,avg_reader_cost: 1.1286604452133178 sec, avg_batch_cost: 1.4936522030830384 sec, avg_samples: 16, avg_ips: 10.711998393584864 images/sec  ETA 03:39:34
+[TRAIN] epoch=11, batch_id=3200, loss=0.856695, lr=0.000125,acc=0.998,avg_reader_cost: 1.1342525386810303 sec, avg_batch_cost: 1.4290489745140076 sec, avg_samples: 16, avg_ips: 11.196257290931051 images/sec  ETA 03:27:41
+[TRAIN] epoch=11, batch_id=3300, loss=0.856784, lr=0.000125,acc=0.998,avg_reader_cost: 1.1346701025962829 sec, avg_batch_cost: 1.4604229140281677 sec, avg_samples: 16, avg_ips: 10.955730594412874 images/sec  ETA 03:29:48
+[TRAIN] epoch=11, batch_id=3400, loss=0.856774, lr=0.000125,acc=0.998,avg_reader_cost: 1.1226197075843811 sec, avg_batch_cost: 1.5450201058387756 sec, avg_samples: 16, avg_ips: 10.355852289257921 images/sec  ETA 03:39:23
+[TRAIN] epoch=11, batch_id=3500, loss=0.856932, lr=0.000125,acc=0.998,avg_reader_cost: 1.135178496837616 sec, avg_batch_cost: 1.4283143925666808 sec, avg_samples: 16, avg_ips: 11.202015524920954 images/sec  ETA 03:20:26
+[TRAIN] epoch=11, batch_id=3600, loss=0.856960, lr=0.000125,acc=0.998,avg_reader_cost: 1.1277708077430726 sec, avg_batch_cost: 1.412200028896332 sec, avg_samples: 16, avg_ips: 11.329839734180139 images/sec  ETA 03:15:49
+[TRAIN] epoch=11, batch_id=3700, loss=0.856948, lr=0.000125,acc=0.998,avg_reader_cost: 1.1349919986724855 sec, avg_batch_cost: 1.4742528653144837 sec, avg_samples: 16, avg_ips: 10.852954996012114 images/sec  ETA 03:21:58
+[TRAIN] epoch=11, batch_id=3800, loss=0.856837, lr=0.000125,acc=0.998,avg_reader_cost: 1.1863300037384032 sec, avg_batch_cost: 1.4866579365730286 sec, avg_samples: 16, avg_ips: 10.76239503815008 images/sec  ETA 03:21:11
+[TRAIN] epoch=11, batch_id=3900, loss=0.856898, lr=0.000125,acc=0.998,avg_reader_cost: 1.1394122552871704 sec, avg_batch_cost: 1.4948865532875062 sec, avg_samples: 16, avg_ips: 10.703153336160069 images/sec  ETA 03:19:48
+[TRAIN] epoch=11, batch_id=4000, loss=0.857062, lr=0.000125,acc=0.998,avg_reader_cost: 1.1531186866760255 sec, avg_batch_cost: 1.4454816508293151 sec, avg_samples: 16, avg_ips: 11.068974822904416 images/sec  ETA 03:10:48
+[TRAIN] epoch=11, batch_id=4100, loss=0.857051, lr=0.000125,acc=0.998,avg_reader_cost: 1.128379807472229 sec, avg_batch_cost: 1.4978880858421326 sec, avg_samples: 16, avg_ips: 10.681705897276423 images/sec  ETA 03:15:13
+[TRAIN] epoch=11, batch_id=4200, loss=0.857085, lr=0.000125,acc=0.998,avg_reader_cost: 1.1259748220443726 sec, avg_batch_cost: 1.4256514310836792 sec, avg_samples: 16, avg_ips: 11.22293966894694 images/sec  ETA 03:03:26
+[TRAIN] epoch=11, batch_id=4300, loss=0.856864, lr=0.000125,acc=0.998,avg_reader_cost: 1.112155168056488 sec, avg_batch_cost: 1.4207880258560182 sec, avg_samples: 16, avg_ips: 11.261356169130208 images/sec  ETA 03:00:26
+[TRAIN] epoch=11, batch_id=4400, loss=0.856794, lr=0.000125,acc=0.998,avg_reader_cost: 1.126127860546112 sec, avg_batch_cost: 1.4586623668670655 sec, avg_samples: 16, avg_ips: 10.968953723242352 images/sec  ETA 03:02:49
+[TRAIN] epoch=11, batch_id=4500, loss=0.856704, lr=0.000125,acc=0.998,avg_reader_cost: 1.137131175994873 sec, avg_batch_cost: 1.4990422868728637 sec, avg_samples: 16, avg_ips: 10.673481422180178 images/sec  ETA 03:05:22
+[TRAIN] epoch=11, batch_id=4600, loss=0.856687, lr=0.000125,acc=0.998,avg_reader_cost: 1.1125573635101318 sec, avg_batch_cost: 1.3860936069488525 sec, avg_samples: 16, avg_ips: 11.543231943201947 images/sec  ETA 02:49:06
+[TRAIN] epoch=11, batch_id=4700, loss=0.856608, lr=0.000125,acc=0.998,avg_reader_cost: 1.154462764263153 sec, avg_batch_cost: 1.448617103099823 sec, avg_samples: 16, avg_ips: 11.045016633976227 images/sec  ETA 02:54:19
+[TRAIN] epoch=11, batch_id=4800, loss=0.856528, lr=0.000125,acc=0.998,avg_reader_cost: 1.123363971710205 sec, avg_batch_cost: 1.4603713464736938 sec, avg_samples: 16, avg_ips: 10.956117455080603 images/sec  ETA 02:53:17
+[TRAIN] epoch=11, batch_id=4900, loss=0.856550, lr=0.000125,acc=0.998,avg_reader_cost: 1.1131708168983458 sec, avg_batch_cost: 1.4265927982330322 sec, avg_samples: 16, avg_ips: 11.215533977051818 images/sec  ETA 02:46:54
+[TRAIN] epoch=11, batch_id=5000, loss=0.856530, lr=0.000125,acc=0.998,avg_reader_cost: 1.120773491859436 sec, avg_batch_cost: 1.4068938517570495 sec, avg_samples: 16, avg_ips: 11.372570844643205 images/sec  ETA 02:42:15
+[TRAIN] epoch=11, batch_id=5100, loss=0.856567, lr=0.000125,acc=0.998,avg_reader_cost: 1.128166515827179 sec, avg_batch_cost: 1.4758655619621277 sec, avg_samples: 16, avg_ips: 10.841095837163099 images/sec  ETA 02:47:45
+[TRAIN] epoch=11, batch_id=5200, loss=0.856557, lr=0.000125,acc=0.998,avg_reader_cost: 1.1312992835044862 sec, avg_batch_cost: 1.457272024154663 sec, avg_samples: 16, avg_ips: 10.979418896949804 images/sec  ETA 02:43:12
+[TRAIN] epoch=11, batch_id=5300, loss=0.856517, lr=0.000125,acc=0.998,avg_reader_cost: 1.112747435569763 sec, avg_batch_cost: 1.4307235050201417 sec, avg_samples: 16, avg_ips: 11.183153099714227 images/sec  ETA 02:37:51
+[TRAIN] epoch=11, batch_id=5400, loss=0.856493, lr=0.000125,acc=0.998,avg_reader_cost: 1.1353680729866027 sec, avg_batch_cost: 1.446889660358429 sec, avg_samples: 16, avg_ips: 11.058203288311853 images/sec  ETA 02:37:13
+[TRAIN] epoch=11, batch_id=5500, loss=0.856459, lr=0.000125,acc=0.998,avg_reader_cost: 1.1329384160041809 sec, avg_batch_cost: 1.4852999925613404 sec, avg_samples: 16, avg_ips: 10.772234619357024 images/sec  ETA 02:38:55
+[TRAIN] epoch=11, batch_id=5600, loss=0.856426, lr=0.000125,acc=0.998,avg_reader_cost: 1.1138920378684998 sec, avg_batch_cost: 1.4240436911582948 sec, avg_samples: 16, avg_ips: 11.235610325260351 images/sec  ETA 02:29:59
+[TRAIN] epoch=11, batch_id=5700, loss=0.856442, lr=0.000125,acc=0.998,avg_reader_cost: 1.1519350457191466 sec, avg_batch_cost: 1.4864344525337219 sec, avg_samples: 16, avg_ips: 10.764013154247726 images/sec  ETA 02:34:05
+[TRAIN] epoch=11, batch_id=5800, loss=0.856415, lr=0.000125,acc=0.998,avg_reader_cost: 1.147445058822632 sec, avg_batch_cost: 1.4789518022537231 sec, avg_samples: 16, avg_ips: 10.818472904673538 images/sec  ETA 02:30:51
+[TRAIN] epoch=11, batch_id=5900, loss=0.856315, lr=0.000125,acc=0.998,avg_reader_cost: 1.1212582468986512 sec, avg_batch_cost: 1.4424670338630676 sec, avg_samples: 16, avg_ips: 11.092107912615816 images/sec  ETA 02:24:43
+[EVAL] epoch=11
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8554
+top5_acc	0.9566
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8545
+[TRAIN] epoch=12, batch_id=40, loss=0.857937, lr=0.000013,acc=0.998,avg_reader_cost: 4.985512039661407 sec, avg_batch_cost: 5.311449573040009 sec, avg_samples: 16, avg_ips: 3.0123603321423227 images/sec  ETA 08:44:03
+[TRAIN] epoch=12, batch_id=140, loss=0.856823, lr=0.000013,acc=0.999,avg_reader_cost: 1.1077908325195311 sec, avg_batch_cost: 1.4977539491653442 sec, avg_samples: 16, avg_ips: 10.682662535402658 images/sec  ETA 02:25:16
+[TRAIN] epoch=12, batch_id=240, loss=0.856686, lr=0.000013,acc=0.998,avg_reader_cost: 1.0303412008285522 sec, avg_batch_cost: 1.3800350785255433 sec, avg_samples: 16, avg_ips: 11.593908190431446 images/sec  ETA 02:11:33
+[TRAIN] epoch=12, batch_id=340, loss=0.856531, lr=0.000013,acc=0.998,avg_reader_cost: 1.099144299030304 sec, avg_batch_cost: 1.438252067565918 sec, avg_samples: 16, avg_ips: 11.124614635234437 images/sec  ETA 02:14:42
+[TRAIN] epoch=12, batch_id=440, loss=0.855141, lr=0.000013,acc=0.998,avg_reader_cost: 1.0969897723197937 sec, avg_batch_cost: 1.435162422657013 sec, avg_samples: 16, avg_ips: 11.148563916813067 images/sec  ETA 02:12:02
+[TRAIN] epoch=12, batch_id=540, loss=0.854310, lr=0.000013,acc=0.998,avg_reader_cost: 1.1188297080993652 sec, avg_batch_cost: 1.4444738173484801 sec, avg_samples: 16, avg_ips: 11.07669783130447 images/sec  ETA 02:10:29
+[TRAIN] epoch=12, batch_id=640, loss=0.855936, lr=0.000013,acc=0.998,avg_reader_cost: 1.0901459288597106 sec, avg_batch_cost: 1.444342532157898 sec, avg_samples: 16, avg_ips: 11.077704660608065 images/sec  ETA 02:08:03
+[TRAIN] epoch=12, batch_id=740, loss=0.856017, lr=0.000013,acc=0.998,avg_reader_cost: 1.0791555881500243 sec, avg_batch_cost: 1.457932744026184 sec, avg_samples: 16, avg_ips: 10.974443139136085 images/sec  ETA 02:06:50
+[TRAIN] epoch=12, batch_id=840, loss=0.856736, lr=0.000013,acc=0.997,avg_reader_cost: 1.0423083114624023 sec, avg_batch_cost: 1.360849757194519 sec, avg_samples: 16, avg_ips: 11.757359631665032 images/sec  ETA 01:56:07
+[TRAIN] epoch=12, batch_id=940, loss=0.857026, lr=0.000013,acc=0.997,avg_reader_cost: 1.0993754410743712 sec, avg_batch_cost: 1.416583287715912 sec, avg_samples: 16, avg_ips: 11.294782409722112 images/sec  ETA 01:58:31
+[TRAIN] epoch=12, batch_id=1040, loss=0.857263, lr=0.000013,acc=0.997,avg_reader_cost: 1.0739241814613343 sec, avg_batch_cost: 1.3783149313926697 sec, avg_samples: 16, avg_ips: 11.608377472798153 images/sec  ETA 01:53:01
+[TRAIN] epoch=12, batch_id=1140, loss=0.856732, lr=0.000013,acc=0.997,avg_reader_cost: 1.0979533076286316 sec, avg_batch_cost: 1.4173913860321046 sec, avg_samples: 16, avg_ips: 11.288342907734867 images/sec  ETA 01:53:51
+[TRAIN] epoch=12, batch_id=1240, loss=0.856456, lr=0.000013,acc=0.998,avg_reader_cost: 1.0614859080314636 sec, avg_batch_cost: 1.368313422203064 sec, avg_samples: 16, avg_ips: 11.693227399786133 images/sec  ETA 01:47:38
+[TRAIN] epoch=12, batch_id=1340, loss=0.856324, lr=0.000013,acc=0.998,avg_reader_cost: 1.1006695055961608 sec, avg_batch_cost: 1.4376860857009888 sec, avg_samples: 16, avg_ips: 11.128994124053653 images/sec  ETA 01:50:42
+[TRAIN] epoch=12, batch_id=1440, loss=0.856333, lr=0.000013,acc=0.998,avg_reader_cost: 1.0946007347106934 sec, avg_batch_cost: 1.4450764989852904 sec, avg_samples: 16, avg_ips: 11.072078198790821 images/sec  ETA 01:48:51
+[TRAIN] epoch=12, batch_id=1540, loss=0.856629, lr=0.000013,acc=0.998,avg_reader_cost: 1.110502882003784 sec, avg_batch_cost: 1.4175915932655334 sec, avg_samples: 16, avg_ips: 11.28674864891287 images/sec  ETA 01:44:25
+[TRAIN] epoch=12, batch_id=1640, loss=0.856389, lr=0.000013,acc=0.998,avg_reader_cost: 1.1473523736000062 sec, avg_batch_cost: 1.4992766785621643 sec, avg_samples: 16, avg_ips: 10.67181276730344 images/sec  ETA 01:47:56
+[TRAIN] epoch=12, batch_id=1740, loss=0.856597, lr=0.000013,acc=0.998,avg_reader_cost: 1.1080452799797058 sec, avg_batch_cost: 1.4419305419921875 sec, avg_samples: 16, avg_ips: 11.096234897621503 images/sec  ETA 01:41:24
+[TRAIN] epoch=12, batch_id=1840, loss=0.856364, lr=0.000013,acc=0.998,avg_reader_cost: 1.0577212429046632 sec, avg_batch_cost: 1.4361802792549134 sec, avg_samples: 16, avg_ips: 11.140662652951033 images/sec  ETA 01:38:37
+[TRAIN] epoch=12, batch_id=1940, loss=0.856198, lr=0.000013,acc=0.998,avg_reader_cost: 1.0602900719642638 sec, avg_batch_cost: 1.3886374950408935 sec, avg_samples: 16, avg_ips: 11.52208553862275 images/sec  ETA 01:33:02
+[TRAIN] epoch=12, batch_id=2040, loss=0.856185, lr=0.000013,acc=0.998,avg_reader_cost: 1.0278560137748718 sec, avg_batch_cost: 1.4480138325691223 sec, avg_samples: 16, avg_ips: 11.049618201237884 images/sec  ETA 01:34:36
+[TRAIN] epoch=12, batch_id=2140, loss=0.856071, lr=0.000013,acc=0.998,avg_reader_cost: 1.0970969319343566 sec, avg_batch_cost: 1.3936639475822448 sec, avg_samples: 16, avg_ips: 11.480529454576988 images/sec  ETA 01:28:43
+[TRAIN] epoch=12, batch_id=2240, loss=0.856024, lr=0.000013,acc=0.998,avg_reader_cost: 1.0968009305000306 sec, avg_batch_cost: 1.4259376835823059 sec, avg_samples: 16, avg_ips: 11.220686699157897 images/sec  ETA 01:28:24
+[TRAIN] epoch=12, batch_id=2340, loss=0.856002, lr=0.000013,acc=0.998,avg_reader_cost: 1.1375097393989564 sec, avg_batch_cost: 1.4679253029823303 sec, avg_samples: 16, avg_ips: 10.899737178379162 images/sec  ETA 01:28:33
+[TRAIN] epoch=12, batch_id=2440, loss=0.855836, lr=0.000013,acc=0.998,avg_reader_cost: 1.1070350432395935 sec, avg_batch_cost: 1.4210767817497254 sec, avg_samples: 16, avg_ips: 11.259067916301976 images/sec  ETA 01:23:22
+[TRAIN] epoch=12, batch_id=2540, loss=0.855509, lr=0.000013,acc=0.998,avg_reader_cost: 1.1256448554992675 sec, avg_batch_cost: 1.4303891491889953 sec, avg_samples: 16, avg_ips: 11.185767180261196 images/sec  ETA 01:21:31
+[TRAIN] epoch=12, batch_id=2640, loss=0.855685, lr=0.000013,acc=0.998,avg_reader_cost: 1.0618005752563477 sec, avg_batch_cost: 1.3492516422271728 sec, avg_samples: 16, avg_ips: 11.858425440631102 images/sec  ETA 01:14:39
+[TRAIN] epoch=12, batch_id=2740, loss=0.855683, lr=0.000013,acc=0.998,avg_reader_cost: 1.0926185822486878 sec, avg_batch_cost: 1.4006937432289124 sec, avg_samples: 16, avg_ips: 11.422911023445012 images/sec  ETA 01:15:10
+[TRAIN] epoch=12, batch_id=2840, loss=0.855518, lr=0.000013,acc=0.998,avg_reader_cost: 1.1097861695289613 sec, avg_batch_cost: 1.415235755443573 sec, avg_samples: 16, avg_ips: 11.305536860878115 images/sec  ETA 01:13:35
+[TRAIN] epoch=12, batch_id=2940, loss=0.855457, lr=0.000013,acc=0.998,avg_reader_cost: 1.0853288745880127 sec, avg_batch_cost: 1.3921972346305846 sec, avg_samples: 16, avg_ips: 11.492624465847005 images/sec  ETA 01:10:04
+[TRAIN] epoch=12, batch_id=3040, loss=0.855484, lr=0.000013,acc=0.998,avg_reader_cost: 1.0724400687217712 sec, avg_batch_cost: 1.3749631834030152 sec, avg_samples: 16, avg_ips: 11.636675216568504 images/sec  ETA 01:06:54
+[TRAIN] epoch=12, batch_id=3140, loss=0.855315, lr=0.000013,acc=0.998,avg_reader_cost: 1.0803752470016479 sec, avg_batch_cost: 1.427953495979309 sec, avg_samples: 16, avg_ips: 11.20484668797074 images/sec  ETA 01:07:06
+[TRAIN] epoch=12, batch_id=3240, loss=0.855216, lr=0.000013,acc=0.998,avg_reader_cost: 1.09870112657547 sec, avg_batch_cost: 1.4092234587669372 sec, avg_samples: 16, avg_ips: 11.353770688716686 images/sec  ETA 01:03:53
+[TRAIN] epoch=12, batch_id=3340, loss=0.855228, lr=0.000013,acc=0.998,avg_reader_cost: 1.1041202306747437 sec, avg_batch_cost: 1.4301844692230226 sec, avg_samples: 16, avg_ips: 11.187368024414594 images/sec  ETA 01:02:27
+[TRAIN] epoch=12, batch_id=3440, loss=0.855198, lr=0.000013,acc=0.998,avg_reader_cost: 1.1182888078689575 sec, avg_batch_cost: 1.4504452347755432 sec, avg_samples: 16, avg_ips: 11.031095567338676 images/sec  ETA 01:00:55
+[TRAIN] epoch=12, batch_id=3540, loss=0.855350, lr=0.000013,acc=0.998,avg_reader_cost: 1.127018356323242 sec, avg_batch_cost: 1.4482849311828614 sec, avg_samples: 16, avg_ips: 11.047549867782081 images/sec  ETA 00:58:24
+[TRAIN] epoch=12, batch_id=3640, loss=0.855258, lr=0.000013,acc=0.998,avg_reader_cost: 1.10764053106308 sec, avg_batch_cost: 1.4151253986358643 sec, avg_samples: 16, avg_ips: 11.306418509217268 images/sec  ETA 00:54:43
+[TRAIN] epoch=12, batch_id=3740, loss=0.855165, lr=0.000013,acc=0.998,avg_reader_cost: 1.0968554496765137 sec, avg_batch_cost: 1.4282147336006163 sec, avg_samples: 16, avg_ips: 11.20279718699094 images/sec  ETA 00:52:50
+[TRAIN] epoch=12, batch_id=3840, loss=0.855255, lr=0.000013,acc=0.998,avg_reader_cost: 1.1363693809509277 sec, avg_batch_cost: 1.4576249647140502 sec, avg_samples: 16, avg_ips: 10.976760406363375 images/sec  ETA 00:51:30
+[TRAIN] epoch=12, batch_id=3940, loss=0.855234, lr=0.000013,acc=0.998,avg_reader_cost: 1.096102831363678 sec, avg_batch_cost: 1.4049883127212524 sec, avg_samples: 16, avg_ips: 11.387995085176469 images/sec  ETA 00:47:18
+[TRAIN] epoch=12, batch_id=4040, loss=0.855348, lr=0.000013,acc=0.998,avg_reader_cost: 1.1255283880233764 sec, avg_batch_cost: 1.4426126050949097 sec, avg_samples: 16, avg_ips: 11.090988629582476 images/sec  ETA 00:46:09
+[TRAIN] epoch=12, batch_id=4140, loss=0.855373, lr=0.000013,acc=0.998,avg_reader_cost: 1.1188950943946838 sec, avg_batch_cost: 1.4515694737434388 sec, avg_samples: 16, avg_ips: 11.022551995901203 images/sec  ETA 00:44:01
+[TRAIN] epoch=12, batch_id=4240, loss=0.855291, lr=0.000013,acc=0.998,avg_reader_cost: 1.0781102252006531 sec, avg_batch_cost: 1.3802524089813233 sec, avg_samples: 16, avg_ips: 11.592082647990873 images/sec  ETA 00:39:34
+[TRAIN] epoch=12, batch_id=4340, loss=0.855104, lr=0.000013,acc=0.998,avg_reader_cost: 1.0973743391036987 sec, avg_batch_cost: 1.386378448009491 sec, avg_samples: 16, avg_ips: 11.54086030619719 images/sec  ETA 00:37:25
+[TRAIN] epoch=12, batch_id=4440, loss=0.855012, lr=0.000013,acc=0.998,avg_reader_cost: 1.1386840772628783 sec, avg_batch_cost: 1.463680739402771 sec, avg_samples: 16, avg_ips: 10.931345592843229 images/sec  ETA 00:37:04
+[TRAIN] epoch=12, batch_id=4540, loss=0.854851, lr=0.000013,acc=0.998,avg_reader_cost: 1.1131937074661256 sec, avg_batch_cost: 1.4236276030540467 sec, avg_samples: 16, avg_ips: 11.238894192326626 images/sec  ETA 00:33:41
+[TRAIN] epoch=12, batch_id=4640, loss=0.854829, lr=0.000013,acc=0.998,avg_reader_cost: 1.1177562952041626 sec, avg_batch_cost: 1.4362207889556884 sec, avg_samples: 16, avg_ips: 11.140348422079306 images/sec  ETA 00:31:35
+[TRAIN] epoch=12, batch_id=4740, loss=0.854779, lr=0.000013,acc=0.998,avg_reader_cost: 1.1021861457824706 sec, avg_batch_cost: 1.4012363314628602 sec, avg_samples: 16, avg_ips: 11.418487831596794 images/sec  ETA 00:28:29
+[TRAIN] epoch=12, batch_id=4840, loss=0.854684, lr=0.000013,acc=0.998,avg_reader_cost: 1.0761194610595703 sec, avg_batch_cost: 1.4038508319854737 sec, avg_samples: 16, avg_ips: 11.397222294174314 images/sec  ETA 00:26:12
+[TRAIN] epoch=12, batch_id=4940, loss=0.854680, lr=0.000013,acc=0.998,avg_reader_cost: 1.0965300750732423 sec, avg_batch_cost: 1.41309809923172 sec, avg_samples: 16, avg_ips: 11.322639248258106 images/sec  ETA 00:24:01
+[TRAIN] epoch=12, batch_id=5040, loss=0.854662, lr=0.000013,acc=0.998,avg_reader_cost: 1.080499496459961 sec, avg_batch_cost: 1.375245554447174 sec, avg_samples: 16, avg_ips: 11.634285926800713 images/sec  ETA 00:21:05
+[TRAIN] epoch=12, batch_id=5140, loss=0.854643, lr=0.000013,acc=0.998,avg_reader_cost: 1.0736853313446044 sec, avg_batch_cost: 1.36161235332489 sec, avg_samples: 16, avg_ips: 11.750774705392447 images/sec  ETA 00:18:36
+[TRAIN] epoch=12, batch_id=5240, loss=0.854693, lr=0.000013,acc=0.998,avg_reader_cost: 1.0875231790542603 sec, avg_batch_cost: 1.3984802412986754 sec, avg_samples: 16, avg_ips: 11.4409911041302 images/sec  ETA 00:16:46
+[TRAIN] epoch=12, batch_id=5340, loss=0.854701, lr=0.000013,acc=0.998,avg_reader_cost: 1.0893047332763672 sec, avg_batch_cost: 1.3994794821739196 sec, avg_samples: 16, avg_ips: 11.432822134088 images/sec  ETA 00:14:27
+[TRAIN] epoch=12, batch_id=5440, loss=0.854704, lr=0.000013,acc=0.998,avg_reader_cost: 1.0718838548660279 sec, avg_batch_cost: 1.38760440826416 sec, avg_samples: 16, avg_ips: 11.530663858307705 images/sec  ETA 00:12:01
+[TRAIN] epoch=12, batch_id=5540, loss=0.854671, lr=0.000013,acc=0.998,avg_reader_cost: 1.1172003841400147 sec, avg_batch_cost: 1.419558515548706 sec, avg_samples: 16, avg_ips: 11.271109873068863 images/sec  ETA 00:09:56
+[TRAIN] epoch=12, batch_id=5640, loss=0.854653, lr=0.000013,acc=0.998,avg_reader_cost: 1.1018580245971679 sec, avg_batch_cost: 1.4039421677589417 sec, avg_samples: 16, avg_ips: 11.39648082907872 images/sec  ETA 00:07:29
+[TRAIN] epoch=12, batch_id=5740, loss=0.854606, lr=0.000013,acc=0.998,avg_reader_cost: 1.074249918460846 sec, avg_batch_cost: 1.430904529094696 sec, avg_samples: 16, avg_ips: 11.181738316338178 images/sec  ETA 00:05:14
+[TRAIN] epoch=12, batch_id=5840, loss=0.854495, lr=0.000013,acc=0.998,avg_reader_cost: 1.1061576843261718 sec, avg_batch_cost: 1.423254656791687 sec, avg_samples: 16, avg_ips: 11.241839205407793 images/sec  ETA 00:02:50
+[TRAIN] epoch=12, batch_id=5940, loss=0.854378, lr=0.000013,acc=0.998,avg_reader_cost: 1.0845616483688354 sec, avg_batch_cost: 1.378436758518219 sec, avg_samples: 16, avg_ips: 11.607351516945583 images/sec  ETA 00:00:27
+[EVAL] epoch=12
+
+Evaluating top_k_accuracy ...
+
+top1_acc	0.8580
+top5_acc	0.9625
+
+Evaluating mean_class_accuracy ...
+
+mean_acc	0.8568

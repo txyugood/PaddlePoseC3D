@@ -5,11 +5,11 @@
 
 
 ## 2.复现精度
-在UCF-101数据的测试效果如下表。
+在UCF-101数据集上spilt1的测试效果如下表。
 
 | NetWork | epochs | opt | image_size | batch_size | dataset | top1 acc |
 | --- | --- | --- | --- | --- | --- | --- |
-| PoseC3D | 12 | SGD | 56x56 | 16 | UCF-101 | 87% |
+| PoseC3D | 12 | SGD | 56x56 | 16 | UCF-101 | 87.05% |
 
 ## 3.数据集
 UCF-101以及预训练模型下载地址:
@@ -24,7 +24,7 @@ PaddlePaddle == 2.2.2
 ### 训练：
 ```shell
 cd PaddlePoseC3D
-nohup python -u train.py --dataset_root /home/aistudio/data/data141005/ucf101.pkl --pretrained res3d_k400.pdparams --max_epochs 12 --batch_size 16  --log_iters 100 > train.log &
+nohup python -u train.py --dataset_root ucf101.pkl --pretrained res3d_k400.pdparams --max_epochs 12 --batch_size 16  --log_iters 100 > train.log &
 tail -f train.log
 ```
 dataset_root: 训练集路径
@@ -41,12 +41,13 @@ batch_size: 批次大小
 
 最优模型下载地址：
 
-链接: https://pan.baidu.com/s/1s836WYAixWBMnCckXblHbA 
+链接: https://pan.baidu.com/s/1J9_X_CNkXQbhBhj-xHHBDw 
 
-提取码: b6wm 
+提取码: uq9m 
+
 
 ```shell
-python test.py --dataset_root ../UCF-101 --pretrained ../best_model.pdparams
+python -u test.py --dataset_root ucf101.pkl --pretrained best_model/model.pdparams
 ```
 
 dataset_root: 训练集路径
@@ -56,32 +57,54 @@ pretrained: 预训练模型路径
 测试结果
 
 ```shell
-W1129 19:35:42.080695   591 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
-W1129 19:35:42.084153   591 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+3783 videos remain after valid thresholding
+W0423 20:29:01.821447 17086 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0423 20:29:01.826694 17086 device_context.cc:465] device: 0, cuDNN Version: 7.6.
 Loading pretrained model from output/best_model/model.pdparams
-There are 22/22 variables loaded into Recognizer3D.
-[                                                  ] 0/3783, elapsed: 0s, ETA:/home/aistudio/paddle_c3d/datasets/pipelines/transforms.py:377: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+There are 217/217 variables loaded into Recognizer3D.
+[                                                  ] 0/3783, elapsed: 0s, ETA:/home/aistudio/PaddlePoseC3D/datasets/pipelines/transforms.py:1467: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
 Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-  clip_offsets = (base_offsets + avg_interval / 2.0).astype(np.int)
-/home/aistudio/paddle_c3d/datasets/pipelines/transforms.py:433: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
-Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-  results['frame_inds'] = frame_inds.astype(np.int)
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 3783/3783, 2.1 task/s, elapsed: 1780s, ETA:     0s
+  results['frame_inds'] = inds.astype(np.int)
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 3783/3783, 0.4 task/s, elapsed: 9310s, ETA:     0s
 Evaluating top_k_accuracy ...
 
-top1_acc        0.8327
-top5_acc        0.9596
+top1_acc	0.8705
+top5_acc	0.9635
 
 Evaluating mean_class_accuracy ...
 
-mean_acc        0.8330
-top1_acc: 0.8327
-top5_acc: 0.9596
-mean_class_accuracy: 0.8330
+mean_acc	0.8693
+top1_acc: 0.8705
+top5_acc: 0.9635
+mean_class_accuracy: 0.8693
+
 ```
 
 ### 单张图片预测
 
+
+```
+python predict.py --input_file test_tipc/data/predict_example.pkl --pretrained ../posec3d_output/best_model/model.pdparams 
+```
+参数说明: 
+
+input_file: 输入文件，按照ucf-101.pkl格式。可以使用test_tipc/data中的predict_example.pkl数据进行测试。
+
+pretrained: 训练好的模型
+
+
+```
+/home/aistudio/PaddlePoseC3D/datasets/pipelines/transforms.py:1467: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  results['frame_inds'] = inds.astype(np.int)
+W0423 23:38:54.291606 32315 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0423 23:38:54.296748 32315 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ../posec3d_output/best_model/model.pdparams
+There are 217/217 variables loaded into Recognizer3D.
+File v_ApplyEyeMakeup_g01_c01 is class 0
+File v_ApplyEyeMakeup_g01_c02 is class 0
+File v_ApplyEyeMakeup_g01_c03 is class 0
+```
 
 ### 模型导出
 模型导出可执行以下命令：
@@ -157,19 +180,23 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/posec3d/train_in
 
 ## 6.代码结构与详细说明
 ```shell
-├── README.md
+PaddlePoseC3D
+├── README.md # 使用说明
 ├── datasets # 数据集包
 │   ├── __init__.py
 │   ├── base.py #数据集基类
 │   ├── file_client.py # 文件处理类
 │   ├── pipelines
 │   │   └── transforms.py # 数据增强类
-│   ├── rawframe_dataset.py # 数据集类
+│   ├── pose_dataset.py # 数据集类
+│   ├── dataset_wrappers.py # 数据集类
 │   └── utils.py #数据集工具类
 ├── models
 │   ├── __init__.py
 │   ├── base.py # 模型基类
-│   ├── c3d.py # c3d模型实现
+│   ├── resnet3d.py # backbone
+│   ├── resnet3d_slowfast.py # backbone
+│   └── resnet3d_slowonly.py # backbone
 │   ├── i3d_head.py # c3d模型头部实现
 │   └── recognizer3d.py # 识别模型框架
 ├── progress_bar.py #进度条工具
@@ -188,6 +215,7 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/posec3d/train_in
 │   └── test_train_inference_python.sh # 训练推理测试脚本
 ├── timer.py # 时间工具类
 ├── train.log # 训练日志
+├── test.log # 测试日志
 ├── train.py # 训练脚本
 └── utils.py # 训练工具包
 ```

@@ -125,8 +125,7 @@ save_dir: 输出图片保存路径
 
 ```shell
 python infer.py
---use_gpu=False --enable_mkldnn=False --cpu_threads=2
---model_file=output/model.pdmodel --batch_size=2 --input_file=validation/BSD300/test --enable_benchmark=True --precision=fp32 --params_file=output/model.pdiparams --save_dir output/inference_img
+--use_gpu=False --enable_mkldnn=False --cpu_threads=2 --model_file=output/model.pdmodel --batch_size=2 --input_file=test_tipc/data/predict_example.pkl --enable_benchmark=False --precision=fp32 --params_file=output/model.pdiparams
 ```
 
 参数说明:
@@ -148,8 +147,6 @@ enable_benchmark: 是否开启benchmark
 precision: 运算精度
 
 params_file: 模型权重文件，由export_model.py脚本导出。
-
-save_dir: 保存推理预测图片的路径
 
 
 ### TIPC基础链条测试

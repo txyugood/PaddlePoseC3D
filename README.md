@@ -5,7 +5,9 @@
 ## 1.简介
 人体骨架作为人类行为的一种简洁的表现形式，近年来受到越来越多的关注。许多基于骨架的动作识别方法都采用了图卷积网络（GCN）来提取人体骨架上的特征。尽管在以前的工作中取得了积极的成果，但基于GCN的方法在健壮性、互操作性和可扩展性方面受到限制。在本文中，作者提出了一种新的基于骨架的动作识别方法PoseC3D，它依赖于3D热图堆栈而不是图形序列作为人体骨架的基本表示。与基于GCN的方法相比，PoseC3D在学习时空特征方面更有效，对姿态估计噪声更具鲁棒性，并且在跨数据集环境下具有更好的通用性。此外，PoseC3D可以在不增加计算成本的情况下处理多人场景，其功能可以在早期融合阶段轻松与其他模式集成，这为进一步提升性能提供了巨大的设计空间。在四个具有挑战性的数据集上，PoseC3D在单独用于Keletons和与RGB模式结合使用时，持续获得优异的性能。
 
+<img src=./images/1.png></img>
 
+上图是网络架构，对于视频中的每一帧，首先使用两阶段姿势估计（检测+姿势估计）进行人体姿势提取。然后沿着时间维度堆叠关节或肢体的heatmap，并对生成的三维heatmap进行预处理。最后，我们使用3D-CNN对三维的heatmap进行分类。
 
 ## 2.复现精度
 在UCF-101数据集上spilt1的测试效果如下表。
@@ -89,6 +91,26 @@ mean_class_accuracy: 0.8693
 ```
 python predict.py --input_file test_tipc/data/predict_example.pkl --pretrained ../posec3d_output/best_model/model.pdparams 
 ```
+
+输入文件可视化结果如下图：
+
+ <center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src=./images/2.gif width = "49%" alt=""/>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src=./images/3.gif width = "49%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      原始频与关节点可视化
+  	</div>
+</center>
+
+
 参数说明: 
 
 input_file: 输入文件，按照ucf-101.pkl格式。可以使用test_tipc/data中的predict_example.pkl数据进行测试。
